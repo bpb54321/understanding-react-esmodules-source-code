@@ -2,6 +2,9 @@
 
 This repo follows along the course [Understanding React](https://understandingreact.com/) by Tony Alicea.
 
+## Serving the Application
+As suggested by Tony Alicea in the course, I use the [Live Server VSCode Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to serve the `index.html` file at the root of the project, which allows me to run the application in my browser locally.
+
 ## React Source Code
 
 In order to provide a better experience when logging and debugging in the browser, the React source code was processed in the following way.
