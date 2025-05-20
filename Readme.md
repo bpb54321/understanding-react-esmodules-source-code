@@ -2,8 +2,20 @@
 
 This repo follows along the course [Understanding React](https://understandingreact.com/) by Tony Alicea.
 
-## Serving the Application
+## Getting Started
 As suggested by Tony Alicea in the course, I use the [Live Server VSCode Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to serve the `index.html` file at the root of the project, which allows me to run the application in my browser locally.
+
+```
+# Install node modules
+npm install
+
+# Compile React source code to a readable bundle located at bundle.js
+npm run compile-react
+```
+
+Right-click the index.html file and select "Open with Live Server" to serve the application in your browser.
+
+Use the debugger to step through your app code as well as the React source code.
 
 ## React Source Code
 
@@ -15,6 +27,7 @@ In order to provide a better experience when logging and debugging in the browse
     1. This is necessary because the browser ES Module resolver requires the '.js' extension for every JS module, whereas the React source code uses the common Node.js shortcut of omitting the '.js' extension for imported modules.
     1. esbuild is able to resolve imports without the '.js' extension.
     1. The `NODE_PATH` variable is set to the `dist` folder for when a JS module uses a global import location / import alias rather than a relative path import.
+    1. The environment variable `__DEV__` is set to false to simply the React code execution. The `__DEV__` flag is mostly used for StrictMode, helpful console logs, etc, which we don't need for our purposes, since we want to actually step through the source code with the debugger.
     1. Source maps are enabled in the esbuild bundle so that the individual Javascript modules are visible when stepping through the code with the DevTools debugger.
     1. Certain manually adjustments are made, such as pasting in the contents of `packages/react-reconciler/src/forks/ReactFiberConfig.dom.js` into the file `packages/react-reconciler/src/ReactFiberConfig.js`, since this is an automated shim step that the actual React build pipeline does when React is built from its source. Since we are not using Rollup and the build scripts from the React repo, this was a quick way to handle this problem.
 
