@@ -6,7 +6,8 @@ export default function App() {
       createElement('section', null, 
         createElement('h1', null, 'Counters'),
         createElement('section', null, 
-          createElement(Counter, null)            
+          createElement(Counter, null),           
+          createElement(Counter, null),           
         )
       )
     );
