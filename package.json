@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "strip-flow-types": "npx flow-remove-types --out-dir dist/ packages/",
     "build-bundle": "NODE_PATH=dist npx esbuild src/main.js --bundle --outfile=bundle.js --sourcemap --format=esm --target=esnext --define:__DEV__=false",
-    "compile-react": "npm run strip-flow-types && npm run build-bundle"
+    "compile-react": "npm run strip-flow-types && npm run build-bundle",
+    "compile-watch": "nodemon --watch src --watch packages --ext js,jsx --exec \"npm run compile-react\""
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   "description": "",
   "devDependencies": {
     "esbuild": "0.25.4",
-    "flow-remove-types": "^2.271.0"
+    "flow-remove-types": "^2.271.0",
+    "nodemon": "^3.1.10"
   }
 }

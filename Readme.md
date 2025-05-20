@@ -17,6 +17,12 @@ Right-click the index.html file and select "Open with Live Server" to serve the 
 
 Use the debugger to step through your app code as well as the React source code.
 
+### Running in Watch Mode
+```
+npm run compile-watch
+```
+This will recompile the React source files and the application files every time you save a change to the `packages` folder (React source files) or the `src` folder (application source files).
+
 ## React Source Code
 
 In order to provide a better experience when logging and debugging in the browser, the React source code was processed in the following way.
