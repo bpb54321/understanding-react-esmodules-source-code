@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "strip-flow-types": "npx flow-remove-types --out-dir dist/ packages/",
-    "build-bundle": "NODE_PATH=dist npx esbuild src/main.js --bundle --outfile=bundle.js --sourcemap --format=esm --target=esnext --define:__DEV__=false",
+    "build-bundle": "node esbuild.mjs",
     "compile-react": "npm run strip-flow-types && npm run build-bundle",
     "compile-watch": "nodemon --watch src --watch packages --ext js,jsx --exec \"npm run compile-react\""
   },
