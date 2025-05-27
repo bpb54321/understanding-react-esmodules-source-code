@@ -5,7 +5,7 @@ export default function Counter({ name }) {
     createElement("article", null,
       createElement("h2", null, "Counter ", name),
       createElement("p", null, "Button pressed 1 times"),
-      createElement("button", null, "Increment"),
+      createElement("button", {className: "counter-button"}, "Increment"),
     )
   );
 }
