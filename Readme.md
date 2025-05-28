@@ -3,25 +3,17 @@
 This repo follows along the course [Understanding React](https://understandingreact.com/) by Tony Alicea.
 
 ## Getting Started
-As suggested by Tony Alicea in the course, I use the [Live Server VSCode Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) to serve the `index.html` file at the root of the project, which allows me to run the application in my browser locally.
 
 ```
 # Install node modules
 npm install
 
-# Compile React source code to a readable bundle located at bundle.js
-npm run compile-react
+# Compile React source code and app code to a readable bundle located at www/js/main.js,
+# and serve the www using esbuild's built-in server.
+npm run run-toolchain
 ```
-
-Right-click the index.html file and select "Open with Live Server" to serve the application in your browser.
 
 Use the debugger to step through your app code as well as the React source code.
-
-### Running in Watch Mode
-```
-npm run compile-watch
-```
-This will recompile the React source files and the application files every time you save a change to the `packages` folder (React source files) or the `src` folder (application source files).
 
 ## React Source Code
 
@@ -40,4 +32,10 @@ In order to provide a better experience when logging and debugging in the browse
 ## Justification
 In my opinion, this makes stepping through the React source code as we are exploring different parts of it in the source code the most readable and easiest to understand.
 
-I tried using the React distribution files, but there were too many instances where functions would be inlined and it would be hard to read and understand. Same thing for running the Vite dev server with source maps enabled for the React source code...the source code was transfered to such an extent that it was hard to read and understand the source code.
+I tried using the React distribution files, but there were too many instances where functions would be inlined and it would be hard to read and understand. Also, the React distribution files are only available as CommonJS modules, not ES Modules. Same thing for running the Vite dev server with source maps enabled for the React source code...the source code was transformed to such an extent that it was hard to read and understand the source code.
+
+## To-do List
+1. Divide up the bundle into multiple entrypoints / modules.
+    - React
+    - ReactDOM client
+    - main.js
