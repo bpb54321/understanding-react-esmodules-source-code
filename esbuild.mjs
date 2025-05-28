@@ -9,4 +9,6 @@ await esbuild.build({
   format: 'esm',
   target: 'esnext',
   define: { __DEV__: 'false' },
+  jsxDev: true,
+  jsx: 'automatic',
 }).catch(() => process.exit(1));
