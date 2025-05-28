@@ -1,7 +1,7 @@
 import esbuild from 'esbuild';
 
 await esbuild.build({
-  entryPoints: ['src/main.js'],
+  entryPoints: ['src/main.jsx'],
   nodePaths: ['dist'],
   bundle: true,
   outfile: 'bundle.js',
@@ -9,6 +9,6 @@ await esbuild.build({
   format: 'esm',
   target: 'esnext',
   define: { __DEV__: 'false' },
-  jsxDev: true,
+  jsxDev: false,
   jsx: 'automatic',
 }).catch(() => process.exit(1));
