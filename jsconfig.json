@@ -2,14 +2,14 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "react/src/*": ["packages/react/src/*"],
-      "react-client/src/*": ["packages/react-client/src/*"],
-      "react-dom/src/*": ["packages/react-dom/src/*"],
-      "react-dom-bindings/src/*": ["packages/react-dom-bindings/src/*"],
-      "react-reconciler/src/*": ["packages/react-reconciler/src/*"],
-      "scheduler/src/*": ["packages/scheduler/src/*"],
-      "shared/*": ["packages/shared/*"]
+      "react/src/*": ["dist/react/src/*"],
+      "react-client/src/*": ["dist/react-client/src/*"],
+      "react-dom/src/*": ["dist/react-dom/src/*"],
+      "react-dom-bindings/src/*": ["dist/react-dom-bindings/src/*"],
+      "react-reconciler/src/*": ["dist/react-reconciler/src/*"],
+      "scheduler/src/*": ["dist/scheduler/src/*"],
+      "shared/*": ["dist/shared/*"]
     }
   },
-  "include": ["packages/**/*"]
+  "include": ["dist/**/*"]
 }

@@ -1,5 +1,4 @@
-// import { createRoot } from "../dist/react-dom/client.js";
-import { createRoot } from "../packages/react-dom/client.js";
+import { createRoot } from "../dist/react-dom/client.js";
 import App, { state } from './App.jsx';
 
 const rootElement = document.getElementById("root");
