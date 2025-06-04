@@ -14,4 +14,5 @@ let context = await esbuild.context({
 
 await context.serve({
   servedir: 'www',
+  port: 8000,
 })
