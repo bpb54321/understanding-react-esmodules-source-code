@@ -437,7 +437,7 @@ export function createWorkInProgress(current: Fiber, pendingProps: any): Fiber {
         break;
     }
   }
-
+  console.log({workInProgress});
   return workInProgress;
 }
 
