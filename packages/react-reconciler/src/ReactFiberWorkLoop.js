@@ -2781,7 +2781,7 @@ function performUnitOfWork(unitOfWork: Fiber): void {
   // nothing should rely on this, but relying on it here means that we don't
   // need an additional field on the work in progress.
   const current = unitOfWork.alternate;
-
+  console.log("Performing work...");
   let next;
   if (enableProfilerTimer && (unitOfWork.mode & ProfileMode) !== NoMode) {
     startProfilerTimer(unitOfWork);
@@ -3073,6 +3073,8 @@ function panicOnRootError(root: FiberRoot, error: mixed) {
 }
 
 function completeUnitOfWork(unitOfWork: Fiber): void {
+  console.log("Completing work...");
+  console.log(unitOfWork);
   // Attempt to complete the current unit of work, then move to the next
   // sibling. If there are no more siblings, return to the parent fiber.
   let completedWork: Fiber = unitOfWork;
