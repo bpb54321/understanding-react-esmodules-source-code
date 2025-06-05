@@ -1122,6 +1122,8 @@ export function removeChild(
   parentInstance: Instance,
   child: Instance | TextInstance | SuspenseInstance | ActivityInstance,
 ): void {
+  console.log("Removing child...");
+  console.log(child);
   parentInstance.removeChild(child);
 }
 
@@ -1142,6 +1144,8 @@ export function removeChildFromContainer(
   } else {
     parentNode = (container: any);
   }
+  console.log("Removing child from container...");
+  console.log(child);
   parentNode.removeChild(child);
 }
 
