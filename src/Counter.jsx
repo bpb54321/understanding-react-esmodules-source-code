@@ -1,4 +1,7 @@
+import { useReducer } from "../dist/react";
+
 export default function Counter({ name }) {
+  const [state, dispatch] = useReducer(() => {}, 0);
   return (
     <article>
       <h2>Counter {name}</h2>
