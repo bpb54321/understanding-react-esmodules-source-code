@@ -1,12 +1,20 @@
-import Counter from "./Counter.jsx";
+import { useState } from "react";
+
+function Link() {
+  return <a href="https://jser.dev">jser.dev</a>;
+}
 
 export default function App() {
+  const [count, setCount] = useState(0);
   return (
-    <section>
-      <h1>Counters</h1>
-      <section>
-        <Counter name="One" />
-      </section>
-    </section>
+    <div>
+      <p>
+        <Link />
+        <br />
+        <button onClick={() => setCount((count) => count + 1)}>
+          click me - {count}
+        </button>
+      </p>
+    </div>
   );
 }
