@@ -27,7 +27,10 @@ In order to provide a better experience when logging and debugging in the browse
     1. The `NODE_PATH` variable is set to the `dist` folder for when a JS module uses a global import location / import alias rather than a relative path import.
     1. The environment variable `__DEV__` is set to false to simply the React code execution. The `__DEV__` flag is mostly used for StrictMode, helpful console logs, etc, which we don't need for our purposes, since we want to actually step through the source code with the debugger.
     1. Source maps are enabled in the esbuild bundle so that the individual Javascript modules are visible when stepping through the code with the DevTools debugger.
-    1. Certain manually adjustments are made, such as pasting in the contents of `packages/react-reconciler/src/forks/ReactFiberConfig.dom.js` into the file `packages/react-reconciler/src/ReactFiberConfig.js`, since this is an automated shim step that the actual React build pipeline does when React is built from its source. Since we are not using Rollup and the build scripts from the React repo, this was a quick way to handle this problem.
+    1. Certain manually adjustments are made:
+    - pasting in the contents of `packages/react-reconciler/src/forks/ReactFiberConfig.dom.js` into the file `packages/react-reconciler/src/ReactFiberConfig.js`, since this is an automated shim step that the actual React build pipeline does when React is built from its source. Since we are not using Rollup and the build scripts from the React repo, this was a quick way to handle this problem.
+    - replacing the undefined properties of the `Scheduler` import in Scheduler.js `unstable_setDisableYieldValue` and `log` with empty arrow functions to avoid receiving a "module import is undefined" warning from esbuild.
+
 
 ## Justification
 In my opinion, this makes stepping through the React source code as we are exploring different parts of it in the source code the most readable and easiest to understand.
