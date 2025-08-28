@@ -1,12 +1,12 @@
 {
   "presets": [
-    "@babel/preset-flow",
-    [
-      "@babel/preset-react",
-      {
-        "development": false,
-        "runtime": "automatic"
-      }
-    ]
+    "@babel/preset-flow"
+    // [
+    //   "@babel/preset-react",
+    //   {
+    //     "development": false,
+    //     "runtime": "automatic"
+    //   }
+    // ]
   ]
 }
