@@ -1,15 +1,16 @@
 import esbuild from 'esbuild';
+import babel from 'esbuild-plugin-babel'
 
 let context = await esbuild.context({
   entryPoints: ['src/main.jsx'],
-  nodePaths: ['dist'],
+  nodePaths: ['packages'],
   bundle: true,
   outdir: 'www/js',
   sourcemap: true,
   format: 'esm',
   target: 'esnext',
   define: { __DEV__: 'false' },
-  jsx: 'automatic',
+  plugins: [babel()]
 }).catch(() => process.exit(1));
 
 await context.serve({
