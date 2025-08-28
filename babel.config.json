@@ -1,11 +1,11 @@
 {
-  "presets": ["@babel/preset-flow"],
-  "plugins": [
-    "babel-plugin-syntax-hermes-parser",
+  "presets": [
+    "@babel/preset-flow",
     [
-      "@babel/plugin-transform-react-jsx",
+      "@babel/preset-react",
       {
-        "runtime": "automatic" // Use JSX without importing React
+        "development": false,
+        "runtime": "automatic"
       }
     ]
   ]

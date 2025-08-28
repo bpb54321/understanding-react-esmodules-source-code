@@ -4,11 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "strip-flow-types": "npx flow-remove-types --out-dir dist/ packages/",
-    "strip-flow-watch": "nodemon --watch packages --ext js --exec \"npm run strip-flow-types\"",
-    "build-and-serve": "node esbuild.mjs",
-    "run-toolchain": "npm run strip-flow-types && npm run build-and-serve"
+    "build-and-serve": "node esbuild.mjs"
   },
   "keywords": [],
   "author": "",
@@ -17,12 +13,9 @@
   "devDependencies": {
     "@babel/cli": "^7.28.3",
     "@babel/core": "^7.28.3",
-    "@babel/plugin-transform-react-jsx": "^7.27.1",
     "@babel/preset-flow": "^7.27.1",
-    "babel-plugin-syntax-hermes-parser": "^0.32.0",
+    "@babel/preset-react": "^7.27.1",
     "esbuild": "0.25.4",
-    "esbuild-plugin-babel": "^0.2.3",
-    "flow-remove-types": "^2.271.0",
-    "nodemon": "^3.1.10"
+    "esbuild-plugin-babel": "^0.2.3"
   }
 }
