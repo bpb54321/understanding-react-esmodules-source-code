@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build-and-serve": "node esbuild.mjs",
-    "transpile-react": "babel packages/ -d dist/ --config-file ./babel.react.config.json"
+    "transpile-react": "babel packages/ -d dist/ --config-file ./babel.react.config.json",
+    "transpile-app": "babel src/ -d app-dist/ --config-file ./babel.app.config.json"
   },
   "keywords": [],
   "author": "",

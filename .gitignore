@@ -1,3 +1,7 @@
 node_modules
+
+# Transpiled React files
 dist
-www/js
+
+# Transpiled app files
+app-dist
