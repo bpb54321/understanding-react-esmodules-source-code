@@ -10,7 +10,7 @@
 
 'use strict';
 
-import {useInsertionEffect} from 'react/index.js';
+import {useInsertionEffect} from 'react';
 
 describe('useEffectEvent', () => {
   let React;

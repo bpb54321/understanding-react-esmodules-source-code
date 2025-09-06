@@ -29,7 +29,7 @@ import {
   checkOptionStringCoercion,
 } from 'shared/CheckStringCoercion.js';
 
-import {Children} from 'react/index.js';
+import {Children} from 'react';
 
 import {
   enableFizzExternalRuntime,

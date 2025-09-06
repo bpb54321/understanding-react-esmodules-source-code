@@ -7,7 +7,7 @@
  * @noflow
  */
 
-import * as React from 'react/index.js';
+import * as React from 'react';
 
 let didWarnAboutUsingAct = false;
 export function act(callback) {

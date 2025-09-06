@@ -7,7 +7,7 @@
  * @flow
  */
 
-import {Children} from 'react/index.js';
+import {Children} from 'react';
 
 let didWarnSelectedSetOnOption = false;
 let didWarnInvalidChild = false;
