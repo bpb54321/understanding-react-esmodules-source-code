@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build-and-serve": "node esbuild.mjs",
-    "build": "babel packages/ -d dist/"
+    "build": "babel packages/ -d dist/ --watch"
   },
   "keywords": [],
   "author": "",
