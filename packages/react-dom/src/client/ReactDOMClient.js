@@ -7,18 +7,18 @@
  * @flow
  */
 
-import {createRoot, hydrateRoot} from './ReactDOMRoot';
+import {createRoot, hydrateRoot} from './ReactDOMRoot.js';
 
 import {
   injectIntoDevTools,
   findHostInstance,
-} from 'react-reconciler/src/ReactFiberReconciler';
-import {canUseDOM} from 'shared/ExecutionEnvironment';
-import ReactVersion from 'shared/ReactVersion';
+} from 'react-reconciler/src/ReactFiberReconciler.js';
+import {canUseDOM} from 'shared/ExecutionEnvironment.js';
+import ReactVersion from 'shared/ReactVersion.js';
 
-import Internals from 'shared/ReactDOMSharedInternals';
+import Internals from 'shared/ReactDOMSharedInternals.js';
 
-import {ensureCorrectIsomorphicReactVersion} from '../shared/ensureCorrectIsomorphicReactVersion';
+import {ensureCorrectIsomorphicReactVersion} from '../shared/ensureCorrectIsomorphicReactVersion.js';
 ensureCorrectIsomorphicReactVersion();
 
 if (__DEV__) {

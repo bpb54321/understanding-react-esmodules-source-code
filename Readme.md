@@ -42,3 +42,13 @@ I tried using the React distribution files, but there were too many instances wh
     - React
     - ReactDOM client
     - main.js
+
+## Notes
+Regular expression to append '.js' to the end of all import statements, which
+is required for module resolution in the browser.
+
+Find expression in VSCode
+'([^']+)'(?=;)
+
+Replace expression in VSCode
+'$1.js'
