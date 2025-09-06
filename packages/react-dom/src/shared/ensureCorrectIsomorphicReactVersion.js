@@ -8,7 +8,7 @@
  */
 
 import reactDOMPackageVersion from 'shared/ReactVersion.js';
-import * as IsomorphicReactPackage from 'react.js';
+import * as IsomorphicReactPackage from 'react/index.js';
 
 export function ensureCorrectIsomorphicReactVersion() {
   const isomorphicReactPackageVersion = IsomorphicReactPackage.version;

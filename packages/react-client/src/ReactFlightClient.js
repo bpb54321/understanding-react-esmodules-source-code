@@ -96,7 +96,7 @@ import ReactVersion from 'shared/ReactVersion.js';
 
 import isArray from 'shared/isArray.js';
 
-import * as React from 'react.js';
+import * as React from 'react/index.js';
 
 import type {SharedStateServer} from 'react/src/ReactSharedInternalsServer.js';
 import type {SharedStateClient} from 'react/src/ReactSharedInternalsClient.js';

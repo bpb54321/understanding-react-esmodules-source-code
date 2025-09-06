@@ -7,7 +7,7 @@
  * @flow
  */
 
-import * as ReactDOM from 'react-dom.js';
+import * as ReactDOM from 'react-dom/index.js';
 
 const ReactDOMSharedInternals =
   ReactDOM.__DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE;

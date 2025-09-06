@@ -9,7 +9,7 @@ The `react` package contains only the functionality necessary to define React co
 ## Usage
 
 ```js
-import { useState } from 'react.js';
+import { useState } from 'react/index.js';
 import { createRoot } from 'react-dom/client.js';
 
 function Counter() {
