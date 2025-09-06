@@ -52,3 +52,7 @@ Find expression in VSCode
 
 Replace expression in VSCode
 $1'$2.js'
+
+- Note: the above expression leads to problems, because it doesn't handle a top-level package name. The expression should be updated to only find and replace non-top-level packages, for example:
+Should skip: from 'react'
+Should match: from 'react/my-subfolder/my-file'
