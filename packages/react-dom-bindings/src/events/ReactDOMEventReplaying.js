@@ -21,7 +21,7 @@ import type {EventPriority} from 'react-reconciler/src/ReactEventPriorities.js';
 import {
   unstable_scheduleCallback as scheduleCallback,
   unstable_NormalPriority as NormalPriority,
-} from 'scheduler.js';
+} from 'scheduler/src/forks/Scheduler.js';
 import {
   getNearestMountedFiber,
   getContainerFromFiber,
