@@ -7,7 +7,7 @@
  * @flow
  */
 
-declare const __REACT_DEVTOOLS_GLOBAL_HOOK__: Object | void;
+// declare const __REACT_DEVTOOLS_GLOBAL_HOOK__: Object | void;
 
 export function injectInternals(internals: Object): boolean {
   if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === 'undefined') {

@@ -23,7 +23,7 @@
 // So `$$$config` looks like a global variable, but it's
 // really an argument to a top-level wrapping function.
 
-declare const $$$config: any;
+// declare const $$$config: any;
 export opaque type Type = mixed;
 export opaque type Props = mixed;
 export opaque type Container = mixed;

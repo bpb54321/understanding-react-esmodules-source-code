@@ -1,5 +1,6 @@
 {
   "javascript.validate.enable": false,
   "javascript.preferGoToSourceDefinition": true,
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "liveServer.settings.port": 5501
 }

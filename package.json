@@ -4,7 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build-and-serve": "node esbuild.mjs"
+    "build-and-serve": "node esbuild.mjs",
+    "build": "babel packages/ -d dist/"
   },
   "keywords": [],
   "author": "",

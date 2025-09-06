@@ -7,4 +7,4 @@
  * @flow
  */
 
-export {createRoot, hydrateRoot, version} from './src/client/ReactDOMClient';
+export {createRoot, hydrateRoot, version} from './src/client/ReactDOMClient.js';
