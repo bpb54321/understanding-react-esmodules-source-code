@@ -7,4 +7,4 @@
  * @flow
  */
 
-export * from './src/ReactServer';
+export * from './src/ReactServer.js';

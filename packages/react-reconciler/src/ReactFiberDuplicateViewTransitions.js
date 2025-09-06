@@ -7,9 +7,9 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
-import type {ViewTransitionProps} from 'shared/ReactTypes';
-import {runWithFiberInDEV} from './ReactCurrentFiber';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {ViewTransitionProps} from 'shared/ReactTypes.js';
+import {runWithFiberInDEV} from './ReactCurrentFiber.js';
 
 // Use in DEV to track mounted named ViewTransitions. This is used to warn for
 // duplicate names. This should technically be tracked per Document because you could

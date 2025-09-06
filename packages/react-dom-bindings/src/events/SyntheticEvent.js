@@ -9,10 +9,10 @@
 
 /* eslint valid-typeof: 0 */
 
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
 
-import assign from 'shared/assign';
-import getEventCharCode from './getEventCharCode';
+import assign from 'shared/assign.js';
+import getEventCharCode from './getEventCharCode.js';
 
 type EventInterfaceType = {
   [propName: string]: 0 | ((event: {[propName: string]: mixed, ...}) => mixed),

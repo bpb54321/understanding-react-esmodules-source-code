@@ -7,15 +7,15 @@
  * @flow
  */
 
-import type {EventPriority} from 'react-reconciler/src/ReactEventPriorities';
+import type {EventPriority} from 'react-reconciler/src/ReactEventPriorities.js';
 
-import {getEventPriority} from '../events/ReactDOMEventListener';
+import {getEventPriority} from '../events/ReactDOMEventListener.js';
 import {
   NoEventPriority,
   DefaultEventPriority,
-} from 'react-reconciler/src/ReactEventPriorities';
+} from 'react-reconciler/src/ReactEventPriorities.js';
 
-import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals';
+import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals.js';
 
 export function setCurrentUpdatePriority(
   newPriority: EventPriority,

@@ -9,8 +9,8 @@ The `react` package contains only the functionality necessary to define React co
 ## Usage
 
 ```js
-import { useState } from 'react';
-import { createRoot } from 'react-dom/client';
+import { useState } from 'react.js';
+import { createRoot } from 'react-dom/client.js';
 
 function Counter() {
   const [count, setCount] = useState(0);

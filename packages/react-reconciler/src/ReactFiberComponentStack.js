@@ -7,9 +7,9 @@
  * @flow
  */
 
-import {enableViewTransition} from 'shared/ReactFeatureFlags';
-import type {Fiber} from './ReactInternalTypes';
-import type {ReactComponentInfo} from 'shared/ReactTypes';
+import {enableViewTransition} from 'shared/ReactFeatureFlags.js';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {ReactComponentInfo} from 'shared/ReactTypes.js';
 
 import {
   HostComponent,
@@ -25,14 +25,14 @@ import {
   HostText,
   ViewTransitionComponent,
   ActivityComponent,
-} from './ReactWorkTags';
+} from './ReactWorkTags.js';
 import {
   describeBuiltInComponentFrame,
   describeFunctionComponentFrame,
   describeClassComponentFrame,
   describeDebugInfoFrame,
-} from 'shared/ReactComponentStackFrame';
-import {formatOwnerStack} from 'shared/ReactOwnerStackFrames';
+} from 'shared/ReactComponentStackFrame.js';
+import {formatOwnerStack} from 'shared/ReactOwnerStackFrames.js';
 
 function describeFiber(fiber: Fiber): string {
   switch (fiber.tag) {

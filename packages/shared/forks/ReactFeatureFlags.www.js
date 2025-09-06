@@ -7,9 +7,9 @@
  * @flow
  */
 
-import typeof * as FeatureFlagsType from 'shared/ReactFeatureFlags';
-import typeof * as ExportsType from './ReactFeatureFlags.www';
-import typeof * as DynamicFeatureFlags from './ReactFeatureFlags.www-dynamic';
+import typeof * as FeatureFlagsType from 'shared/ReactFeatureFlags.js';
+import typeof * as ExportsType from './ReactFeatureFlags.www.js';
+import typeof * as DynamicFeatureFlags from './ReactFeatureFlags.www-dynamic.js';
 
 // Re-export dynamic flags from the www version.
 const dynamicFeatureFlags: DynamicFeatureFlags = require('ReactFeatureFlags');

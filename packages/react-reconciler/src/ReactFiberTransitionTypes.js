@@ -7,11 +7,11 @@
  * @flow
  */
 
-import type {FiberRoot} from './ReactInternalTypes';
-import type {TransitionTypes} from 'react/src/ReactTransitionType';
+import type {FiberRoot} from './ReactInternalTypes.js';
+import type {TransitionTypes} from 'react/src/ReactTransitionType.js';
 
-import {enableViewTransition} from 'shared/ReactFeatureFlags';
-import {includesTransitionLane} from './ReactFiberLane';
+import {enableViewTransition} from 'shared/ReactFeatureFlags.js';
+import {includesTransitionLane} from './ReactFiberLane.js';
 
 export function queueTransitionTypes(
   root: FiberRoot,

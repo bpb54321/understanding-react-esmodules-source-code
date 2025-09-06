@@ -7,37 +7,37 @@
  * @flow
  */
 
-import type {ReactNodeList} from 'shared/ReactTypes';
+import type {ReactNodeList} from 'shared/ReactTypes.js';
 
-import {disableLegacyMode} from 'shared/ReactFeatureFlags';
-import {isValidContainer} from 'react-dom-bindings/src/client/ReactDOMContainer';
-import {createEventHandle} from 'react-dom-bindings/src/client/ReactDOMEventHandle';
-import {runWithPriority} from 'react-dom-bindings/src/client/ReactDOMUpdatePriority';
-import {flushSync as flushSyncIsomorphic} from '../shared/ReactDOMFlushSync';
+import {disableLegacyMode} from 'shared/ReactFeatureFlags.js';
+import {isValidContainer} from 'react-dom-bindings/src/client/ReactDOMContainer.js';
+import {createEventHandle} from 'react-dom-bindings/src/client/ReactDOMEventHandle.js';
+import {runWithPriority} from 'react-dom-bindings/src/client/ReactDOMUpdatePriority.js';
+import {flushSync as flushSyncIsomorphic} from '../shared/ReactDOMFlushSync.js';
 
 import {
   flushSyncFromReconciler as flushSyncWithoutWarningIfAlreadyRendering,
   isAlreadyRendering,
   injectIntoDevTools,
   findHostInstance,
-} from 'react-reconciler/src/ReactFiberReconciler';
-import {createPortal as createPortalImpl} from 'react-reconciler/src/ReactPortal';
-import {canUseDOM} from 'shared/ExecutionEnvironment';
-import ReactVersion from 'shared/ReactVersion';
+} from 'react-reconciler/src/ReactFiberReconciler.js';
+import {createPortal as createPortalImpl} from 'react-reconciler/src/ReactPortal.js';
+import {canUseDOM} from 'shared/ExecutionEnvironment.js';
+import ReactVersion from 'shared/ReactVersion.js';
 
-import {ensureCorrectIsomorphicReactVersion} from '../shared/ensureCorrectIsomorphicReactVersion';
+import {ensureCorrectIsomorphicReactVersion} from '../shared/ensureCorrectIsomorphicReactVersion.js';
 ensureCorrectIsomorphicReactVersion();
 
 import {
   getInstanceFromNode,
   getNodeFromInstance,
   getFiberCurrentPropsFromNode,
-} from 'react-dom-bindings/src/client/ReactDOMComponentTree';
+} from 'react-dom-bindings/src/client/ReactDOMComponentTree.js';
 import {
   enqueueStateRestore,
   restoreStateIfNeeded,
-} from 'react-dom-bindings/src/events/ReactDOMControlledComponent';
-import Internals from '../ReactDOMSharedInternalsFB';
+} from 'react-dom-bindings/src/events/ReactDOMControlledComponent.js';
+import Internals from '../ReactDOMSharedInternalsFB.js';
 
 export {
   prefetchDNS,
@@ -46,12 +46,12 @@ export {
   preloadModule,
   preinit,
   preinitModule,
-} from '../shared/ReactDOMFloat';
+} from '../shared/ReactDOMFloat.js';
 export {
   useFormStatus,
   useFormState,
   requestFormReset,
-} from 'react-dom-bindings/src/shared/ReactDOMFormActions';
+} from 'react-dom-bindings/src/shared/ReactDOMFormActions.js';
 
 if (__DEV__) {
   if (

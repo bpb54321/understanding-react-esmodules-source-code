@@ -7,7 +7,7 @@
  * @flow
  */
 
-import {checkFormFieldValueStringCoercion} from 'shared/CheckStringCoercion';
+import {checkFormFieldValueStringCoercion} from 'shared/CheckStringCoercion.js';
 
 type ValueTracker = {
   getValue(): string,

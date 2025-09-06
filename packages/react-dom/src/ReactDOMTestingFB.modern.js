@@ -7,7 +7,7 @@
  * @flow
  */
 
-export * from './ReactDOMFB.modern';
+export * from './ReactDOMFB.modern.js';
 
 export {
   createComponentSelector,
@@ -20,4 +20,4 @@ export {
   findBoundingRects,
   focusWithin,
   observeVisibleRects,
-} from 'react-reconciler/src/ReactFiberReconciler';
+} from 'react-reconciler/src/ReactFiberReconciler.js';

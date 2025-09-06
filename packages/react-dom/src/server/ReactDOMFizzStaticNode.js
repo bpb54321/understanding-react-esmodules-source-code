@@ -7,21 +7,21 @@
  * @flow
  */
 
-import type {ReactNodeList} from 'shared/ReactTypes';
+import type {ReactNodeList} from 'shared/ReactTypes.js';
 import type {
   BootstrapScriptDescriptor,
   HeadersDescriptor,
-} from 'react-dom-bindings/src/server/ReactFizzConfigDOM';
+} from 'react-dom-bindings/src/server/ReactFizzConfigDOM.js';
 import type {
   PostponedState,
   ErrorInfo,
   PostponeInfo,
-} from 'react-server/src/ReactFizzServer';
-import type {ImportMap} from '../shared/ReactDOMTypes';
+} from 'react-server/src/ReactFizzServer.js';
+import type {ImportMap} from '../shared/ReactDOMTypes.js';
 
-import {Writable, Readable} from 'stream';
+import {Writable, Readable} from 'stream.js';
 
-import ReactVersion from 'shared/ReactVersion';
+import ReactVersion from 'shared/ReactVersion.js';
 
 import {
   createPrerenderRequest,
@@ -30,18 +30,18 @@ import {
   startFlowing,
   abort,
   getPostponedState,
-} from 'react-server/src/ReactFizzServer';
+} from 'react-server/src/ReactFizzServer.js';
 
 import {
   createResumableState,
   createRenderState,
   resumeRenderState,
   createRootFormatContext,
-} from 'react-dom-bindings/src/server/ReactFizzConfigDOM';
+} from 'react-dom-bindings/src/server/ReactFizzConfigDOM.js';
 
-import {enablePostpone, enableHalt} from 'shared/ReactFeatureFlags';
+import {enablePostpone, enableHalt} from 'shared/ReactFeatureFlags.js';
 
-import {ensureCorrectIsomorphicReactVersion} from '../shared/ensureCorrectIsomorphicReactVersion';
+import {ensureCorrectIsomorphicReactVersion} from '../shared/ensureCorrectIsomorphicReactVersion.js';
 ensureCorrectIsomorphicReactVersion();
 
 type Options = {

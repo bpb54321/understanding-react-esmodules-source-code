@@ -20,4 +20,4 @@ export {
   findBoundingRects,
   focusWithin,
   observeVisibleRects,
-} from 'react-reconciler/src/ReactFiberReconciler';
+} from 'react-reconciler/src/ReactFiberReconciler.js';

@@ -7,4 +7,4 @@
  * @flow
  */
 
-export * from './static.node';
+export * from './static.node.js';

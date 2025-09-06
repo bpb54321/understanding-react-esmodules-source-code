@@ -7,7 +7,7 @@
  * @flow
  */
 
-import type {PriorityLevel} from '../SchedulerPriorities';
+import type {PriorityLevel} from '../SchedulerPriorities.js';
 
 declare class TaskController {
   constructor(options?: {priority?: string}): TaskController;
@@ -27,7 +27,7 @@ import {
   NormalPriority,
   LowPriority,
   IdlePriority,
-} from '../SchedulerPriorities';
+} from '../SchedulerPriorities.js';
 
 export {
   ImmediatePriority as unstable_ImmediatePriority,

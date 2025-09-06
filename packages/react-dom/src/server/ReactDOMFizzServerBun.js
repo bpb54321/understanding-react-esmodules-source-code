@@ -7,15 +7,15 @@
  * @flow
  */
 
-import type {ReactNodeList, ReactFormState} from 'shared/ReactTypes';
+import type {ReactNodeList, ReactFormState} from 'shared/ReactTypes.js';
 import type {
   BootstrapScriptDescriptor,
   HeadersDescriptor,
-} from 'react-dom-bindings/src/server/ReactFizzConfigDOM';
-import type {ImportMap} from '../shared/ReactDOMTypes';
-import type {ErrorInfo, PostponeInfo} from 'react-server/src/ReactFizzServer';
+} from 'react-dom-bindings/src/server/ReactFizzConfigDOM.js';
+import type {ImportMap} from '../shared/ReactDOMTypes.js';
+import type {ErrorInfo, PostponeInfo} from 'react-server/src/ReactFizzServer.js';
 
-import ReactVersion from 'shared/ReactVersion';
+import ReactVersion from 'shared/ReactVersion.js';
 
 import {
   createRequest,
@@ -23,15 +23,15 @@ import {
   startFlowing,
   stopFlowing,
   abort,
-} from 'react-server/src/ReactFizzServer';
+} from 'react-server/src/ReactFizzServer.js';
 
 import {
   createResumableState,
   createRenderState,
   createRootFormatContext,
-} from 'react-dom-bindings/src/server/ReactFizzConfigDOM';
+} from 'react-dom-bindings/src/server/ReactFizzConfigDOM.js';
 
-import {ensureCorrectIsomorphicReactVersion} from '../shared/ensureCorrectIsomorphicReactVersion';
+import {ensureCorrectIsomorphicReactVersion} from '../shared/ensureCorrectIsomorphicReactVersion.js';
 ensureCorrectIsomorphicReactVersion();
 
 type Options = {

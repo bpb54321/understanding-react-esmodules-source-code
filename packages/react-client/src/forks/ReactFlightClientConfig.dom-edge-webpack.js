@@ -7,13 +7,13 @@
  * @flow
  */
 
-export {default as rendererVersion} from 'shared/ReactVersion';
+export {default as rendererVersion} from 'shared/ReactVersion.js';
 export const rendererPackageName = 'react-server-dom-webpack';
 
-export * from 'react-client/src/ReactFlightClientStreamConfigWeb';
-export * from 'react-client/src/ReactClientConsoleConfigServer';
-export * from 'react-server-dom-webpack/src/client/ReactFlightClientConfigBundlerWebpack';
-export * from 'react-server-dom-webpack/src/client/ReactFlightClientConfigBundlerWebpackServer';
-export * from 'react-server-dom-webpack/src/client/ReactFlightClientConfigTargetWebpackServer';
-export * from 'react-dom-bindings/src/shared/ReactFlightClientConfigDOM';
+export * from 'react-client/src/ReactFlightClientStreamConfigWeb.js';
+export * from 'react-client/src/ReactClientConsoleConfigServer.js';
+export * from 'react-server-dom-webpack/src/client/ReactFlightClientConfigBundlerWebpack.js';
+export * from 'react-server-dom-webpack/src/client/ReactFlightClientConfigBundlerWebpackServer.js';
+export * from 'react-server-dom-webpack/src/client/ReactFlightClientConfigTargetWebpackServer.js';
+export * from 'react-dom-bindings/src/shared/ReactFlightClientConfigDOM.js';
 export const usedWithSSR = true;

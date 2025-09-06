@@ -7,27 +7,27 @@
  * @flow
  */
 
-import type {DOMEventName} from '../events/DOMEventNames';
-import type {ReactScopeInstance} from 'shared/ReactTypes';
+import type {DOMEventName} from '../events/DOMEventNames.js';
+import type {ReactScopeInstance} from 'shared/ReactTypes.js';
 import type {
   ReactDOMEventHandle,
   ReactDOMEventHandleListener,
-} from './ReactDOMEventHandleTypes';
+} from './ReactDOMEventHandleTypes.js';
 
-import {allNativeEvents} from '../events/EventRegistry';
+import {allNativeEvents} from '../events/EventRegistry.js';
 import {
   getEventHandlerListeners,
   setEventHandlerListeners,
   doesTargetHaveEventHandle,
   addEventHandleToTarget,
-} from './ReactDOMComponentTree';
-import {ELEMENT_NODE} from './HTMLNodeType';
-import {listenToNativeEventForNonManagedEventTarget} from '../events/DOMPluginEventSystem';
+} from './ReactDOMComponentTree.js';
+import {ELEMENT_NODE} from './HTMLNodeType.js';
+import {listenToNativeEventForNonManagedEventTarget} from '../events/DOMPluginEventSystem.js';
 
 import {
   enableScopeAPI,
   enableCreateEventHandleAPI,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
 type EventHandleOptions = {
   capture?: boolean,

@@ -7,9 +7,9 @@
  * @flow
  */
 
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
-import type {Transition} from 'react/src/ReactStartTransition';
-import type {ConcurrentUpdate} from './ReactFiberConcurrentUpdates';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
+import type {Transition} from 'react/src/ReactStartTransition.js';
+import type {ConcurrentUpdate} from './ReactFiberConcurrentUpdates.js';
 
 // TODO: Ideally these types would be opaque but that doesn't work well with
 // our reconciler fork infra, since these leak into non-reconciler packages.
@@ -28,10 +28,10 @@ import {
   retryLaneExpirationMs,
   disableLegacyMode,
   enableDefaultTransitionIndicator,
-} from 'shared/ReactFeatureFlags';
-import {isDevToolsPresent} from './ReactFiberDevToolsHook';
-import {clz32} from './clz32';
-import {LegacyRoot} from './ReactRootTags';
+} from 'shared/ReactFeatureFlags.js';
+import {isDevToolsPresent} from './ReactFiberDevToolsHook.js';
+import {clz32} from './clz32.js';
+import {LegacyRoot} from './ReactRootTags.js';
 
 // Lane values below should be kept in sync with getLabelForLane(), used by react-devtools-timeline.
 // If those values are changed that package should be rebuilt and redeployed.

@@ -7,44 +7,44 @@
  * @flow
  */
 
-import type {ReactNodeList} from 'shared/ReactTypes';
+import type {ReactNodeList} from 'shared/ReactTypes.js';
 
 import type {
   RootType,
   CreateRootOptions,
   HydrateRootOptions,
-} from './ReactDOMRoot';
+} from './ReactDOMRoot.js';
 
-import type {FiberRoot} from 'react-reconciler/src/ReactInternalTypes';
+import type {FiberRoot} from 'react-reconciler/src/ReactInternalTypes.js';
 
 import type {
   Container,
   PublicInstance,
-} from 'react-dom-bindings/src/client/ReactFiberConfigDOM';
+} from 'react-dom-bindings/src/client/ReactFiberConfigDOM.js';
 
 import {
   createRoot as createRootImpl,
   hydrateRoot as hydrateRootImpl,
-} from './ReactDOMRoot';
+} from './ReactDOMRoot.js';
 
 import {
   disableLegacyMode,
   disableCommentsAsDOMContainers,
-} from 'shared/ReactFeatureFlags';
-import {clearContainer} from 'react-dom-bindings/src/client/ReactFiberConfigDOM';
+} from 'shared/ReactFeatureFlags.js';
+import {clearContainer} from 'react-dom-bindings/src/client/ReactFiberConfigDOM.js';
 import {
   getInstanceFromNode,
   isContainerMarkedAsRoot,
   markContainerAsRoot,
   unmarkContainerAsRoot,
-} from 'react-dom-bindings/src/client/ReactDOMComponentTree';
-import {listenToAllSupportedEvents} from 'react-dom-bindings/src/events/DOMPluginEventSystem';
-import {isValidContainer} from 'react-dom-bindings/src/client/ReactDOMContainer';
+} from 'react-dom-bindings/src/client/ReactDOMComponentTree.js';
+import {listenToAllSupportedEvents} from 'react-dom-bindings/src/events/DOMPluginEventSystem.js';
+import {isValidContainer} from 'react-dom-bindings/src/client/ReactDOMContainer.js';
 import {
   DOCUMENT_NODE,
   ELEMENT_NODE,
   COMMENT_NODE,
-} from 'react-dom-bindings/src/client/HTMLNodeType';
+} from 'react-dom-bindings/src/client/HTMLNodeType.js';
 
 import {
   batchedUpdates,
@@ -59,18 +59,18 @@ import {
   findHostInstanceWithWarning,
   defaultOnUncaughtError,
   defaultOnCaughtError,
-} from 'react-reconciler/src/ReactFiberReconciler';
-import {LegacyRoot} from 'react-reconciler/src/ReactRootTags';
-import getComponentNameFromType from 'shared/getComponentNameFromType';
+} from 'react-reconciler/src/ReactFiberReconciler.js';
+import {LegacyRoot} from 'react-reconciler/src/ReactRootTags.js';
+import getComponentNameFromType from 'shared/getComponentNameFromType.js';
 
 import {
   current as currentOwner,
   isRendering,
-} from 'react-reconciler/src/ReactCurrentFiber';
+} from 'react-reconciler/src/ReactCurrentFiber.js';
 
-import assign from 'shared/assign';
+import assign from 'shared/assign.js';
 
-import noop from 'shared/noop';
+import noop from 'shared/noop.js';
 
 // Provided by www
 const ReactFiberErrorDialogWWW = require('ReactFiberErrorDialog');

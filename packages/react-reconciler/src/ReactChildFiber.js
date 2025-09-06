@@ -7,25 +7,25 @@
  * @flow
  */
 
-import type {ReactElement} from 'shared/ReactElementType';
+import type {ReactElement} from 'shared/ReactElementType.js';
 import type {
   ReactPortal,
   Thenable,
   ReactContext,
   ReactDebugInfo,
-} from 'shared/ReactTypes';
-import type {Fiber} from './ReactInternalTypes';
-import type {Lanes} from './ReactFiberLane';
-import type {ThenableState} from './ReactFiberThenable';
+} from 'shared/ReactTypes.js';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {Lanes} from './ReactFiberLane.js';
+import type {ThenableState} from './ReactFiberThenable.js';
 
-import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber';
+import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber.js';
 import {
   Placement,
   ChildDeletion,
   Forked,
   PlacementDEV,
-} from './ReactFiberFlags';
-import {NoMode, ConcurrentMode} from './ReactTypeOfMode';
+} from './ReactFiberFlags.js';
+import {NoMode, ConcurrentMode} from './ReactTypeOfMode.js';
 import {
   getIteratorFn,
   ASYNC_ITERATOR,
@@ -35,20 +35,20 @@ import {
   REACT_LAZY_TYPE,
   REACT_CONTEXT_TYPE,
   REACT_LEGACY_ELEMENT_TYPE,
-} from 'shared/ReactSymbols';
+} from 'shared/ReactSymbols.js';
 import {
   HostRoot,
   HostText,
   HostPortal,
   Fragment,
   FunctionComponent,
-} from './ReactWorkTags';
-import isArray from 'shared/isArray';
+} from './ReactWorkTags.js';
+import isArray from 'shared/isArray.js';
 import {
   enableAsyncIterableChildren,
   disableLegacyMode,
   enableFragmentRefs,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
 import {
   createWorkInProgress,
@@ -58,20 +58,20 @@ import {
   createFiberFromText,
   createFiberFromPortal,
   createFiberFromThrow,
-} from './ReactFiber';
-import {isCompatibleFamilyForHotReloading} from './ReactFiberHotReloading';
-import {getIsHydrating} from './ReactFiberHydrationContext';
-import {pushTreeFork} from './ReactFiberTreeContext';
+} from './ReactFiber.js';
+import {isCompatibleFamilyForHotReloading} from './ReactFiberHotReloading.js';
+import {getIsHydrating} from './ReactFiberHydrationContext.js';
+import {pushTreeFork} from './ReactFiberTreeContext.js';
 import {
   SuspenseException,
   SuspenseActionException,
   createThenableState,
   trackUsedThenable,
-} from './ReactFiberThenable';
-import {readContextDuringReconciliation} from './ReactFiberNewContext';
-import {callLazyInitInDEV} from './ReactFiberCallUserSpace';
+} from './ReactFiberThenable.js';
+import {readContextDuringReconciliation} from './ReactFiberNewContext.js';
+import {callLazyInitInDEV} from './ReactFiberCallUserSpace.js';
 
-import {runWithFiberInDEV} from './ReactCurrentFiber';
+import {runWithFiberInDEV} from './ReactCurrentFiber.js';
 
 // This tracks the thenables that are unwrapped during reconcilation.
 let thenableState: ThenableState | null = null;

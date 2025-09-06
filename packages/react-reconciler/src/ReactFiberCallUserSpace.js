@@ -7,13 +7,13 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
-import type {LazyComponent} from 'react/src/ReactLazy';
-import type {Effect} from './ReactFiberHooks';
-import type {CapturedValue} from './ReactCapturedValue';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {LazyComponent} from 'react/src/ReactLazy.js';
+import type {Effect} from './ReactFiberHooks.js';
+import type {CapturedValue} from './ReactCapturedValue.js';
 
-import {isRendering, setIsRendering} from './ReactCurrentFiber';
-import {captureCommitPhaseError} from './ReactFiberWorkLoop';
+import {isRendering, setIsRendering} from './ReactCurrentFiber.js';
+import {captureCommitPhaseError} from './ReactFiberWorkLoop.js';
 
 // These indirections exists so we can exclude its stack frame in DEV (and anything below it).
 // TODO: Consider marking the whole bundle instead of these boundaries.

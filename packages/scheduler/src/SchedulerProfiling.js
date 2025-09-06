@@ -7,8 +7,8 @@
  * @flow
  */
 
-import type {PriorityLevel} from './SchedulerPriorities';
-import {enableProfiling} from './SchedulerFeatureFlags';
+import type {PriorityLevel} from './SchedulerPriorities.js';
+import {enableProfiling} from './SchedulerFeatureFlags.js';
 
 let runIdCounter: number = 0;
 let mainThreadIdCounter: number = 0;

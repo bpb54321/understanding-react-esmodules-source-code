@@ -7,34 +7,34 @@
  * @flow
  */
 
-import type {ReactElement} from 'shared/ReactElementType';
+import type {ReactElement} from 'shared/ReactElementType.js';
 import type {
   ReactFragment,
   ReactPortal,
   ReactScope,
   ViewTransitionProps,
   ActivityProps,
-} from 'shared/ReactTypes';
-import type {Fiber} from './ReactInternalTypes';
-import type {RootTag} from './ReactRootTags';
-import type {WorkTag} from './ReactWorkTags';
-import type {TypeOfMode} from './ReactTypeOfMode';
-import type {Lanes} from './ReactFiberLane';
-import type {ActivityInstance, SuspenseInstance} from './ReactFiberConfig';
+} from 'shared/ReactTypes.js';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {RootTag} from './ReactRootTags.js';
+import type {WorkTag} from './ReactWorkTags.js';
+import type {TypeOfMode} from './ReactTypeOfMode.js';
+import type {Lanes} from './ReactFiberLane.js';
+import type {ActivityInstance, SuspenseInstance} from './ReactFiberConfig.js';
 import type {
   LegacyHiddenProps,
   OffscreenProps,
   OffscreenInstance,
-} from './ReactFiberOffscreenComponent';
-import type {ViewTransitionState} from './ReactFiberViewTransitionComponent';
-import type {TracingMarkerInstance} from './ReactFiberTracingMarkerComponent';
+} from './ReactFiberOffscreenComponent.js';
+import type {ViewTransitionState} from './ReactFiberViewTransitionComponent.js';
+import type {TracingMarkerInstance} from './ReactFiberTracingMarkerComponent.js';
 
 import {
   supportsResources,
   supportsSingletons,
   isHostHoistableType,
   isHostSingletonType,
-} from './ReactFiberConfig';
+} from './ReactFiberConfig.js';
 import {
   enableProfilerTimer,
   enableScopeAPI,
@@ -46,9 +46,9 @@ import {
   enableObjectFiber,
   enableViewTransition,
   enableSuspenseyImages,
-} from 'shared/ReactFeatureFlags';
-import {NoFlags, Placement, StaticMask} from './ReactFiberFlags';
-import {ConcurrentRoot} from './ReactRootTags';
+} from 'shared/ReactFeatureFlags.js';
+import {NoFlags, Placement, StaticMask} from './ReactFiberFlags.js';
+import {ConcurrentRoot} from './ReactRootTags.js';
 import {
   ClassComponent,
   HostRoot,
@@ -77,16 +77,16 @@ import {
   Throw,
   ViewTransitionComponent,
   ActivityComponent,
-} from './ReactWorkTags';
-import {OffscreenVisible} from './ReactFiberOffscreenComponent';
-import {getComponentNameFromOwner} from 'react-reconciler/src/getComponentNameFromFiber';
-import {isDevToolsPresent} from './ReactFiberDevToolsHook';
+} from './ReactWorkTags.js';
+import {OffscreenVisible} from './ReactFiberOffscreenComponent.js';
+import {getComponentNameFromOwner} from 'react-reconciler/src/getComponentNameFromFiber.js';
+import {isDevToolsPresent} from './ReactFiberDevToolsHook.js';
 import {
   resolveClassForHotReloading,
   resolveFunctionForHotReloading,
   resolveForwardRefForHotReloading,
-} from './ReactFiberHotReloading';
-import {NoLanes} from './ReactFiberLane';
+} from './ReactFiberHotReloading.js';
+import {NoLanes} from './ReactFiberLane.js';
 import {
   NoMode,
   ConcurrentMode,
@@ -95,7 +95,7 @@ import {
   StrictEffectsMode,
   NoStrictPassiveEffectsMode,
   SuspenseyImagesMode,
-} from './ReactTypeOfMode';
+} from './ReactTypeOfMode.js';
 import {
   REACT_FORWARD_REF_TYPE,
   REACT_FRAGMENT_TYPE,
@@ -114,12 +114,12 @@ import {
   REACT_ELEMENT_TYPE,
   REACT_VIEW_TRANSITION_TYPE,
   REACT_ACTIVITY_TYPE,
-} from 'shared/ReactSymbols';
-import {TransitionTracingMarker} from './ReactFiberTracingMarkerComponent';
-import {getHostContext} from './ReactFiberHostContext';
-import type {ReactComponentInfo} from '../../shared/ReactTypes';
-import isArray from 'shared/isArray';
-import getComponentNameFromType from 'shared/getComponentNameFromType';
+} from 'shared/ReactSymbols.js';
+import {TransitionTracingMarker} from './ReactFiberTracingMarkerComponent.js';
+import {getHostContext} from './ReactFiberHostContext.js';
+import type {ReactComponentInfo} from '../../shared/ReactTypes.js';
+import isArray from 'shared/isArray.js';
+import getComponentNameFromType from 'shared/getComponentNameFromType.js';
 
 export type {Fiber};
 

@@ -7,14 +7,14 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
-import type {StackCursor} from './ReactFiberStack';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {StackCursor} from './ReactFiberStack.js';
 
-import {disableLegacyContext} from 'shared/ReactFeatureFlags';
-import {ClassComponent, HostRoot} from './ReactWorkTags';
-import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber';
+import {disableLegacyContext} from 'shared/ReactFeatureFlags.js';
+import {ClassComponent, HostRoot} from './ReactWorkTags.js';
+import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber.js';
 
-import {createCursor, push, pop} from './ReactFiberStack';
+import {createCursor, push, pop} from './ReactFiberStack.js';
 
 let warnedAboutMissingGetChildContext;
 

@@ -7,21 +7,21 @@
  * @flow
  */
 
-import type {AnyNativeEvent} from '../PluginModuleType';
-import type {DOMEventName} from '../DOMEventNames';
-import type {DispatchQueue} from '../DOMPluginEventSystem';
-import type {EventSystemFlags} from '../EventSystemFlags';
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {FormStatus} from 'react-dom-bindings/src/shared/ReactDOMFormActions';
+import type {AnyNativeEvent} from '../PluginModuleType.js';
+import type {DOMEventName} from '../DOMEventNames.js';
+import type {DispatchQueue} from '../DOMPluginEventSystem.js';
+import type {EventSystemFlags} from '../EventSystemFlags.js';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {FormStatus} from 'react-dom-bindings/src/shared/ReactDOMFormActions.js';
 
-import {enableTrustedTypesIntegration} from 'shared/ReactFeatureFlags';
-import {getFiberCurrentPropsFromNode} from '../../client/ReactDOMComponentTree';
-import {startHostTransition} from 'react-reconciler/src/ReactFiberReconciler';
-import {didCurrentEventScheduleTransition} from 'react-reconciler/src/ReactFiberRootScheduler';
-import sanitizeURL from 'react-dom-bindings/src/shared/sanitizeURL';
-import {checkAttributeStringCoercion} from 'shared/CheckStringCoercion';
+import {enableTrustedTypesIntegration} from 'shared/ReactFeatureFlags.js';
+import {getFiberCurrentPropsFromNode} from '../../client/ReactDOMComponentTree.js';
+import {startHostTransition} from 'react-reconciler/src/ReactFiberReconciler.js';
+import {didCurrentEventScheduleTransition} from 'react-reconciler/src/ReactFiberRootScheduler.js';
+import sanitizeURL from 'react-dom-bindings/src/shared/sanitizeURL.js';
+import {checkAttributeStringCoercion} from 'shared/CheckStringCoercion.js';
 
-import {SyntheticEvent} from '../SyntheticEvent';
+import {SyntheticEvent} from '../SyntheticEvent.js';
 
 function coerceFormActionProp(
   actionProp: mixed,

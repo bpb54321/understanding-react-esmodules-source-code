@@ -14,15 +14,15 @@ import type {
   PreinitStyleOptions,
   PreinitScriptOptions,
   PreinitModuleScriptOptions,
-} from 'react-dom/src/shared/ReactDOMTypes';
+} from 'react-dom/src/shared/ReactDOMTypes.js';
 
 import {
   emitHint,
   getHints,
   resolveRequest,
-} from 'react-server/src/ReactFlightServer';
+} from 'react-server/src/ReactFlightServer.js';
 
-import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals';
+import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals.js';
 
 const previousDispatcher =
   ReactDOMSharedInternals.d; /* ReactDOMCurrentDispatcher */

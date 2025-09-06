@@ -7,22 +7,22 @@
  * @flow
  */
 
-import ReactVersion from 'shared/ReactVersion';
+import ReactVersion from 'shared/ReactVersion.js';
 
-import type {ReactNodeList} from 'shared/ReactTypes';
+import type {ReactNodeList} from 'shared/ReactTypes.js';
 
 import {
   createRequest,
   startWork,
   startFlowing,
   abort,
-} from 'react-server/src/ReactFizzServer';
+} from 'react-server/src/ReactFizzServer.js';
 
 import {
   createResumableState,
   createRenderState,
   createRootFormatContext,
-} from 'react-dom-bindings/src/server/ReactFizzConfigDOMLegacy';
+} from 'react-dom-bindings/src/server/ReactFizzConfigDOMLegacy.js';
 
 type ServerOptions = {
   identifierPrefix?: string,

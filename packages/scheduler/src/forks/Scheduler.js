@@ -9,7 +9,7 @@
 
 /* eslint-disable no-var */
 
-import type {PriorityLevel} from '../SchedulerPriorities';
+import type {PriorityLevel} from '../SchedulerPriorities.js';
 
 import {
   enableProfiling,
@@ -19,9 +19,9 @@ import {
   normalPriorityTimeout,
   enableRequestPaint,
   enableAlwaysYieldScheduler,
-} from '../SchedulerFeatureFlags';
+} from '../SchedulerFeatureFlags.js';
 
-import {push, pop, peek} from '../SchedulerMinHeap';
+import {push, pop, peek} from '../SchedulerMinHeap.js';
 
 // TODO: Use symbols?
 import {
@@ -30,7 +30,7 @@ import {
   NormalPriority,
   LowPriority,
   IdlePriority,
-} from '../SchedulerPriorities';
+} from '../SchedulerPriorities.js';
 import {
   markTaskRun,
   markTaskYield,
@@ -42,7 +42,7 @@ import {
   markTaskStart,
   stopLoggingProfilingEvents,
   startLoggingProfilingEvents,
-} from '../SchedulerProfiling';
+} from '../SchedulerProfiling.js';
 
 export type Callback = boolean => ?Callback;
 

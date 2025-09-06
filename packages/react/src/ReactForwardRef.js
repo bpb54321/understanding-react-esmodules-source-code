@@ -7,7 +7,7 @@
  * @noflow
  */
 
-import {REACT_FORWARD_REF_TYPE, REACT_MEMO_TYPE} from 'shared/ReactSymbols';
+import {REACT_FORWARD_REF_TYPE, REACT_MEMO_TYPE} from 'shared/ReactSymbols.js';
 
 export function forwardRef<Props, ElementType: React$ElementType>(
   render: (

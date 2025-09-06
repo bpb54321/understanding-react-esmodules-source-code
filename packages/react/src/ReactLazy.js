@@ -7,10 +7,10 @@
  * @flow
  */
 
-import type {Wakeable, Thenable, ReactDebugInfo} from 'shared/ReactTypes';
+import type {Wakeable, Thenable, ReactDebugInfo} from 'shared/ReactTypes.js';
 
-import {REACT_LAZY_TYPE} from 'shared/ReactSymbols';
-import {disableDefaultPropsExceptForClasses} from 'shared/ReactFeatureFlags';
+import {REACT_LAZY_TYPE} from 'shared/ReactSymbols.js';
+import {disableDefaultPropsExceptForClasses} from 'shared/ReactFeatureFlags.js';
 
 const Uninitialized = -1;
 const Pending = 0;

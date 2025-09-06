@@ -7,12 +7,12 @@
  * @flow
  */
 
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {ReactScopeInstance} from 'shared/ReactTypes';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {ReactScopeInstance} from 'shared/ReactTypes.js';
 import type {
   ReactDOMEventHandle,
   ReactDOMEventHandleListener,
-} from './ReactDOMEventHandleTypes';
+} from './ReactDOMEventHandleTypes.js';
 import type {
   Container,
   TextInstance,
@@ -22,7 +22,7 @@ import type {
   Props,
   HoistableRoot,
   RootResources,
-} from './ReactFiberConfigDOM';
+} from './ReactFiberConfigDOM.js';
 
 import {
   HostComponent,
@@ -32,11 +32,11 @@ import {
   HostRoot,
   SuspenseComponent,
   ActivityComponent,
-} from 'react-reconciler/src/ReactWorkTags';
+} from 'react-reconciler/src/ReactWorkTags.js';
 
-import {getParentHydrationBoundary} from './ReactFiberConfigDOM';
+import {getParentHydrationBoundary} from './ReactFiberConfigDOM.js';
 
-import {enableScopeAPI} from 'shared/ReactFeatureFlags';
+import {enableScopeAPI} from 'shared/ReactFeatureFlags.js';
 
 const randomKey = Math.random().toString(36).slice(2);
 const internalInstanceKey = '__reactFiber$' + randomKey;

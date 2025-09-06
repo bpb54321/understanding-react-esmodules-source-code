@@ -7,16 +7,16 @@
  * @flow
  */
 
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {Instance} from './ReactFiberConfig';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {Instance} from './ReactFiberConfig.js';
 
 import {
   HostComponent,
   HostHoistable,
   HostSingleton,
   HostText,
-} from 'react-reconciler/src/ReactWorkTags';
-import getComponentNameFromType from 'shared/getComponentNameFromType';
+} from 'react-reconciler/src/ReactWorkTags.js';
+import getComponentNameFromType from 'shared/getComponentNameFromType.js';
 import {
   findFiberRoot,
   getBoundingRect,
@@ -27,7 +27,7 @@ import {
   setFocusIfFocusable,
   setupIntersectionObserver,
   supportsTestSelectors,
-} from './ReactFiberConfig';
+} from './ReactFiberConfig.js';
 
 let COMPONENT_TYPE: symbol | number = 0b000;
 let HAS_PSEUDO_CLASS_TYPE: symbol | number = 0b001;

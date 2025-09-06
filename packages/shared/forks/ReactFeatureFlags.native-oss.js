@@ -7,8 +7,8 @@
  * @flow
  */
 
-import typeof * as FeatureFlagsType from 'shared/ReactFeatureFlags';
-import typeof * as ExportsType from './ReactFeatureFlags.native-oss';
+import typeof * as FeatureFlagsType from 'shared/ReactFeatureFlags.js';
+import typeof * as ExportsType from './ReactFeatureFlags.native-oss.js';
 
 // TODO: Align these flags with canary and delete this file once RN ships from Canary.
 

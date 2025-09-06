@@ -7,8 +7,8 @@
  * @flow
  */
 
-import type {ReactScopeInstance} from 'shared/ReactTypes';
-import type {DOMEventName} from '../events/DOMEventNames';
+import type {ReactScopeInstance} from 'shared/ReactTypes.js';
+import type {DOMEventName} from '../events/DOMEventNames.js';
 
 export type ReactDOMEventHandle = (
   target: EventTarget | ReactScopeInstance,

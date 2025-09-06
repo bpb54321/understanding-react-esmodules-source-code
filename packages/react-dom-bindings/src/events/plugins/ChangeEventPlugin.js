@@ -6,33 +6,33 @@
  *
  * @flow
  */
-import type {TextInstance, Instance} from '../../client/ReactFiberConfigDOM';
-import type {AnyNativeEvent} from '../PluginModuleType';
-import type {DOMEventName} from '../DOMEventNames';
-import type {DispatchQueue} from '../DOMPluginEventSystem';
-import type {EventSystemFlags} from '../EventSystemFlags';
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {ReactSyntheticEvent} from '../ReactSyntheticEventType';
+import type {TextInstance, Instance} from '../../client/ReactFiberConfigDOM.js';
+import type {AnyNativeEvent} from '../PluginModuleType.js';
+import type {DOMEventName} from '../DOMEventNames.js';
+import type {DispatchQueue} from '../DOMPluginEventSystem.js';
+import type {EventSystemFlags} from '../EventSystemFlags.js';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {ReactSyntheticEvent} from '../ReactSyntheticEventType.js';
 
-import {registerTwoPhaseEvent} from '../EventRegistry';
-import {SyntheticEvent} from '../SyntheticEvent';
-import isTextInputElement from '../isTextInputElement';
-import {canUseDOM} from 'shared/ExecutionEnvironment';
+import {registerTwoPhaseEvent} from '../EventRegistry.js';
+import {SyntheticEvent} from '../SyntheticEvent.js';
+import isTextInputElement from '../isTextInputElement.js';
+import {canUseDOM} from 'shared/ExecutionEnvironment.js';
 
-import getEventTarget from '../getEventTarget';
-import isEventSupported from '../isEventSupported';
-import {getNodeFromInstance} from '../../client/ReactDOMComponentTree';
-import {updateValueIfChanged} from '../../client/inputValueTracking';
-import {setDefaultValue} from '../../client/ReactDOMInput';
-import {enqueueStateRestore} from '../ReactDOMControlledComponent';
+import getEventTarget from '../getEventTarget.js';
+import isEventSupported from '../isEventSupported.js';
+import {getNodeFromInstance} from '../../client/ReactDOMComponentTree.js';
+import {updateValueIfChanged} from '../../client/inputValueTracking.js';
+import {setDefaultValue} from '../../client/ReactDOMInput.js';
+import {enqueueStateRestore} from '../ReactDOMControlledComponent.js';
 
-import {disableInputAttributeSyncing} from 'shared/ReactFeatureFlags';
-import {batchedUpdates} from '../ReactDOMUpdateBatching';
+import {disableInputAttributeSyncing} from 'shared/ReactFeatureFlags.js';
+import {batchedUpdates} from '../ReactDOMUpdateBatching.js';
 import {
   processDispatchQueue,
   accumulateTwoPhaseListeners,
-} from '../DOMPluginEventSystem';
-import isCustomElement from '../../shared/isCustomElement';
+} from '../DOMPluginEventSystem.js';
+import isCustomElement from '../../shared/isCustomElement.js';
 
 function registerEvents() {
   registerTwoPhaseEvent('onChange', [

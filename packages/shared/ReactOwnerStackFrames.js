@@ -7,7 +7,7 @@
  * @flow
  */
 
-import DefaultPrepareStackTrace from 'shared/DefaultPrepareStackTrace';
+import DefaultPrepareStackTrace from 'shared/DefaultPrepareStackTrace.js';
 
 export function formatOwnerStack(error: Error): string {
   const prevPrepareStackTrace = Error.prepareStackTrace;

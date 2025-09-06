@@ -14,11 +14,11 @@ import type {
   RejectedThenable,
   ReactCustomFormAction,
   ReactFunctionLocation,
-} from 'shared/ReactTypes';
-import type {LazyComponent} from 'react/src/ReactLazy';
-import type {TemporaryReferenceSet} from './ReactFlightTemporaryReferences';
+} from 'shared/ReactTypes.js';
+import type {LazyComponent} from 'react/src/ReactLazy.js';
+import type {TemporaryReferenceSet} from './ReactFlightTemporaryReferences.js';
 
-import {enableRenderableContext} from 'shared/ReactFeatureFlags';
+import {enableRenderableContext} from 'shared/ReactFeatureFlags.js';
 
 import {
   REACT_ELEMENT_TYPE,
@@ -27,22 +27,22 @@ import {
   REACT_PROVIDER_TYPE,
   getIteratorFn,
   ASYNC_ITERATOR,
-} from 'shared/ReactSymbols';
+} from 'shared/ReactSymbols.js';
 
 import {
   describeObjectForErrorMessage,
   isSimpleObject,
   objectName,
-} from 'shared/ReactSerializationErrors';
+} from 'shared/ReactSerializationErrors.js';
 
-import {writeTemporaryReference} from './ReactFlightTemporaryReferences';
+import {writeTemporaryReference} from './ReactFlightTemporaryReferences.js';
 
-import isArray from 'shared/isArray';
-import getPrototypeOf from 'shared/getPrototypeOf';
+import isArray from 'shared/isArray.js';
+import getPrototypeOf from 'shared/getPrototypeOf.js';
 
 const ObjectPrototype = Object.prototype;
 
-import {usedWithSSR} from './ReactFlightClientConfig';
+import {usedWithSSR} from './ReactFlightClientConfig.js';
 
 type ReactJSONValue =
   | string

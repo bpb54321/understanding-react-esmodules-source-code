@@ -7,28 +7,28 @@
  * @flow
  */
 
-export {default as __SERVER_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE} from './ReactSharedInternalsServer';
+export {default as __SERVER_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE} from './ReactSharedInternalsServer.js';
 
-import {forEach, map, count, toArray, only} from './ReactChildren';
+import {forEach, map, count, toArray, only} from './ReactChildren.js';
 import {
   REACT_FRAGMENT_TYPE,
   REACT_PROFILER_TYPE,
   REACT_STRICT_MODE_TYPE,
   REACT_SUSPENSE_TYPE,
-} from 'shared/ReactSymbols';
+} from 'shared/ReactSymbols.js';
 import {
   cloneElement,
   createElement,
   isValidElement,
-} from './jsx/ReactJSXElement';
-import {createRef} from './ReactCreateRef';
-import {use, useId, useCallback, useDebugValue, useMemo} from './ReactHooks';
-import {forwardRef} from './ReactForwardRef';
-import {lazy} from './ReactLazy';
-import {memo} from './ReactMemo';
-import {cache} from './ReactCacheServer';
-import version from 'shared/ReactVersion';
-import {captureOwnerStack} from './ReactOwnerStack';
+} from './jsx/ReactJSXElement.js';
+import {createRef} from './ReactCreateRef.js';
+import {use, useId, useCallback, useDebugValue, useMemo} from './ReactHooks.js';
+import {forwardRef} from './ReactForwardRef.js';
+import {lazy} from './ReactLazy.js';
+import {memo} from './ReactMemo.js';
+import {cache} from './ReactCacheServer.js';
+import version from 'shared/ReactVersion.js';
+import {captureOwnerStack} from './ReactOwnerStack.js';
 
 const Children = {
   map,

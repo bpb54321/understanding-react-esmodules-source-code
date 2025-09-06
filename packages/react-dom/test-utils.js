@@ -7,4 +7,4 @@
  * @flow
  */
 
-export * from './src/test-utils/ReactTestUtils';
+export * from './src/test-utils/ReactTestUtils.js';

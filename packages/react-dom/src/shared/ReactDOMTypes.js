@@ -7,7 +7,7 @@
  * @flow
  */
 
-import type {CrossOriginString} from 'react-dom-bindings/src/shared/crossOriginStrings';
+import type {CrossOriginString} from 'react-dom-bindings/src/shared/crossOriginStrings.js';
 
 export type PrefetchDNSOptions = {};
 export type PreconnectOptions = {crossOrigin?: string};

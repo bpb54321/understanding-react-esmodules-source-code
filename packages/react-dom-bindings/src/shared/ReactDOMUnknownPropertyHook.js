@@ -5,10 +5,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {ATTRIBUTE_NAME_CHAR} from './isAttributeNameSafe';
-import isCustomElement from './isCustomElement';
-import possibleStandardNames from './possibleStandardNames';
-import hasOwnProperty from 'shared/hasOwnProperty';
+import {ATTRIBUTE_NAME_CHAR} from './isAttributeNameSafe.js';
+import isCustomElement from './isCustomElement.js';
+import possibleStandardNames from './possibleStandardNames.js';
+import hasOwnProperty from 'shared/hasOwnProperty.js';
 
 const warnedProperties = {};
 const EVENT_NAME_REGEX = /^on./;

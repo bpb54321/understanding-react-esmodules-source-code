@@ -7,12 +7,12 @@
  * @flow
  */
 
-import {disableLegacyMode} from 'shared/ReactFeatureFlags';
-import {DiscreteEventPriority} from 'react-reconciler/src/ReactEventPriorities';
+import {disableLegacyMode} from 'shared/ReactFeatureFlags.js';
+import {DiscreteEventPriority} from 'react-reconciler/src/ReactEventPriorities.js';
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
 
-import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals';
+import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals.js';
 
 declare function flushSyncImpl<R>(fn: () => R): R;
 declare function flushSyncImpl(void): void;

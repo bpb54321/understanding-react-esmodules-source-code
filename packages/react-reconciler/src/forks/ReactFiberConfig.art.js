@@ -7,5 +7,5 @@
  * @flow
  */
 
-export * from 'react-art/src/ReactFiberConfigART';
-export * from 'react-client/src/ReactClientConsoleConfigBrowser';
+export * from 'react-art/src/ReactFiberConfigART.js';
+export * from 'react-client/src/ReactClientConsoleConfigBrowser.js';

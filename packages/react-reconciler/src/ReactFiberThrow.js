@@ -7,15 +7,15 @@
  * @flow
  */
 
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
-import type {Lane, Lanes} from './ReactFiberLane';
-import type {CapturedValue} from './ReactCapturedValue';
-import type {Update} from './ReactFiberClassUpdateQueue';
-import type {Wakeable} from 'shared/ReactTypes';
-import type {OffscreenQueue} from './ReactFiberOffscreenComponent';
-import type {RetryQueue} from './ReactFiberSuspenseComponent';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
+import type {Lane, Lanes} from './ReactFiberLane.js';
+import type {CapturedValue} from './ReactCapturedValue.js';
+import type {Update} from './ReactFiberClassUpdateQueue.js';
+import type {Wakeable} from 'shared/ReactTypes.js';
+import type {OffscreenQueue} from './ReactFiberOffscreenComponent.js';
+import type {RetryQueue} from './ReactFiberSuspenseComponent.js';
 
-import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber';
+import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber.js';
 import {
   ClassComponent,
   HostRoot,
@@ -27,7 +27,7 @@ import {
   ActivityComponent,
   SuspenseComponent,
   OffscreenComponent,
-} from './ReactWorkTags';
+} from './ReactWorkTags.js';
 import {
   DidCapture,
   Incomplete,
@@ -37,26 +37,26 @@ import {
   ForceUpdateForLegacySuspense,
   ForceClientRender,
   ScheduleRetry,
-} from './ReactFiberFlags';
-import {NoMode, ConcurrentMode} from './ReactTypeOfMode';
+} from './ReactFiberFlags.js';
+import {NoMode, ConcurrentMode} from './ReactTypeOfMode.js';
 import {
   enableUpdaterTracking,
   enablePostpone,
   disableLegacyMode,
-} from 'shared/ReactFeatureFlags';
-import {createCapturedValueAtFiber} from './ReactCapturedValue';
+} from 'shared/ReactFeatureFlags.js';
+import {createCapturedValueAtFiber} from './ReactCapturedValue.js';
 import {
   enqueueCapturedUpdate,
   createUpdate,
   CaptureUpdate,
   ForceUpdate,
   enqueueUpdate,
-} from './ReactFiberClassUpdateQueue';
-import {markFailedErrorBoundaryForHotReloading} from './ReactFiberHotReloading';
+} from './ReactFiberClassUpdateQueue.js';
+import {markFailedErrorBoundaryForHotReloading} from './ReactFiberHotReloading.js';
 import {
   getShellBoundary,
   getSuspenseHandler,
-} from './ReactFiberSuspenseContext';
+} from './ReactFiberSuspenseContext.js';
 import {
   renderDidError,
   queueConcurrentError,
@@ -66,27 +66,27 @@ import {
   attachPingListener,
   restorePendingUpdaters,
   renderDidSuspend,
-} from './ReactFiberWorkLoop';
-import {propagateParentContextChangesToDeferredTree} from './ReactFiberNewContext';
-import {logUncaughtError, logCaughtError} from './ReactFiberErrorLogger';
-import {isDevToolsPresent} from './ReactFiberDevToolsHook';
+} from './ReactFiberWorkLoop.js';
+import {propagateParentContextChangesToDeferredTree} from './ReactFiberNewContext.js';
+import {logUncaughtError, logCaughtError} from './ReactFiberErrorLogger.js';
+import {isDevToolsPresent} from './ReactFiberDevToolsHook.js';
 import {
   SyncLane,
   includesSomeLane,
   mergeLanes,
   pickArbitraryLane,
-} from './ReactFiberLane';
+} from './ReactFiberLane.js';
 import {
   getIsHydrating,
   markDidThrowWhileHydratingDEV,
   queueHydrationError,
   HydrationMismatchException,
-} from './ReactFiberHydrationContext';
-import {ConcurrentRoot} from './ReactRootTags';
-import {noopSuspenseyCommitThenable} from './ReactFiberThenable';
-import {REACT_POSTPONE_TYPE} from 'shared/ReactSymbols';
-import {runWithFiberInDEV} from './ReactCurrentFiber';
-import {callComponentDidCatchInDEV} from './ReactFiberCallUserSpace';
+} from './ReactFiberHydrationContext.js';
+import {ConcurrentRoot} from './ReactRootTags.js';
+import {noopSuspenseyCommitThenable} from './ReactFiberThenable.js';
+import {REACT_POSTPONE_TYPE} from 'shared/ReactSymbols.js';
+import {runWithFiberInDEV} from './ReactCurrentFiber.js';
+import {callComponentDidCatchInDEV} from './ReactFiberCallUserSpace.js';
 
 function createRootErrorUpdate(
   root: FiberRoot,

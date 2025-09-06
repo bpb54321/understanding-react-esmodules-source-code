@@ -73,4 +73,4 @@ export {
   useTransition,
   useActionState,
   version,
-} from './src/ReactClient';
+} from './src/ReactClient.js';

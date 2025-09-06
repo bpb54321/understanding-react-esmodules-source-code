@@ -7,13 +7,13 @@
  * @flow
  */
 
-import type {ReactContext} from 'shared/ReactTypes';
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
-import type {Lanes} from './ReactFiberLane';
-import type {ActivityState} from './ReactFiberActivityComponent';
-import type {SuspenseState} from './ReactFiberSuspenseComponent';
-import type {Cache} from './ReactFiberCacheComponent';
-import type {TracingMarkerInstance} from './ReactFiberTracingMarkerComponent';
+import type {ReactContext} from 'shared/ReactTypes.js';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
+import type {Lanes} from './ReactFiberLane.js';
+import type {ActivityState} from './ReactFiberActivityComponent.js';
+import type {SuspenseState} from './ReactFiberSuspenseComponent.js';
+import type {Cache} from './ReactFiberCacheComponent.js';
+import type {TracingMarkerInstance} from './ReactFiberTracingMarkerComponent.js';
 
 import {
   ClassComponent,
@@ -30,36 +30,36 @@ import {
   LegacyHiddenComponent,
   CacheComponent,
   TracingMarkerComponent,
-} from './ReactWorkTags';
-import {DidCapture, NoFlags, ShouldCapture} from './ReactFiberFlags';
-import {NoMode, ProfileMode} from './ReactTypeOfMode';
+} from './ReactWorkTags.js';
+import {DidCapture, NoFlags, ShouldCapture} from './ReactFiberFlags.js';
+import {NoMode, ProfileMode} from './ReactTypeOfMode.js';
 import {
   enableProfilerTimer,
   enableTransitionTracing,
   enableRenderableContext,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
-import {popHostContainer, popHostContext} from './ReactFiberHostContext';
+import {popHostContainer, popHostContext} from './ReactFiberHostContext.js';
 import {
   popSuspenseListContext,
   popSuspenseHandler,
-} from './ReactFiberSuspenseContext';
-import {popHiddenContext} from './ReactFiberHiddenContext';
-import {resetHydrationState} from './ReactFiberHydrationContext';
+} from './ReactFiberSuspenseContext.js';
+import {popHiddenContext} from './ReactFiberHiddenContext.js';
+import {resetHydrationState} from './ReactFiberHydrationContext.js';
 import {
   isContextProvider as isLegacyContextProvider,
   popContext as popLegacyContext,
   popTopLevelContextObject as popTopLevelLegacyContextObject,
-} from './ReactFiberContext';
-import {popProvider} from './ReactFiberNewContext';
-import {popCacheProvider} from './ReactFiberCacheComponent';
-import {transferActualDuration} from './ReactProfilerTimer';
-import {popTreeContext} from './ReactFiberTreeContext';
-import {popRootTransition, popTransition} from './ReactFiberTransition';
+} from './ReactFiberContext.js';
+import {popProvider} from './ReactFiberNewContext.js';
+import {popCacheProvider} from './ReactFiberCacheComponent.js';
+import {transferActualDuration} from './ReactProfilerTimer.js';
+import {popTreeContext} from './ReactFiberTreeContext.js';
+import {popRootTransition, popTransition} from './ReactFiberTransition.js';
 import {
   popMarkerInstance,
   popRootMarkerInstance,
-} from './ReactFiberTracingMarkerComponent';
+} from './ReactFiberTracingMarkerComponent.js';
 
 function unwindWork(
   current: Fiber | null,

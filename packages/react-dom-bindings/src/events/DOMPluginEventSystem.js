@@ -7,16 +7,16 @@
  * @flow
  */
 
-import type {DOMEventName} from './DOMEventNames';
-import type {EventSystemFlags} from './EventSystemFlags';
-import type {AnyNativeEvent} from './PluginModuleType';
+import type {DOMEventName} from './DOMEventNames.js';
+import type {EventSystemFlags} from './EventSystemFlags.js';
+import type {AnyNativeEvent} from './PluginModuleType.js';
 import type {
   KnownReactSyntheticEvent,
   ReactSyntheticEvent,
-} from './ReactSyntheticEventType';
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
+} from './ReactSyntheticEventType.js';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
 
-import {allNativeEvents} from './EventRegistry';
+import {allNativeEvents} from './EventRegistry.js';
 import {
   SHOULD_NOT_DEFER_CLICK_FOR_FB_SUPPORT_MODE,
   IS_LEGACY_FB_SUPPORT_MODE,
@@ -24,8 +24,8 @@ import {
   IS_CAPTURE_PHASE,
   IS_EVENT_HANDLE_NON_MANAGED_NODE,
   IS_NON_DELEGATED,
-} from './EventSystemFlags';
-import {isReplayingEvent} from './CurrentReplayingEvent';
+} from './EventSystemFlags.js';
+import {isReplayingEvent} from './CurrentReplayingEvent.js';
 
 import {
   HostRoot,
@@ -35,19 +35,19 @@ import {
   HostSingleton,
   HostText,
   ScopeComponent,
-} from 'react-reconciler/src/ReactWorkTags';
-import {getLowestCommonAncestor} from 'react-reconciler/src/ReactFiberTreeReflection';
+} from 'react-reconciler/src/ReactWorkTags.js';
+import {getLowestCommonAncestor} from 'react-reconciler/src/ReactFiberTreeReflection.js';
 
-import getEventTarget from './getEventTarget';
+import getEventTarget from './getEventTarget.js';
 import {
   getClosestInstanceFromNode,
   getEventListenerSet,
   getEventHandlerListeners,
-} from '../client/ReactDOMComponentTree';
-import {COMMENT_NODE, DOCUMENT_NODE} from '../client/HTMLNodeType';
-import {batchedUpdates} from './ReactDOMUpdateBatching';
-import getListener from './getListener';
-import {passiveBrowserEventsSupported} from './checkPassiveEvents';
+} from '../client/ReactDOMComponentTree.js';
+import {COMMENT_NODE, DOCUMENT_NODE} from '../client/HTMLNodeType.js';
+import {batchedUpdates} from './ReactDOMUpdateBatching.js';
+import getListener from './getListener.js';
+import {passiveBrowserEventsSupported} from './checkPassiveEvents.js';
 
 import {
   enableLegacyFBSupport,
@@ -55,26 +55,26 @@ import {
   enableScopeAPI,
   disableCommentsAsDOMContainers,
   enableScrollEndPolyfill,
-} from 'shared/ReactFeatureFlags';
-import {createEventListenerWrapperWithPriority} from './ReactDOMEventListener';
+} from 'shared/ReactFeatureFlags.js';
+import {createEventListenerWrapperWithPriority} from './ReactDOMEventListener.js';
 import {
   removeEventListener,
   addEventCaptureListener,
   addEventBubbleListener,
   addEventBubbleListenerWithPassiveFlag,
   addEventCaptureListenerWithPassiveFlag,
-} from './EventListener';
-import * as BeforeInputEventPlugin from './plugins/BeforeInputEventPlugin';
-import * as ChangeEventPlugin from './plugins/ChangeEventPlugin';
-import * as EnterLeaveEventPlugin from './plugins/EnterLeaveEventPlugin';
-import * as SelectEventPlugin from './plugins/SelectEventPlugin';
-import * as SimpleEventPlugin from './plugins/SimpleEventPlugin';
-import * as FormActionEventPlugin from './plugins/FormActionEventPlugin';
-import * as ScrollEndEventPlugin from './plugins/ScrollEndEventPlugin';
+} from './EventListener.js';
+import * as BeforeInputEventPlugin from './plugins/BeforeInputEventPlugin.js';
+import * as ChangeEventPlugin from './plugins/ChangeEventPlugin.js';
+import * as EnterLeaveEventPlugin from './plugins/EnterLeaveEventPlugin.js';
+import * as SelectEventPlugin from './plugins/SelectEventPlugin.js';
+import * as SimpleEventPlugin from './plugins/SimpleEventPlugin.js';
+import * as FormActionEventPlugin from './plugins/FormActionEventPlugin.js';
+import * as ScrollEndEventPlugin from './plugins/ScrollEndEventPlugin.js';
 
-import reportGlobalError from 'shared/reportGlobalError';
+import reportGlobalError from 'shared/reportGlobalError.js';
 
-import {runWithFiberInDEV} from 'react-reconciler/src/ReactCurrentFiber';
+import {runWithFiberInDEV} from 'react-reconciler/src/ReactCurrentFiber.js';
 
 type DispatchListener = {
   instance: null | Fiber,

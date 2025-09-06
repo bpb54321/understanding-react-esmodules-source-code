@@ -5,9 +5,9 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {ATTRIBUTE_NAME_CHAR} from './isAttributeNameSafe';
-import validAriaProperties from './validAriaProperties';
-import hasOwnProperty from 'shared/hasOwnProperty';
+import {ATTRIBUTE_NAME_CHAR} from './isAttributeNameSafe.js';
+import validAriaProperties from './validAriaProperties.js';
+import hasOwnProperty from 'shared/hasOwnProperty.js';
 
 const warnedProperties = {};
 const rARIA = new RegExp('^(aria)-[' + ATTRIBUTE_NAME_CHAR + ']*$');

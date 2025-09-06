@@ -7,7 +7,7 @@
  * @flow
  */
 
-export {default as __DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE} from './ReactDOMSharedInternalsFB';
+export {default as __DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE} from './ReactDOMSharedInternalsFB.js';
 
 export {
   createPortal,
@@ -25,6 +25,6 @@ export {
   preinit,
   preinitModule,
   version,
-} from './client/ReactDOMClientFB';
+} from './client/ReactDOMClientFB.js';
 
-export {createRoot, hydrateRoot} from './client/ReactDOMRootFB';
+export {createRoot, hydrateRoot} from './client/ReactDOMRootFB.js';

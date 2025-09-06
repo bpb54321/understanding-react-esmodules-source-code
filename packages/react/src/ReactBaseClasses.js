@@ -5,8 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import ReactNoopUpdateQueue from './ReactNoopUpdateQueue';
-import assign from 'shared/assign';
+import ReactNoopUpdateQueue from './ReactNoopUpdateQueue.js';
+import assign from 'shared/assign.js';
 
 const emptyObject = {};
 if (__DEV__) {

@@ -7,7 +7,7 @@
  * @noflow
  */
 
-import {REACT_MEMO_TYPE} from 'shared/ReactSymbols';
+import {REACT_MEMO_TYPE} from 'shared/ReactSymbols.js';
 
 export function memo<Props>(
   type: React$ElementType,

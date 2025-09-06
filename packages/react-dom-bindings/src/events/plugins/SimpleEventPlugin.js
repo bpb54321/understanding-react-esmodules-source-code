@@ -7,12 +7,12 @@
  * @flow
  */
 
-import type {DOMEventName} from '../../events/DOMEventNames';
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {AnyNativeEvent} from '../../events/PluginModuleType';
-import type {DispatchQueue} from '../DOMPluginEventSystem';
-import type {EventSystemFlags} from '../EventSystemFlags';
-import type {ReactSyntheticEvent} from '../ReactSyntheticEventType';
+import type {DOMEventName} from '../../events/DOMEventNames.js';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {AnyNativeEvent} from '../../events/PluginModuleType.js';
+import type {DispatchQueue} from '../DOMPluginEventSystem.js';
+import type {EventSystemFlags} from '../EventSystemFlags.js';
+import type {ReactSyntheticEvent} from '../ReactSyntheticEventType.js';
 
 import {
   SyntheticEvent,
@@ -28,30 +28,30 @@ import {
   SyntheticClipboardEvent,
   SyntheticPointerEvent,
   SyntheticToggleEvent,
-} from '../../events/SyntheticEvent';
+} from '../../events/SyntheticEvent.js';
 
 import {
   ANIMATION_END,
   ANIMATION_ITERATION,
   ANIMATION_START,
   TRANSITION_END,
-} from '../DOMEventNames';
+} from '../DOMEventNames.js';
 import {
   topLevelEventsToReactNames,
   registerSimpleEvents,
-} from '../DOMEventProperties';
+} from '../DOMEventProperties.js';
 import {
   accumulateSinglePhaseListeners,
   accumulateEventHandleNonManagedNodeListeners,
-} from '../DOMPluginEventSystem';
+} from '../DOMPluginEventSystem.js';
 import {
   IS_EVENT_HANDLE_NON_MANAGED_NODE,
   IS_CAPTURE_PHASE,
-} from '../EventSystemFlags';
+} from '../EventSystemFlags.js';
 
-import getEventCharCode from '../getEventCharCode';
+import getEventCharCode from '../getEventCharCode.js';
 
-import {enableCreateEventHandleAPI} from 'shared/ReactFeatureFlags';
+import {enableCreateEventHandleAPI} from 'shared/ReactFeatureFlags.js';
 
 function extractEvents(
   dispatchQueue: DispatchQueue,

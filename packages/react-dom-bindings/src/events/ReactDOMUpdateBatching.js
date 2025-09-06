@@ -8,13 +8,13 @@
 import {
   needsStateRestore,
   restoreStateIfNeeded,
-} from './ReactDOMControlledComponent';
+} from './ReactDOMControlledComponent.js';
 
 import {
   batchedUpdates as batchedUpdatesImpl,
   discreteUpdates as discreteUpdatesImpl,
   flushSyncWork,
-} from 'react-reconciler/src/ReactFiberReconciler';
+} from 'react-reconciler/src/ReactFiberReconciler.js';
 
 // Used as a way to call batchedUpdates when we don't have a reference to
 // the renderer. Such as when we're dispatching events or if third party

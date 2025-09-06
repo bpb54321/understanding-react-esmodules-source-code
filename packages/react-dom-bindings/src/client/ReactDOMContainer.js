@@ -7,14 +7,14 @@
  * @flow
  */
 
-import {disableCommentsAsDOMContainers} from 'shared/ReactFeatureFlags';
+import {disableCommentsAsDOMContainers} from 'shared/ReactFeatureFlags.js';
 
 import {
   ELEMENT_NODE,
   COMMENT_NODE,
   DOCUMENT_NODE,
   DOCUMENT_FRAGMENT_NODE,
-} from './HTMLNodeType';
+} from './HTMLNodeType.js';
 
 export function isValidContainer(node: any): boolean {
   return !!(

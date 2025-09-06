@@ -7,7 +7,7 @@
  * @flow
  */
 
-export {default as __DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE} from './src/ReactDOMSharedInternals';
+export {default as __DOM_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE} from './src/ReactDOMSharedInternals.js';
 export {
   createPortal,
   flushSync,
@@ -22,4 +22,4 @@ export {
   useFormState,
   useFormStatus,
   version,
-} from './src/shared/ReactDOM';
+} from './src/shared/ReactDOM.js';

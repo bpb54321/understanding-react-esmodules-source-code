@@ -9,9 +9,9 @@
 
 /* eslint-disable react-internal/no-production-logging */
 
-import type {ReactComponentInfo} from 'shared/ReactTypes';
+import type {ReactComponentInfo} from 'shared/ReactTypes.js';
 
-import {enableProfilerTimer} from 'shared/ReactFeatureFlags';
+import {enableProfilerTimer} from 'shared/ReactFeatureFlags.js';
 
 const supportsUserTiming =
   enableProfilerTimer &&

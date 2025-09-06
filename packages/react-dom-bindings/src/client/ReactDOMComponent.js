@@ -7,18 +7,18 @@
  * @flow
  */
 
-import type {HostContext, HostContextDev} from './ReactFiberConfigDOM';
+import type {HostContext, HostContextDev} from './ReactFiberConfigDOM.js';
 
-import {HostContextNamespaceNone} from './ReactFiberConfigDOM';
+import {HostContextNamespaceNone} from './ReactFiberConfigDOM.js';
 
 import {
   registrationNameDependencies,
   possibleRegistrationNames,
-} from '../events/EventRegistry';
+} from '../events/EventRegistry.js';
 
-import {checkHtmlStringCoercion} from 'shared/CheckStringCoercion';
-import {checkAttributeStringCoercion} from 'shared/CheckStringCoercion';
-import {checkControlledValueProps} from '../shared/ReactControlledValuePropTypes';
+import {checkHtmlStringCoercion} from 'shared/CheckStringCoercion.js';
+import {checkAttributeStringCoercion} from 'shared/CheckStringCoercion.js';
+import {checkControlledValueProps} from '../shared/ReactControlledValuePropTypes.js';
 
 import {
   getValueForAttribute,
@@ -27,45 +27,45 @@ import {
   setValueForKnownAttribute,
   setValueForAttribute,
   setValueForNamespacedAttribute,
-} from './DOMPropertyOperations';
+} from './DOMPropertyOperations.js';
 import {
   validateInputProps,
   initInput,
   updateInput,
   restoreControlledInputState,
-} from './ReactDOMInput';
-import {validateOptionProps} from './ReactDOMOption';
+} from './ReactDOMInput.js';
+import {validateOptionProps} from './ReactDOMOption.js';
 import {
   validateSelectProps,
   initSelect,
   restoreControlledSelectState,
   updateSelect,
-} from './ReactDOMSelect';
+} from './ReactDOMSelect.js';
 import {
   validateTextareaProps,
   initTextarea,
   updateTextarea,
   restoreControlledTextareaState,
-} from './ReactDOMTextarea';
-import {setSrcObject} from './ReactDOMSrcObject';
-import {validateTextNesting} from './validateDOMNesting';
-import setTextContent from './setTextContent';
+} from './ReactDOMTextarea.js';
+import {setSrcObject} from './ReactDOMSrcObject.js';
+import {validateTextNesting} from './validateDOMNesting.js';
+import setTextContent from './setTextContent.js';
 import {
   createDangerousStringForStyles,
   setValueForStyles,
-} from './CSSPropertyOperations';
-import {SVG_NAMESPACE, MATH_NAMESPACE} from './DOMNamespaces';
-import isCustomElement from '../shared/isCustomElement';
-import getAttributeAlias from '../shared/getAttributeAlias';
-import possibleStandardNames from '../shared/possibleStandardNames';
-import {validateProperties as validateARIAProperties} from '../shared/ReactDOMInvalidARIAHook';
-import {validateProperties as validateInputProperties} from '../shared/ReactDOMNullInputValuePropHook';
-import {validateProperties as validateUnknownProperties} from '../shared/ReactDOMUnknownPropertyHook';
-import sanitizeURL from '../shared/sanitizeURL';
+} from './CSSPropertyOperations.js';
+import {SVG_NAMESPACE, MATH_NAMESPACE} from './DOMNamespaces.js';
+import isCustomElement from '../shared/isCustomElement.js';
+import getAttributeAlias from '../shared/getAttributeAlias.js';
+import possibleStandardNames from '../shared/possibleStandardNames.js';
+import {validateProperties as validateARIAProperties} from '../shared/ReactDOMInvalidARIAHook.js';
+import {validateProperties as validateInputProperties} from '../shared/ReactDOMNullInputValuePropHook.js';
+import {validateProperties as validateUnknownProperties} from '../shared/ReactDOMUnknownPropertyHook.js';
+import sanitizeURL from '../shared/sanitizeURL.js';
 
-import noop from 'shared/noop';
+import noop from 'shared/noop.js';
 
-import {trackHostMutation} from 'react-reconciler/src/ReactFiberMutationTracking';
+import {trackHostMutation} from 'react-reconciler/src/ReactFiberMutationTracking.js';
 
 import {
   enableHydrationChangeEvent,
@@ -73,11 +73,11 @@ import {
   enableSrcObject,
   enableTrustedTypesIntegration,
   enableViewTransition,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 import {
   mediaEventTypes,
   listenToNonDelegatedEvent,
-} from '../events/DOMPluginEventSystem';
+} from '../events/DOMPluginEventSystem.js';
 
 let didWarnControlledToUncontrolled = false;
 let didWarnUncontrolledToControlled = false;

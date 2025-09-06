@@ -9,31 +9,31 @@
 
 /* eslint-disable react-internal/prod-error-codes */
 
-import type {ReactElement} from 'shared/ReactElementType';
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
-import type {ReactNodeList} from 'shared/ReactTypes';
+import type {ReactElement} from 'shared/ReactElementType.js';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
+import type {ReactNodeList} from 'shared/ReactTypes.js';
 
 import {
   flushSyncWork,
   scheduleUpdateOnFiber,
   flushPendingEffects,
-} from './ReactFiberWorkLoop';
-import {enqueueConcurrentRenderForLane} from './ReactFiberConcurrentUpdates';
-import {updateContainerSync} from './ReactFiberReconciler';
-import {emptyContextObject} from './ReactFiberContext';
-import {SyncLane} from './ReactFiberLane';
+} from './ReactFiberWorkLoop.js';
+import {enqueueConcurrentRenderForLane} from './ReactFiberConcurrentUpdates.js';
+import {updateContainerSync} from './ReactFiberReconciler.js';
+import {emptyContextObject} from './ReactFiberContext.js';
+import {SyncLane} from './ReactFiberLane.js';
 import {
   ClassComponent,
   FunctionComponent,
   ForwardRef,
   MemoComponent,
   SimpleMemoComponent,
-} from './ReactWorkTags';
+} from './ReactWorkTags.js';
 import {
   REACT_FORWARD_REF_TYPE,
   REACT_MEMO_TYPE,
   REACT_LAZY_TYPE,
-} from 'shared/ReactSymbols';
+} from 'shared/ReactSymbols.js';
 
 export type Family = {
   current: any,

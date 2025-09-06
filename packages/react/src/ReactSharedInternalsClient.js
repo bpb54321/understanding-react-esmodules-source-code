@@ -7,12 +7,12 @@
  * @flow
  */
 
-import type {Dispatcher} from 'react-reconciler/src/ReactInternalTypes';
-import type {AsyncDispatcher} from 'react-reconciler/src/ReactInternalTypes';
-import type {Transition} from './ReactStartTransition';
-import type {GestureProvider, GestureOptions} from 'shared/ReactTypes';
+import type {Dispatcher} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {AsyncDispatcher} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {Transition} from './ReactStartTransition.js';
+import type {GestureProvider, GestureOptions} from 'shared/ReactTypes.js';
 
-import {enableGestureTransition} from 'shared/ReactFeatureFlags';
+import {enableGestureTransition} from 'shared/ReactFeatureFlags.js';
 
 type onStartTransitionFinish = (Transition, mixed) => void;
 type onStartGestureTransitionFinish = (

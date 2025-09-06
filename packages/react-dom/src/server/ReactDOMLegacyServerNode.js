@@ -7,9 +7,9 @@
  * @flow
  */
 
-import type {ReactNodeList} from 'shared/ReactTypes';
+import type {ReactNodeList} from 'shared/ReactTypes.js';
 
-import {version, renderToStringImpl} from './ReactDOMLegacyServerImpl';
+import {version, renderToStringImpl} from './ReactDOMLegacyServerImpl.js';
 
 type ServerOptions = {
   identifierPrefix?: string,

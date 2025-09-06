@@ -12,8 +12,8 @@
 import {
   insertNodesAndExecuteScripts,
   getVisibleChildren,
-} from '../test-utils/FizzTestUtils';
-import {patchMessageChannel} from '../../../../scripts/jest/patchMessageChannel';
+} from '../test-utils/FizzTestUtils.js';
+import {patchMessageChannel} from '../../../../scripts/jest/patchMessageChannel.js';
 
 // Polyfills for test environment
 global.ReadableStream =

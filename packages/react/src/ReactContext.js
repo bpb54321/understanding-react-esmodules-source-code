@@ -11,10 +11,10 @@ import {
   REACT_PROVIDER_TYPE,
   REACT_CONSUMER_TYPE,
   REACT_CONTEXT_TYPE,
-} from 'shared/ReactSymbols';
+} from 'shared/ReactSymbols.js';
 
-import type {ReactContext} from 'shared/ReactTypes';
-import {enableRenderableContext} from 'shared/ReactFeatureFlags';
+import type {ReactContext} from 'shared/ReactTypes.js';
+import {enableRenderableContext} from 'shared/ReactFeatureFlags.js';
 
 export function createContext<T>(defaultValue: T): ReactContext<T> {
   // TODO: Second argument used to be an optional `calculateChangedBits`

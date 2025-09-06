@@ -9,7 +9,7 @@
 
 'use strict';
 
-import {createEventTarget} from 'dom-event-testing-library';
+import {createEventTarget} from 'dom-event-testing-library.js';
 
 let React;
 let ReactDOM;

@@ -7,30 +7,30 @@
  * @flow
  */
 
-import type {ReactContext} from 'shared/ReactTypes';
+import type {ReactContext} from 'shared/ReactTypes.js';
 import type {
   Fiber,
   ContextDependency,
   Dependencies,
-} from './ReactInternalTypes';
-import type {StackCursor} from './ReactFiberStack';
-import type {Lanes} from './ReactFiberLane';
-import type {TransitionStatus} from './ReactFiberConfig';
-import type {Hook} from './ReactFiberHooks';
+} from './ReactInternalTypes.js';
+import type {StackCursor} from './ReactFiberStack.js';
+import type {Lanes} from './ReactFiberLane.js';
+import type {TransitionStatus} from './ReactFiberConfig.js';
+import type {Hook} from './ReactFiberHooks.js';
 
-import {isPrimaryRenderer, HostTransitionContext} from './ReactFiberConfig';
-import {createCursor, push, pop} from './ReactFiberStack';
-import {ContextProvider, DehydratedFragment} from './ReactWorkTags';
-import {NoLanes, isSubsetOfLanes, mergeLanes} from './ReactFiberLane';
+import {isPrimaryRenderer, HostTransitionContext} from './ReactFiberConfig.js';
+import {createCursor, push, pop} from './ReactFiberStack.js';
+import {ContextProvider, DehydratedFragment} from './ReactWorkTags.js';
+import {NoLanes, isSubsetOfLanes, mergeLanes} from './ReactFiberLane.js';
 import {
   NoFlags,
   DidPropagateContext,
   NeedsPropagation,
-} from './ReactFiberFlags';
+} from './ReactFiberFlags.js';
 
-import is from 'shared/objectIs';
-import {enableRenderableContext} from 'shared/ReactFeatureFlags';
-import {getHostTransitionProvider} from './ReactFiberHostContext';
+import is from 'shared/objectIs.js';
+import {enableRenderableContext} from 'shared/ReactFeatureFlags.js';
+import {getHostTransitionProvider} from './ReactFiberHostContext.js';
 
 const valueCursor: StackCursor<mixed> = createCursor(null);
 

@@ -20,5 +20,5 @@
 // throw new Error('This module must be shimmed by a specific renderer.');
 
 // Below is the contents pasted from packages/react-reconciler/src/forks/ReactFiberConfig.dom.js
-export * from 'react-dom-bindings/src/client/ReactFiberConfigDOM';
-export * from 'react-client/src/ReactClientConsoleConfigBrowser';
+export * from 'react-dom-bindings/src/client/ReactFiberConfigDOM.js';
+export * from 'react-client/src/ReactClientConsoleConfigBrowser.js';

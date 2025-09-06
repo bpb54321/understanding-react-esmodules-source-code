@@ -7,10 +7,10 @@
  * @flow
  */
 
-import type {ActivityInstance} from './ReactFiberConfig';
-import type {CapturedValue} from './ReactCapturedValue';
-import type {Lane} from './ReactFiberLane';
-import type {TreeContext} from './ReactFiberTreeContext';
+import type {ActivityInstance} from './ReactFiberConfig.js';
+import type {CapturedValue} from './ReactCapturedValue.js';
+import type {Lane} from './ReactFiberLane.js';
+import type {TreeContext} from './ReactFiberTreeContext.js';
 
 // A non-null ActivityState represents a dehydrated Activity boundary.
 export type ActivityState = {

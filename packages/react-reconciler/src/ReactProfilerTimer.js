@@ -7,13 +7,13 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber} from './ReactInternalTypes.js';
 
-import type {SuspendedReason} from './ReactFiberWorkLoop';
+import type {SuspendedReason} from './ReactFiberWorkLoop.js';
 
-import type {Lane, Lanes} from './ReactFiberLane';
+import type {Lane, Lanes} from './ReactFiberLane.js';
 
-import type {CapturedValue} from './ReactCapturedValue';
+import type {CapturedValue} from './ReactCapturedValue.js';
 
 import {
   isTransitionLane,
@@ -22,22 +22,22 @@ import {
   includesTransitionLane,
   includesBlockingLane,
   includesSyncLane,
-} from './ReactFiberLane';
+} from './ReactFiberLane.js';
 
-import {resolveEventType, resolveEventTimeStamp} from './ReactFiberConfig';
+import {resolveEventType, resolveEventTimeStamp} from './ReactFiberConfig.js';
 
 import {
   enableProfilerCommitHooks,
   enableProfilerNestedUpdatePhase,
   enableProfilerTimer,
   enableComponentPerformanceTrack,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
-import {isAlreadyRendering} from './ReactFiberWorkLoop';
+import {isAlreadyRendering} from './ReactFiberWorkLoop.js';
 
 // Intentionally not named imports because Rollup would use dynamic dispatch for
 // CommonJS interop named imports.
-import * as Scheduler from 'scheduler';
+import * as Scheduler from 'scheduler.js';
 
 const {unstable_now: now} = Scheduler;
 

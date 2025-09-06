@@ -16,32 +16,32 @@ import type {
   HoistableRoot,
   FormInstance,
   Props,
-} from './ReactFiberConfig';
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
-import type {Lanes} from './ReactFiberLane';
+} from './ReactFiberConfig.js';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
+import type {Lanes} from './ReactFiberLane.js';
 import {
   includesLoadingIndicatorLanes,
   includesOnlySuspenseyCommitEligibleLanes,
   includesOnlyViewTransitionEligibleLanes,
-} from './ReactFiberLane';
-import type {ActivityState} from './ReactFiberActivityComponent';
-import type {SuspenseState, RetryQueue} from './ReactFiberSuspenseComponent';
-import type {UpdateQueue} from './ReactFiberClassUpdateQueue';
-import type {FunctionComponentUpdateQueue} from './ReactFiberHooks';
-import type {Wakeable, ViewTransitionProps} from 'shared/ReactTypes';
+} from './ReactFiberLane.js';
+import type {ActivityState} from './ReactFiberActivityComponent.js';
+import type {SuspenseState, RetryQueue} from './ReactFiberSuspenseComponent.js';
+import type {UpdateQueue} from './ReactFiberClassUpdateQueue.js';
+import type {FunctionComponentUpdateQueue} from './ReactFiberHooks.js';
+import type {Wakeable, ViewTransitionProps} from 'shared/ReactTypes.js';
 import type {
   OffscreenState,
   OffscreenInstance,
   OffscreenQueue,
-} from './ReactFiberOffscreenComponent';
-import type {Cache} from './ReactFiberCacheComponent';
-import type {RootState} from './ReactFiberRoot';
-import type {Transition} from 'react/src/ReactStartTransition';
+} from './ReactFiberOffscreenComponent.js';
+import type {Cache} from './ReactFiberCacheComponent.js';
+import type {RootState} from './ReactFiberRoot.js';
+import type {Transition} from 'react/src/ReactStartTransition.js';
 import type {
   TracingMarkerInstance,
   TransitionAbort,
-} from './ReactFiberTracingMarkerComponent';
-import type {ViewTransitionState} from './ReactFiberViewTransitionComponent';
+} from './ReactFiberTracingMarkerComponent.js';
+import type {ViewTransitionState} from './ReactFiberViewTransitionComponent.js';
 
 import {
   alwaysThrottleRetries,
@@ -62,7 +62,7 @@ import {
   enableFragmentRefs,
   enableEagerAlternateStateNodeCleanup,
   enableDefaultTransitionIndicator,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 import {
   FunctionComponent,
   ForwardRef,
@@ -88,7 +88,7 @@ import {
   TracingMarkerComponent,
   ViewTransitionComponent,
   Fragment,
-} from './ReactWorkTags';
+} from './ReactWorkTags.js';
 import {
   NoFlags,
   ContentReset,
@@ -117,7 +117,7 @@ import {
   DidCapture,
   AffectedParentLayout,
   ViewTransitionNamedStatic,
-} from './ReactFiberFlags';
+} from './ReactFiberFlags.js';
 import {
   commitStartTime,
   pushNestedEffectDurations,
@@ -134,7 +134,7 @@ import {
   componentEffectEndTime,
   componentEffectDuration,
   componentEffectErrors,
-} from './ReactProfilerTimer';
+} from './ReactProfilerTimer.js';
 import {
   logComponentRender,
   logComponentErrored,
@@ -143,9 +143,9 @@ import {
   logComponentUnmount,
   logComponentReappeared,
   logComponentDisappeared,
-} from './ReactFiberPerformanceTrack';
-import {ConcurrentMode, NoMode, ProfileMode} from './ReactTypeOfMode';
-import {deferHiddenCallbacks} from './ReactFiberClassUpdateQueue';
+} from './ReactFiberPerformanceTrack.js';
+import {ConcurrentMode, NoMode, ProfileMode} from './ReactTypeOfMode.js';
+import {deferHiddenCallbacks} from './ReactFiberClassUpdateQueue.js';
 import {
   supportsMutation,
   supportsPersistence,
@@ -177,7 +177,7 @@ import {
   restoreRootViewTransitionName,
   isSingletonScope,
   updateFragmentInstanceFiber,
-} from './ReactFiberConfig';
+} from './ReactFiberConfig.js';
 import {
   captureCommitPhaseError,
   resolveRetryWakeable,
@@ -191,26 +191,26 @@ import {
   addMarkerCompleteCallbackToPendingTransition,
   retryDehydratedSuspenseBoundary,
   scheduleViewTransitionEvent,
-} from './ReactFiberWorkLoop';
+} from './ReactFiberWorkLoop.js';
 import {
   HasEffect as HookHasEffect,
   Layout as HookLayout,
   Insertion as HookInsertion,
   Passive as HookPassive,
-} from './ReactHookEffectTags';
-import {doesFiberContain} from './ReactFiberTreeReflection';
-import {isDevToolsPresent, onCommitUnmount} from './ReactFiberDevToolsHook';
-import {releaseCache, retainCache} from './ReactFiberCacheComponent';
-import {clearTransitionsForLanes} from './ReactFiberLane';
+} from './ReactHookEffectTags.js';
+import {doesFiberContain} from './ReactFiberTreeReflection.js';
+import {isDevToolsPresent, onCommitUnmount} from './ReactFiberDevToolsHook.js';
+import {releaseCache, retainCache} from './ReactFiberCacheComponent.js';
+import {clearTransitionsForLanes} from './ReactFiberLane.js';
 import {
   OffscreenVisible,
   OffscreenPassiveEffectsConnected,
-} from './ReactFiberOffscreenComponent';
+} from './ReactFiberOffscreenComponent.js';
 import {
   TransitionRoot,
   TransitionTracingMarker,
-} from './ReactFiberTracingMarkerComponent';
-import {getViewTransitionClassName} from './ReactFiberViewTransitionComponent';
+} from './ReactFiberTracingMarkerComponent.js';
+import {getViewTransitionClassName} from './ReactFiberViewTransitionComponent.js';
 import {
   commitHookLayoutEffects,
   commitHookLayoutUnmountEffects,
@@ -229,7 +229,7 @@ import {
   commitProfilerUpdate,
   commitProfilerPostCommit,
   commitRootCallbacks,
-} from './ReactFiberCommitEffects';
+} from './ReactFiberCommitEffects.js';
 import {
   commitHostMount,
   commitHostHydratedInstance,
@@ -251,7 +251,7 @@ import {
   commitHostSingletonRelease,
   commitFragmentInstanceDeletionEffects,
   commitFragmentInstanceInsertionEffects,
-} from './ReactFiberCommitHostEffects';
+} from './ReactFiberCommitHostEffects.js';
 import {
   trackEnterViewTransitions,
   commitEnterViewTransitions,
@@ -268,19 +268,19 @@ import {
   viewTransitionCancelableChildren,
   pushViewTransitionCancelableScope,
   popViewTransitionCancelableScope,
-} from './ReactFiberCommitViewTransitions';
+} from './ReactFiberCommitViewTransitions.js';
 import {
   viewTransitionMutationContext,
   pushRootMutationContext,
   pushMutationContext,
   popMutationContext,
   rootMutationContext,
-} from './ReactFiberMutationTracking';
+} from './ReactFiberMutationTracking.js';
 import {
   trackNamedViewTransition,
   untrackNamedViewTransition,
-} from './ReactFiberDuplicateViewTransitions';
-import {markIndicatorHandled} from './ReactFiberRootScheduler';
+} from './ReactFiberDuplicateViewTransitions.js';
+import {markIndicatorHandled} from './ReactFiberRootScheduler.js';
 
 // Used during the commit phase to track the state of the Offscreen component stack.
 // Allows us to avoid traversing the return path to find the nearest Offscreen ancestor.

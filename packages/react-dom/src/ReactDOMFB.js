@@ -7,9 +7,9 @@
  * @flow
  */
 
-import {isEnabled} from 'react-dom-bindings/src/events/ReactDOMEventListener';
+import {isEnabled} from 'react-dom-bindings/src/events/ReactDOMEventListener.js';
 
-import Internals from './ReactDOMSharedInternalsFB';
+import Internals from './ReactDOMSharedInternalsFB.js';
 
 // For classic WWW builds, include a few internals that are already in use.
 Object.assign((Internals: any), {
@@ -35,7 +35,7 @@ export {
   preinit,
   preinitModule,
   version,
-} from './client/ReactDOMClientFB';
+} from './client/ReactDOMClientFB.js';
 
 export {
   createRoot,
@@ -44,4 +44,4 @@ export {
   unstable_batchedUpdates,
   findDOMNode,
   unmountComponentAtNode,
-} from './client/ReactDOMRootFB';
+} from './client/ReactDOMRootFB.js';

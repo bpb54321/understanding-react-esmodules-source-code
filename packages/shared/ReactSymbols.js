@@ -7,7 +7,7 @@
  * @flow
  */
 
-import {renameElementSymbol} from 'shared/ReactFeatureFlags';
+import {renameElementSymbol} from 'shared/ReactFeatureFlags.js';
 
 // ATTENTION
 // When adding new symbols to this file,

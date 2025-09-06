@@ -9,8 +9,8 @@
 
 'use strict';
 
-import {insertNodesAndExecuteScripts} from '../test-utils/FizzTestUtils';
-import {patchMessageChannel} from '../../../../scripts/jest/patchMessageChannel';
+import {insertNodesAndExecuteScripts} from '../test-utils/FizzTestUtils.js';
+import {patchMessageChannel} from '../../../../scripts/jest/patchMessageChannel.js';
 
 // Polyfills for test environment
 global.ReadableStream =

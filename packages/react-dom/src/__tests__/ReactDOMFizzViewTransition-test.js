@@ -12,7 +12,7 @@
 import {
   insertNodesAndExecuteScripts,
   getVisibleChildren,
-} from '../test-utils/FizzTestUtils';
+} from '../test-utils/FizzTestUtils.js';
 
 let JSDOM;
 let React;

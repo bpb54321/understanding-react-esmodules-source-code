@@ -5,13 +5,13 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import {shorthandToLonghand} from './CSSShorthandProperty';
+import {shorthandToLonghand} from './CSSShorthandProperty.js';
 
-import hyphenateStyleName from '../shared/hyphenateStyleName';
-import warnValidStyle from '../shared/warnValidStyle';
-import isUnitlessNumber from '../shared/isUnitlessNumber';
-import {checkCSSPropertyStringCoercion} from 'shared/CheckStringCoercion';
-import {trackHostMutation} from 'react-reconciler/src/ReactFiberMutationTracking';
+import hyphenateStyleName from '../shared/hyphenateStyleName.js';
+import warnValidStyle from '../shared/warnValidStyle.js';
+import isUnitlessNumber from '../shared/isUnitlessNumber.js';
+import {checkCSSPropertyStringCoercion} from 'shared/CheckStringCoercion.js';
+import {trackHostMutation} from 'react-reconciler/src/ReactFiberMutationTracking.js';
 
 /**
  * Operations for dealing with CSS properties.

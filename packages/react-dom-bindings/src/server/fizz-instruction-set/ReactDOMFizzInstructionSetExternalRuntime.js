@@ -10,7 +10,7 @@ import {
   listenToFormSubmissionsForReplaying,
   revealCompletedBoundaries,
   revealCompletedBoundariesWithViewTransitions,
-} from './ReactDOMFizzInstructionSetShared';
+} from './ReactDOMFizzInstructionSetShared.js';
 
 // This is a string so Closure's advanced compilation mode doesn't mangle it.
 // These will be renamed to local references by the external-runtime-plugin.

@@ -7,11 +7,11 @@
  * @flow
  */
 
-export {default as rendererVersion} from 'shared/ReactVersion';
+export {default as rendererVersion} from 'shared/ReactVersion.js';
 export const rendererPackageName = 'not-used';
 
-export * from 'react-client/src/ReactFlightClientStreamConfigWeb';
-export * from 'react-client/src/ReactClientConsoleConfigBrowser';
+export * from 'react-client/src/ReactFlightClientStreamConfigWeb.js';
+export * from 'react-client/src/ReactClientConsoleConfigBrowser.js';
 
 export type Response = any;
 export opaque type ModuleLoading = mixed;

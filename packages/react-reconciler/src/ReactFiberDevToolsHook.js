@@ -7,27 +7,27 @@
  * @flow
  */
 
-import type {Lane, Lanes} from './ReactFiberLane';
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
-import type {ReactNodeList, Wakeable} from 'shared/ReactTypes';
-import type {EventPriority} from './ReactEventPriorities';
-// import type {DevToolsProfilingHooks} from 'react-devtools-shared/src/backend/types';
+import type {Lane, Lanes} from './ReactFiberLane.js';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
+import type {ReactNodeList, Wakeable} from 'shared/ReactTypes.js';
+import type {EventPriority} from './ReactEventPriorities.js';
+// import type {DevToolsProfilingHooks} from 'react-devtools-shared/src/backend/types.js';
 // TODO: This import doesn't work because the DevTools depend on the DOM version of React
 // and to properly type check against DOM React we can't also type check again non-DOM
 // React which this hook might be in.
 type DevToolsProfilingHooks = any;
 
-import {DidCapture} from './ReactFiberFlags';
+import {DidCapture} from './ReactFiberFlags.js';
 import {
   enableProfilerTimer,
   enableSchedulingProfiler,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 import {
   DiscreteEventPriority,
   ContinuousEventPriority,
   DefaultEventPriority,
   IdleEventPriority,
-} from './ReactEventPriorities';
+} from './ReactEventPriorities.js';
 import {
   ImmediatePriority as ImmediateSchedulerPriority,
   UserBlockingPriority as UserBlockingSchedulerPriority,
@@ -35,7 +35,7 @@ import {
   IdlePriority as IdleSchedulerPriority,
   log,
   unstable_setDisableYieldValue,
-} from './Scheduler';
+} from './Scheduler.js';
 
 // declare const __REACT_DEVTOOLS_GLOBAL_HOOK__: Object | void;
 

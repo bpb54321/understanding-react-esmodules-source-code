@@ -11,28 +11,28 @@ import type {
   Thenable,
   FulfilledThenable,
   RejectedThenable,
-} from 'shared/ReactTypes';
-import type {Lane} from './ReactFiberLane';
-import type {Transition} from 'react/src/ReactStartTransition';
+} from 'shared/ReactTypes.js';
+import type {Lane} from './ReactFiberLane.js';
+import type {Transition} from 'react/src/ReactStartTransition.js';
 
 import {
   requestTransitionLane,
   ensureScheduleIsScheduled,
-} from './ReactFiberRootScheduler';
-import {NoLane} from './ReactFiberLane';
+} from './ReactFiberRootScheduler.js';
+import {NoLane} from './ReactFiberLane.js';
 import {
   hasScheduledTransitionWork,
   clearAsyncTransitionTimer,
-} from './ReactProfilerTimer';
+} from './ReactProfilerTimer.js';
 import {
   enableComponentPerformanceTrack,
   enableProfilerTimer,
   enableDefaultTransitionIndicator,
-} from 'shared/ReactFeatureFlags';
-import {clearEntangledAsyncTransitionTypes} from './ReactFiberTransitionTypes';
+} from 'shared/ReactFeatureFlags.js';
+import {clearEntangledAsyncTransitionTypes} from './ReactFiberTransitionTypes.js';
 
-import noop from 'shared/noop';
-import reportGlobalError from 'shared/reportGlobalError';
+import noop from 'shared/noop.js';
+import reportGlobalError from 'shared/reportGlobalError.js';
 
 // If there are multiple, concurrent async actions, they are entangled. All
 // transition updates that occur while the async action is still in progress

@@ -60,11 +60,11 @@
 // log2(32) = 5 bits. That means we can lop bits off the end 5 at a time without
 // affecting the final result.
 
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
 
-import {getIsHydrating} from './ReactFiberHydrationContext';
-import {clz32} from './clz32';
-import {Forked, NoFlags} from './ReactFiberFlags';
+import {getIsHydrating} from './ReactFiberHydrationContext.js';
+import {clz32} from './clz32.js';
+import {Forked, NoFlags} from './ReactFiberFlags.js';
 
 export type TreeContext = {
   id: number,

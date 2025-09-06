@@ -8,7 +8,7 @@
 // This file is only used for tests.
 // It lazily loads the implementation so that we get the correct set of host configs.
 
-import ReactVersion from 'shared/ReactVersion';
+import ReactVersion from 'shared/ReactVersion.js';
 export {ReactVersion as version};
 
 export function renderToReadableStream() {

@@ -7,7 +7,7 @@
  * @flow
  */
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
 
 const UNTERMINATED = 0;
 const TERMINATED = 1;

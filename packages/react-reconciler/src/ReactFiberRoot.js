@@ -7,25 +7,25 @@
  * @flow
  */
 
-import type {ReactNodeList, ReactFormState} from 'shared/ReactTypes';
+import type {ReactNodeList, ReactFormState} from 'shared/ReactTypes.js';
 import type {
   FiberRoot,
   SuspenseHydrationCallbacks,
   TransitionTracingCallbacks,
-} from './ReactInternalTypes';
-import type {RootTag} from './ReactRootTags';
-import type {Cache} from './ReactFiberCacheComponent';
-import type {Container} from './ReactFiberConfig';
+} from './ReactInternalTypes.js';
+import type {RootTag} from './ReactRootTags.js';
+import type {Cache} from './ReactFiberCacheComponent.js';
+import type {Container} from './ReactFiberConfig.js';
 
-import {noTimeout} from './ReactFiberConfig';
-import {createHostRootFiber} from './ReactFiber';
+import {noTimeout} from './ReactFiberConfig.js';
+import {createHostRootFiber} from './ReactFiber.js';
 import {
   NoLane,
   NoLanes,
   NoTimestamp,
   TotalLanes,
   createLaneMap,
-} from './ReactFiberLane';
+} from './ReactFiberLane.js';
 import {
   enableSuspenseCallback,
   enableProfilerCommitHooks,
@@ -36,10 +36,10 @@ import {
   enableViewTransition,
   enableGestureTransition,
   enableDefaultTransitionIndicator,
-} from 'shared/ReactFeatureFlags';
-import {initializeUpdateQueue} from './ReactFiberClassUpdateQueue';
-import {LegacyRoot, ConcurrentRoot} from './ReactRootTags';
-import {createCache, retainCache} from './ReactFiberCacheComponent';
+} from 'shared/ReactFeatureFlags.js';
+import {initializeUpdateQueue} from './ReactFiberClassUpdateQueue.js';
+import {LegacyRoot, ConcurrentRoot} from './ReactRootTags.js';
+import {createCache, retainCache} from './ReactFiberCacheComponent.js';
 
 export type RootState = {
   element: any,

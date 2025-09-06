@@ -7,19 +7,19 @@
  * @flow
  */
 
-import type {Wakeable, SuspenseListTailMode} from 'shared/ReactTypes';
-import type {Fiber} from './ReactInternalTypes';
-import type {SuspenseInstance} from './ReactFiberConfig';
-import type {Lane} from './ReactFiberLane';
-import type {TreeContext} from './ReactFiberTreeContext';
-import type {CapturedValue} from './ReactCapturedValue';
+import type {Wakeable, SuspenseListTailMode} from 'shared/ReactTypes.js';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {SuspenseInstance} from './ReactFiberConfig.js';
+import type {Lane} from './ReactFiberLane.js';
+import type {TreeContext} from './ReactFiberTreeContext.js';
+import type {CapturedValue} from './ReactCapturedValue.js';
 
-import {SuspenseComponent, SuspenseListComponent} from './ReactWorkTags';
-import {NoFlags, DidCapture} from './ReactFiberFlags';
+import {SuspenseComponent, SuspenseListComponent} from './ReactWorkTags.js';
+import {NoFlags, DidCapture} from './ReactFiberFlags.js';
 import {
   isSuspenseInstancePending,
   isSuspenseInstanceFallback,
-} from './ReactFiberConfig';
+} from './ReactFiberConfig.js';
 
 // A null SuspenseState represents an unsuspended normal Suspense boundary.
 // A non-null SuspenseState means that it is blocked for one reason or another.

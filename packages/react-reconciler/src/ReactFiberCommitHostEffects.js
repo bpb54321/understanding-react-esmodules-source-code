@@ -15,8 +15,8 @@ import type {
   Container,
   ChildSet,
   FragmentInstanceType,
-} from './ReactFiberConfig';
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
+} from './ReactFiberConfig.js';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
 
 import {
   HostRoot,
@@ -27,8 +27,8 @@ import {
   HostPortal,
   DehydratedFragment,
   Fragment,
-} from './ReactWorkTags';
-import {ContentReset, Placement} from './ReactFiberFlags';
+} from './ReactWorkTags.js';
+import {ContentReset, Placement} from './ReactFiberFlags.js';
 import {
   supportsMutation,
   supportsResources,
@@ -59,12 +59,12 @@ import {
   isSingletonScope,
   commitNewChildToFragmentInstance,
   deleteChildFromFragmentInstance,
-} from './ReactFiberConfig';
-import {captureCommitPhaseError} from './ReactFiberWorkLoop';
-import {trackHostMutation} from './ReactFiberMutationTracking';
+} from './ReactFiberConfig.js';
+import {captureCommitPhaseError} from './ReactFiberWorkLoop.js';
+import {trackHostMutation} from './ReactFiberMutationTracking.js';
 
-import {runWithFiberInDEV} from './ReactCurrentFiber';
-import {enableFragmentRefs} from 'shared/ReactFeatureFlags';
+import {runWithFiberInDEV} from './ReactCurrentFiber.js';
+import {enableFragmentRefs} from 'shared/ReactFeatureFlags.js';
 
 export function commitHostMount(finishedWork: Fiber) {
   const type = finishedWork.type;

@@ -7,11 +7,11 @@
  * @flow
  */
 
-import type {ReactComponentInfo} from 'shared/ReactTypes';
+import type {ReactComponentInfo} from 'shared/ReactTypes.js';
 
-import {describeBuiltInComponentFrame} from 'shared/ReactComponentStackFrame';
+import {describeBuiltInComponentFrame} from 'shared/ReactComponentStackFrame.js';
 
-import {formatOwnerStack} from 'shared/ReactOwnerStackFrames';
+import {formatOwnerStack} from 'shared/ReactOwnerStackFrames.js';
 
 export function getOwnerStackByComponentInfoInDev(
   componentInfo: ReactComponentInfo,

@@ -48,7 +48,7 @@ Regular expression to append '.js' to the end of all import statements, which
 is required for module resolution in the browser.
 
 Find expression in VSCode
-'([^']+)'(?=;)
+(from\s)'([^']+)'
 
 Replace expression in VSCode
-'$1.js'
+$1'$2.js'

@@ -7,8 +7,8 @@
  * @flow
  */
 
-import is from './objectIs';
-import hasOwnProperty from './hasOwnProperty';
+import is from './objectIs.js';
+import hasOwnProperty from './hasOwnProperty.js';
 
 /**
  * Performs equality by iterating through keys on an object and returning false

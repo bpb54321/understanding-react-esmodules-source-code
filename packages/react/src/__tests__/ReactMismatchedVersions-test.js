@@ -9,7 +9,7 @@
 
 'use strict';
 
-import {patchMessageChannel} from '../../../../scripts/jest/patchMessageChannel';
+import {patchMessageChannel} from '../../../../scripts/jest/patchMessageChannel.js';
 
 describe('ReactMismatchedVersions-test', () => {
   // Polyfills for test environment

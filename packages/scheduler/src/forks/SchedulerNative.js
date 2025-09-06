@@ -7,11 +7,11 @@
  * @flow strict
  */
 
-import * as Scheduler from './Scheduler';
-import type {Callback, Task} from './Scheduler';
-import type {PriorityLevel} from '../SchedulerPriorities';
-import typeof * as SchedulerExportsType from './Scheduler';
-import typeof * as SchedulerNativeExportsType from './SchedulerNative';
+import * as Scheduler from './Scheduler.js';
+import type {Callback, Task} from './Scheduler.js';
+import type {PriorityLevel} from '../SchedulerPriorities.js';
+import typeof * as SchedulerExportsType from './Scheduler.js';
+import typeof * as SchedulerNativeExportsType from './SchedulerNative.js';
 
 // This type is supposed to reflect the actual methods and arguments currently supported by the C++ implementation:
 // https://github.com/facebook/react-native/blob/main/packages/react-native/ReactCommon/react/renderer/runtimescheduler/RuntimeSchedulerBinding.cpp

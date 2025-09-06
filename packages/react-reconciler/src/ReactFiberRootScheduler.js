@@ -7,10 +7,10 @@
  * @flow
  */
 
-import type {FiberRoot} from './ReactInternalTypes';
-import type {Lane, Lanes} from './ReactFiberLane';
-import type {PriorityLevel} from 'scheduler/src/SchedulerPriorities';
-import type {Transition} from 'react/src/ReactStartTransition';
+import type {FiberRoot} from './ReactInternalTypes.js';
+import type {Lane, Lanes} from './ReactFiberLane.js';
+import type {PriorityLevel} from 'scheduler/src/SchedulerPriorities.js';
+import type {Transition} from 'react/src/ReactStartTransition.js';
 
 import {
   disableLegacyMode,
@@ -21,7 +21,7 @@ import {
   enableYieldingBeforePassive,
   enableGestureTransition,
   enableDefaultTransitionIndicator,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 import {
   NoLane,
   NoLanes,
@@ -35,7 +35,7 @@ import {
   getNextLanesToFlushSync,
   checkIfRootIsPrerendering,
   isGestureRender,
-} from './ReactFiberLane';
+} from './ReactFiberLane.js';
 import {
   CommitContext,
   NoContext,
@@ -49,8 +49,8 @@ import {
   hasPendingCommitEffects,
   isWorkLoopSuspendedOnData,
   performWorkOnRoot,
-} from './ReactFiberWorkLoop';
-import {LegacyRoot} from './ReactRootTags';
+} from './ReactFiberWorkLoop.js';
+import {LegacyRoot} from './ReactRootTags.js';
 import {
   ImmediatePriority as ImmediateSchedulerPriority,
   UserBlockingPriority as UserBlockingSchedulerPriority,
@@ -59,38 +59,38 @@ import {
   cancelCallback as Scheduler_cancelCallback,
   scheduleCallback as Scheduler_scheduleCallback,
   now,
-} from './Scheduler';
+} from './Scheduler.js';
 import {
   DiscreteEventPriority,
   ContinuousEventPriority,
   DefaultEventPriority,
   IdleEventPriority,
   lanesToEventPriority,
-} from './ReactEventPriorities';
+} from './ReactEventPriorities.js';
 import {
   supportsMicrotasks,
   scheduleMicrotask,
   shouldAttemptEagerTransition,
   trackSchedulerEvent,
   noTimeout,
-} from './ReactFiberConfig';
+} from './ReactFiberConfig.js';
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
 import {
   resetNestedUpdateFlag,
   syncNestedUpdateFlag,
-} from './ReactProfilerTimer';
-import {peekEntangledActionLane} from './ReactFiberAsyncAction';
+} from './ReactProfilerTimer.js';
+import {peekEntangledActionLane} from './ReactFiberAsyncAction.js';
 
-import noop from 'shared/noop';
-import reportGlobalError from 'shared/reportGlobalError';
+import noop from 'shared/noop.js';
+import reportGlobalError from 'shared/reportGlobalError.js';
 
 import {
   startIsomorphicDefaultIndicatorIfNeeded,
   hasOngoingIsomorphicIndicator,
   retainIsomorphicIndicator,
   markIsomorphicIndicatorHandled,
-} from './ReactFiberAsyncAction';
+} from './ReactFiberAsyncAction.js';
 
 // A linked list of all the roots with pending work. In an idiomatic app,
 // there's only a single root, but we do support multi root apps, hence this

@@ -7,7 +7,7 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber} from './ReactInternalTypes.js';
 import type {
   Instance,
   TextInstance,
@@ -16,12 +16,12 @@ import type {
   SuspenseInstance,
   Container,
   HostContext,
-} from './ReactFiberConfig';
-import type {ActivityState} from './ReactFiberActivityComponent';
-import type {SuspenseState} from './ReactFiberSuspenseComponent';
-import type {TreeContext} from './ReactFiberTreeContext';
-import type {CapturedValue} from './ReactCapturedValue';
-import type {HydrationDiffNode} from './ReactFiberHydrationDiffs';
+} from './ReactFiberConfig.js';
+import type {ActivityState} from './ReactFiberActivityComponent.js';
+import type {SuspenseState} from './ReactFiberSuspenseComponent.js';
+import type {TreeContext} from './ReactFiberTreeContext.js';
+import type {CapturedValue} from './ReactCapturedValue.js';
+import type {HydrationDiffNode} from './ReactFiberHydrationDiffs.js';
 
 import {
   HostComponent,
@@ -29,12 +29,12 @@ import {
   HostRoot,
   SuspenseComponent,
   ActivityComponent,
-} from './ReactWorkTags';
-import {favorSafetyOverHydrationPerf} from 'shared/ReactFeatureFlags';
+} from './ReactWorkTags.js';
+import {favorSafetyOverHydrationPerf} from 'shared/ReactFeatureFlags.js';
 
-import {createCapturedValueAtFiber} from './ReactCapturedValue';
+import {createCapturedValueAtFiber} from './ReactCapturedValue.js';
 
-import {createFiberFromDehydratedFragment} from './ReactFiber';
+import {createFiberFromDehydratedFragment} from './ReactFiber.js';
 import {
   shouldSetTextContent,
   supportsHydration,
@@ -65,16 +65,16 @@ import {
   isFormStateMarkerMatching,
   validateHydratableInstance,
   validateHydratableTextInstance,
-} from './ReactFiberConfig';
-import {OffscreenLane} from './ReactFiberLane';
+} from './ReactFiberConfig.js';
+import {OffscreenLane} from './ReactFiberLane.js';
 import {
   getSuspendedTreeContext,
   restoreSuspendedTreeContext,
-} from './ReactFiberTreeContext';
-import {queueRecoverableErrors} from './ReactFiberWorkLoop';
-import {getRootHostContainer, getHostContext} from './ReactFiberHostContext';
-import {describeDiff} from './ReactFiberHydrationDiffs';
-import {runWithFiberInDEV} from './ReactCurrentFiber';
+} from './ReactFiberTreeContext.js';
+import {queueRecoverableErrors} from './ReactFiberWorkLoop.js';
+import {getRootHostContainer, getHostContext} from './ReactFiberHostContext.js';
+import {describeDiff} from './ReactFiberHydrationDiffs.js';
+import {runWithFiberInDEV} from './ReactCurrentFiber.js';
 
 // The deepest Fiber on the stack involved in a hydration context.
 // This may have been an insertion or a hydration.

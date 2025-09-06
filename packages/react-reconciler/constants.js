@@ -9,4 +9,4 @@
 
 'use strict';
 
-export * from './src/ReactReconcilerConstants';
+export * from './src/ReactReconcilerConstants.js';

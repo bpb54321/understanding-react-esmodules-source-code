@@ -9,24 +9,24 @@
 
 /* eslint-disable react-internal/no-production-logging */
 
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber} from './ReactInternalTypes.js';
 
-import type {Lanes} from './ReactFiberLane';
+import type {Lanes} from './ReactFiberLane.js';
 
-import type {CapturedValue} from './ReactCapturedValue';
+import type {CapturedValue} from './ReactCapturedValue.js';
 
-import {SuspenseComponent} from './ReactWorkTags';
+import {SuspenseComponent} from './ReactWorkTags.js';
 
-import getComponentNameFromFiber from './getComponentNameFromFiber';
+import getComponentNameFromFiber from './getComponentNameFromFiber.js';
 
 import {
   getGroupNameOfHighestPriorityLane,
   includesOnlyHydrationLanes,
   includesOnlyOffscreenLanes,
   includesOnlyHydrationOrOffscreenLanes,
-} from './ReactFiberLane';
+} from './ReactFiberLane.js';
 
-import {enableProfilerTimer} from 'shared/ReactFeatureFlags';
+import {enableProfilerTimer} from 'shared/ReactFeatureFlags.js';
 
 const supportsUserTiming =
   enableProfilerTimer &&

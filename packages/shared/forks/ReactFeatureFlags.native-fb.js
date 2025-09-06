@@ -7,13 +7,13 @@
  * @flow
  */
 
-import typeof * as FeatureFlagsType from 'shared/ReactFeatureFlags';
-import typeof * as ExportsType from './ReactFeatureFlags.native-fb';
-import typeof * as DynamicExportsType from './ReactFeatureFlags.native-fb-dynamic';
+import typeof * as FeatureFlagsType from 'shared/ReactFeatureFlags.js';
+import typeof * as ExportsType from './ReactFeatureFlags.native-fb.js';
+import typeof * as DynamicExportsType from './ReactFeatureFlags.native-fb-dynamic.js';
 
 // Re-export dynamic flags from the internal module.
 // Intentionally using * because this import is compiled to a `require` call.
-import * as dynamicFlagsUntyped from 'ReactNativeInternalFeatureFlags';
+import * as dynamicFlagsUntyped from 'ReactNativeInternalFeatureFlags.js';
 const dynamicFlags: DynamicExportsType = (dynamicFlagsUntyped: any);
 
 // We destructure each value before re-exporting to avoid a dynamic look-up on

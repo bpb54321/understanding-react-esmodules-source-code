@@ -7,8 +7,8 @@
  * @flow
  */
 
-import {disableClientCache} from 'shared/ReactFeatureFlags';
-import {cache as cacheImpl} from './ReactCacheImpl';
+import {disableClientCache} from 'shared/ReactFeatureFlags.js';
+import {cache as cacheImpl} from './ReactCacheImpl.js';
 
 export function noopCache<A: Iterable<mixed>, T>(fn: (...A) => T): (...A) => T {
   // On the client (i.e. not a Server Components environment) `cache` has

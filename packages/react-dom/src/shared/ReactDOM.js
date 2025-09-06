@@ -7,13 +7,13 @@
  * @flow
  */
 
-import type {ReactNodeList} from 'shared/ReactTypes';
+import type {ReactNodeList} from 'shared/ReactTypes.js';
 
-import ReactVersion from 'shared/ReactVersion';
+import ReactVersion from 'shared/ReactVersion.js';
 
-import {isValidContainer} from 'react-dom-bindings/src/client/ReactDOMContainer';
-import {createPortal as createPortalImpl} from 'react-reconciler/src/ReactPortal';
-import {flushSync} from './ReactDOMFlushSync';
+import {isValidContainer} from 'react-dom-bindings/src/client/ReactDOMContainer.js';
+import {createPortal as createPortalImpl} from 'react-reconciler/src/ReactPortal.js';
+import {flushSync} from './ReactDOMFlushSync.js';
 
 import {
   prefetchDNS,
@@ -22,12 +22,12 @@ import {
   preloadModule,
   preinit,
   preinitModule,
-} from './ReactDOMFloat';
+} from './ReactDOMFloat.js';
 import {
   requestFormReset,
   useFormStatus,
   useFormState,
-} from 'react-dom-bindings/src/shared/ReactDOMFormActions';
+} from 'react-dom-bindings/src/shared/ReactDOMFormActions.js';
 
 if (__DEV__) {
   if (

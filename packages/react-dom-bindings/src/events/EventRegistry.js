@@ -7,9 +7,9 @@
  * @flow
  */
 
-import type {DOMEventName} from './DOMEventNames';
+import type {DOMEventName} from './DOMEventNames.js';
 
-import {enableCreateEventHandleAPI} from 'shared/ReactFeatureFlags';
+import {enableCreateEventHandleAPI} from 'shared/ReactFeatureFlags.js';
 
 export const allNativeEvents: Set<DOMEventName> = new Set();
 

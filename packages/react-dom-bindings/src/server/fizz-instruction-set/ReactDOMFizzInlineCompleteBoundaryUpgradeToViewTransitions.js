@@ -1,4 +1,4 @@
-import {revealCompletedBoundariesWithViewTransitions} from './ReactDOMFizzInstructionSetShared';
+import {revealCompletedBoundariesWithViewTransitions} from './ReactDOMFizzInstructionSetShared.js';
 
 // Upgrade the revealCompletedBoundaries instruction to support ViewTransitions.
 // This is a string so Closure's advanced compilation mode doesn't mangle it.

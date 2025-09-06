@@ -7,25 +7,25 @@
  * @flow
  */
 
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
 import type {
   StartTransitionOptions,
   GestureProvider,
   GestureOptions,
-} from 'shared/ReactTypes';
-import type {TransitionTypes} from './ReactTransitionType';
+} from 'shared/ReactTypes.js';
+import type {TransitionTypes} from './ReactTransitionType.js';
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
 
 import {
   enableTransitionTracing,
   enableViewTransition,
   enableGestureTransition,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
-import reportGlobalError from 'shared/reportGlobalError';
+import reportGlobalError from 'shared/reportGlobalError.js';
 
-import noop from 'shared/noop';
+import noop from 'shared/noop.js';
 
 export type Transition = {
   types: null | TransitionTypes, // enableViewTransition

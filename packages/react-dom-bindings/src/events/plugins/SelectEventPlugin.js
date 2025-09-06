@@ -7,24 +7,24 @@
  * @flow
  */
 
-import type {AnyNativeEvent} from '../PluginModuleType';
-import type {DOMEventName} from '../DOMEventNames';
-import type {DispatchQueue} from '../DOMPluginEventSystem';
-import type {EventSystemFlags} from '../EventSystemFlags';
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {ReactSyntheticEvent} from '../ReactSyntheticEventType';
+import type {AnyNativeEvent} from '../PluginModuleType.js';
+import type {DOMEventName} from '../DOMEventNames.js';
+import type {DispatchQueue} from '../DOMPluginEventSystem.js';
+import type {EventSystemFlags} from '../EventSystemFlags.js';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {ReactSyntheticEvent} from '../ReactSyntheticEventType.js';
 
-import {canUseDOM} from 'shared/ExecutionEnvironment';
-import {SyntheticEvent} from '../../events/SyntheticEvent';
-import isTextInputElement from '../isTextInputElement';
-import shallowEqual from 'shared/shallowEqual';
+import {canUseDOM} from 'shared/ExecutionEnvironment.js';
+import {SyntheticEvent} from '../../events/SyntheticEvent.js';
+import isTextInputElement from '../isTextInputElement.js';
+import shallowEqual from 'shared/shallowEqual.js';
 
-import {registerTwoPhaseEvent} from '../EventRegistry';
-import getActiveElement from '../../client/getActiveElement';
-import {getNodeFromInstance} from '../../client/ReactDOMComponentTree';
-import {hasSelectionCapabilities} from '../../client/ReactInputSelection';
-import {DOCUMENT_NODE} from '../../client/HTMLNodeType';
-import {accumulateTwoPhaseListeners} from '../DOMPluginEventSystem';
+import {registerTwoPhaseEvent} from '../EventRegistry.js';
+import getActiveElement from '../../client/getActiveElement.js';
+import {getNodeFromInstance} from '../../client/ReactDOMComponentTree.js';
+import {hasSelectionCapabilities} from '../../client/ReactInputSelection.js';
+import {DOCUMENT_NODE} from '../../client/HTMLNodeType.js';
+import {accumulateTwoPhaseListeners} from '../DOMPluginEventSystem.js';
 
 const skipSelectionChangeEvent =
   canUseDOM && 'documentMode' in document && document.documentMode <= 11;

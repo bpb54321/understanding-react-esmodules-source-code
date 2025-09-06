@@ -8,5 +8,5 @@
  */
 
 // This entrypoint should track the /client entrypoint
-export * from './client';
-export * from './index';
+export * from './client.js';
+export * from './index.js';

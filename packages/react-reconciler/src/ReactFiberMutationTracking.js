@@ -10,7 +10,7 @@
 import {
   enableDefaultTransitionIndicator,
   enableViewTransition,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
 export let rootMutationContext: boolean = false;
 export let viewTransitionMutationContext: boolean = false;

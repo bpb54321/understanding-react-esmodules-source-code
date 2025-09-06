@@ -7,13 +7,13 @@
  * @flow
  */
 
-import {enableTaint} from 'shared/ReactFeatureFlags';
+import {enableTaint} from 'shared/ReactFeatureFlags.js';
 
-import getPrototypeOf from 'shared/getPrototypeOf';
+import getPrototypeOf from 'shared/getPrototypeOf.js';
 
-import binaryToComparableString from 'shared/binaryToComparableString';
+import binaryToComparableString from 'shared/binaryToComparableString.js';
 
-import ReactSharedInternals from './ReactSharedInternalsServer';
+import ReactSharedInternals from './ReactSharedInternalsServer.js';
 const {
   TaintRegistryObjects,
   TaintRegistryValues,

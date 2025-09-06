@@ -7,17 +7,17 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
-import type {StackCursor} from './ReactFiberStack';
-import type {Lanes} from './ReactFiberLane';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {StackCursor} from './ReactFiberStack.js';
+import type {Lanes} from './ReactFiberLane.js';
 
-import {createCursor, push, pop} from './ReactFiberStack';
+import {createCursor, push, pop} from './ReactFiberStack.js';
 
 import {
   getEntangledRenderLanes,
   setEntangledRenderLanes,
-} from './ReactFiberWorkLoop';
-import {NoLanes, mergeLanes} from './ReactFiberLane';
+} from './ReactFiberWorkLoop.js';
+import {NoLanes, mergeLanes} from './ReactFiberLane.js';
 
 // TODO: Remove `renderLanes` context in favor of hidden context
 type HiddenContext = {

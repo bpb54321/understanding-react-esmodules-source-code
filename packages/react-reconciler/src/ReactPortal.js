@@ -7,10 +7,10 @@
  * @flow
  */
 
-import {REACT_PORTAL_TYPE} from 'shared/ReactSymbols';
-import {checkKeyStringCoercion} from 'shared/CheckStringCoercion';
+import {REACT_PORTAL_TYPE} from 'shared/ReactSymbols.js';
+import {checkKeyStringCoercion} from 'shared/CheckStringCoercion.js';
 
-import type {ReactNodeList, ReactPortal} from 'shared/ReactTypes';
+import type {ReactNodeList, ReactPortal} from 'shared/ReactTypes.js';
 
 export function createPortal(
   children: ReactNodeList,

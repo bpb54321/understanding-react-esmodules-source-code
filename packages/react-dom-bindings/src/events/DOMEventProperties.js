@@ -7,9 +7,9 @@
  * @flow
  */
 
-import type {DOMEventName} from './DOMEventNames';
+import type {DOMEventName} from './DOMEventNames.js';
 
-import {registerTwoPhaseEvent} from './EventRegistry';
+import {registerTwoPhaseEvent} from './EventRegistry.js';
 import {
   ANIMATION_END,
   ANIMATION_ITERATION,
@@ -18,12 +18,12 @@ import {
   TRANSITION_START,
   TRANSITION_CANCEL,
   TRANSITION_END,
-} from './DOMEventNames';
+} from './DOMEventNames.js';
 
 import {
   enableCreateEventHandleAPI,
   enableScrollEndPolyfill,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
 export const topLevelEventsToReactNames: Map<DOMEventName, string | null> =
   new Map();

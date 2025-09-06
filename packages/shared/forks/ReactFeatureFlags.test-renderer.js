@@ -7,8 +7,8 @@
  * @flow
  */
 
-import typeof * as FeatureFlagsType from 'shared/ReactFeatureFlags';
-import typeof * as ExportsType from './ReactFeatureFlags.test-renderer';
+import typeof * as FeatureFlagsType from 'shared/ReactFeatureFlags.js';
+import typeof * as ExportsType from './ReactFeatureFlags.test-renderer.js';
 
 export const enableAsyncDebugInfo = false;
 export const enableSchedulingProfiler = false;

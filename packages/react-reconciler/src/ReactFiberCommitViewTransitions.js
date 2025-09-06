@@ -7,23 +7,23 @@
  * @flow
  */
 
-import type {ViewTransitionProps} from 'shared/ReactTypes';
-import type {Instance, InstanceMeasurement, Props} from './ReactFiberConfig';
-import type {Fiber} from './ReactInternalTypes';
-import type {ViewTransitionState} from './ReactFiberViewTransitionComponent';
+import type {ViewTransitionProps} from 'shared/ReactTypes.js';
+import type {Instance, InstanceMeasurement, Props} from './ReactFiberConfig.js';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {ViewTransitionState} from './ReactFiberViewTransitionComponent.js';
 
 import {
   HostComponent,
   OffscreenComponent,
   ViewTransitionComponent,
-} from './ReactWorkTags';
+} from './ReactWorkTags.js';
 import {
   NoFlags,
   Update,
   ViewTransitionStatic,
   AffectedParentLayout,
   ViewTransitionNamedStatic,
-} from './ReactFiberFlags';
+} from './ReactFiberFlags.js';
 import {
   supportsMutation,
   applyViewTransitionName,
@@ -33,12 +33,12 @@ import {
   hasInstanceChanged,
   hasInstanceAffectedParent,
   wasInstanceInViewport,
-} from './ReactFiberConfig';
-import {scheduleViewTransitionEvent} from './ReactFiberWorkLoop';
+} from './ReactFiberConfig.js';
+import {scheduleViewTransitionEvent} from './ReactFiberWorkLoop.js';
 import {
   getViewTransitionName,
   getViewTransitionClassName,
-} from './ReactFiberViewTransitionComponent';
+} from './ReactFiberViewTransitionComponent.js';
 
 export let shouldStartViewTransition: boolean = false;
 

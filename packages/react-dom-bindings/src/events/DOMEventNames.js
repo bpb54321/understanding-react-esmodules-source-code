@@ -7,7 +7,7 @@
  * @flow
  */
 
-import getVendorPrefixedEventName from './getVendorPrefixedEventName';
+import getVendorPrefixedEventName from './getVendorPrefixedEventName.js';
 
 export type DOMEventName =
   | 'abort'

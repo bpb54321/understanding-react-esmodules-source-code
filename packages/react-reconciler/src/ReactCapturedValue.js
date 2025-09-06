@@ -7,9 +7,9 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber} from './ReactInternalTypes.js';
 
-import {getStackByFiberInDevAndProd} from './ReactFiberComponentStack';
+import {getStackByFiberInDevAndProd} from './ReactFiberComponentStack.js';
 
 const CapturedStacks: WeakMap<any, CapturedValue<any>> = new WeakMap();
 

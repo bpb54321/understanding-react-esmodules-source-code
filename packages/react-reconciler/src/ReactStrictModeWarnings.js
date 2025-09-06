@@ -7,11 +7,11 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber} from './ReactInternalTypes.js';
 
-import {runWithFiberInDEV} from './ReactCurrentFiber';
-import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber';
-import {StrictLegacyMode} from './ReactTypeOfMode';
+import {runWithFiberInDEV} from './ReactCurrentFiber.js';
+import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber.js';
+import {StrictLegacyMode} from './ReactTypeOfMode.js';
 
 type FiberArray = Array<Fiber>;
 type FiberToFiberComponentsMap = Map<Fiber, FiberArray>;

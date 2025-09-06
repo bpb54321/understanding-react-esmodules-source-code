@@ -7,12 +7,12 @@
  * @flow
  */
 
-import type {ReactNodeList, Wakeable} from 'shared/ReactTypes';
-import type {Lanes} from './ReactFiberLane';
-import type {SpawnedCachePool} from './ReactFiberCacheComponent';
-import type {Transition} from 'react/src/ReactStartTransition';
-import type {TracingMarkerInstance} from './ReactFiberTracingMarkerComponent';
-import type {RetryQueue} from './ReactFiberSuspenseComponent';
+import type {ReactNodeList, Wakeable} from 'shared/ReactTypes.js';
+import type {Lanes} from './ReactFiberLane.js';
+import type {SpawnedCachePool} from './ReactFiberCacheComponent.js';
+import type {Transition} from 'react/src/ReactStartTransition.js';
+import type {TracingMarkerInstance} from './ReactFiberTracingMarkerComponent.js';
+import type {RetryQueue} from './ReactFiberSuspenseComponent.js';
 
 type OffscreenMode = 'hidden' | 'unstable-defer-without-hiding' | 'visible';
 

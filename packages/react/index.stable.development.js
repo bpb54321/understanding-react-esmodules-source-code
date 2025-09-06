@@ -49,4 +49,4 @@ export {
   version,
   act, // DEV-only
   captureOwnerStack, // DEV-only
-} from './src/ReactClient';
+} from './src/ReactClient.js';

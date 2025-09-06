@@ -13,19 +13,19 @@ import type {
   PendingThenable,
   FulfilledThenable,
   RejectedThenable,
-} from 'shared/ReactTypes';
+} from 'shared/ReactTypes.js';
 
-import isArray from 'shared/isArray';
-import noop from 'shared/noop';
+import isArray from 'shared/isArray.js';
+import noop from 'shared/noop.js';
 import {
   getIteratorFn,
   REACT_ELEMENT_TYPE,
   REACT_LAZY_TYPE,
   REACT_PORTAL_TYPE,
-} from 'shared/ReactSymbols';
-import {checkKeyStringCoercion} from 'shared/CheckStringCoercion';
+} from 'shared/ReactSymbols.js';
+import {checkKeyStringCoercion} from 'shared/CheckStringCoercion.js';
 
-import {isValidElement, cloneAndReplaceKey} from './jsx/ReactJSXElement';
+import {isValidElement, cloneAndReplaceKey} from './jsx/ReactJSXElement.js';
 
 const SEPARATOR = '.';
 const SUBSEPARATOR = ':';

@@ -7,7 +7,7 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber} from './ReactInternalTypes.js';
 
 import {
   HostComponent,
@@ -22,15 +22,15 @@ import {
   SimpleMemoComponent,
   ClassComponent,
   HostText,
-} from './ReactWorkTags';
+} from './ReactWorkTags.js';
 
-import {enableSrcObject} from 'shared/ReactFeatureFlags';
+import {enableSrcObject} from 'shared/ReactFeatureFlags.js';
 
-import {REACT_ELEMENT_TYPE} from 'shared/ReactSymbols';
-import assign from 'shared/assign';
-import getComponentNameFromType from 'shared/getComponentNameFromType';
+import {REACT_ELEMENT_TYPE} from 'shared/ReactSymbols.js';
+import assign from 'shared/assign.js';
+import getComponentNameFromType from 'shared/getComponentNameFromType.js';
 
-import isArray from 'shared/isArray';
+import isArray from 'shared/isArray.js';
 
 export type HydrationDiffNode = {
   fiber: Fiber,

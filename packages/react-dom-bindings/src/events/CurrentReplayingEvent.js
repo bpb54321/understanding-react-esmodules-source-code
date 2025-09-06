@@ -6,7 +6,7 @@
  *
  * @flow
  */
-import type {AnyNativeEvent} from '../events/PluginModuleType';
+import type {AnyNativeEvent} from '../events/PluginModuleType.js';
 
 // This exists to avoid circular dependency between ReactDOMEventReplaying
 // and DOMPluginEventSystem.

@@ -7,4 +7,4 @@
  * @flow
  */
 
-export {Fragment, jsxDEV} from './src/jsx/ReactJSXServer';
+export {Fragment, jsxDEV} from './src/jsx/ReactJSXServer.js';

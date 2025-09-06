@@ -7,13 +7,13 @@
  * @flow
  */
 
-import type {ReactContext} from 'shared/ReactTypes';
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
+import type {ReactContext} from 'shared/ReactTypes.js';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
 
-import {REACT_CONTEXT_TYPE} from 'shared/ReactSymbols';
+import {REACT_CONTEXT_TYPE} from 'shared/ReactSymbols.js';
 
-import {pushProvider, popProvider} from './ReactFiberNewContext';
-import * as Scheduler from 'scheduler';
+import {pushProvider, popProvider} from './ReactFiberNewContext.js';
+import * as Scheduler from 'scheduler.js';
 
 // In environments without AbortController (e.g. tests)
 // replace it with a lightweight shim that only has the features we use.

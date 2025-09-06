@@ -10,10 +10,10 @@
 /* eslint-disable no-var */
 /* eslint-disable react-internal/prod-error-codes */
 
-import type {PriorityLevel} from '../SchedulerPriorities';
+import type {PriorityLevel} from '../SchedulerPriorities.js';
 
-import {enableProfiling} from '../SchedulerFeatureFlags';
-import {push, pop, peek} from '../SchedulerMinHeap';
+import {enableProfiling} from '../SchedulerFeatureFlags.js';
+import {push, pop, peek} from '../SchedulerMinHeap.js';
 
 // TODO: Use symbols?
 import {
@@ -22,7 +22,7 @@ import {
   NormalPriority,
   LowPriority,
   IdlePriority,
-} from '../SchedulerPriorities';
+} from '../SchedulerPriorities.js';
 import {
   markTaskRun,
   markTaskYield,
@@ -34,7 +34,7 @@ import {
   markTaskStart,
   stopLoggingProfilingEvents,
   startLoggingProfilingEvents,
-} from '../SchedulerProfiling';
+} from '../SchedulerProfiling.js';
 
 type Callback = boolean => ?Callback;
 

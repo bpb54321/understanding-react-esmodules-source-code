@@ -6,35 +6,35 @@
  *
  * @flow
  */
-import type {AnyNativeEvent} from '../PluginModuleType';
-import type {DOMEventName} from '../DOMEventNames';
-import type {DispatchQueue} from '../DOMPluginEventSystem';
-import type {EventSystemFlags} from '../EventSystemFlags';
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {ReactSyntheticEvent} from '../ReactSyntheticEventType';
+import type {AnyNativeEvent} from '../PluginModuleType.js';
+import type {DOMEventName} from '../DOMEventNames.js';
+import type {DispatchQueue} from '../DOMPluginEventSystem.js';
+import type {EventSystemFlags} from '../EventSystemFlags.js';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {ReactSyntheticEvent} from '../ReactSyntheticEventType.js';
 
-import {registerTwoPhaseEvent} from '../EventRegistry';
-import {SyntheticUIEvent} from '../SyntheticEvent';
+import {registerTwoPhaseEvent} from '../EventRegistry.js';
+import {SyntheticUIEvent} from '../SyntheticEvent.js';
 
-import {canUseDOM} from 'shared/ExecutionEnvironment';
-import isEventSupported from '../isEventSupported';
+import {canUseDOM} from 'shared/ExecutionEnvironment.js';
+import isEventSupported from '../isEventSupported.js';
 
-import {IS_CAPTURE_PHASE} from '../EventSystemFlags';
+import {IS_CAPTURE_PHASE} from '../EventSystemFlags.js';
 
-import {batchedUpdates} from '../ReactDOMUpdateBatching';
+import {batchedUpdates} from '../ReactDOMUpdateBatching.js';
 import {
   processDispatchQueue,
   accumulateSinglePhaseListeners,
   accumulateTwoPhaseListeners,
-} from '../DOMPluginEventSystem';
+} from '../DOMPluginEventSystem.js';
 
 import {
   getScrollEndTimer,
   setScrollEndTimer,
   clearScrollEndTimer,
-} from '../../client/ReactDOMComponentTree';
+} from '../../client/ReactDOMComponentTree.js';
 
-import {enableScrollEndPolyfill} from 'shared/ReactFeatureFlags';
+import {enableScrollEndPolyfill} from 'shared/ReactFeatureFlags.js';
 
 const isScrollEndEventSupported =
   enableScrollEndPolyfill && canUseDOM && isEventSupported('scrollend');

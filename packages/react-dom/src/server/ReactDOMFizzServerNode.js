@@ -12,17 +12,17 @@ import type {
   PostponedState,
   ErrorInfo,
   PostponeInfo,
-} from 'react-server/src/ReactFizzServer';
-import type {ReactNodeList, ReactFormState} from 'shared/ReactTypes';
-import type {Writable} from 'stream';
+} from 'react-server/src/ReactFizzServer.js';
+import type {ReactNodeList, ReactFormState} from 'shared/ReactTypes.js';
+import type {Writable} from 'stream.js';
 import type {
   BootstrapScriptDescriptor,
   HeadersDescriptor,
-} from 'react-dom-bindings/src/server/ReactFizzConfigDOM';
-import type {Destination} from 'react-server/src/ReactServerStreamConfigNode';
-import type {ImportMap} from '../shared/ReactDOMTypes';
+} from 'react-dom-bindings/src/server/ReactFizzConfigDOM.js';
+import type {Destination} from 'react-server/src/ReactServerStreamConfigNode.js';
+import type {ImportMap} from '../shared/ReactDOMTypes.js';
 
-import ReactVersion from 'shared/ReactVersion';
+import ReactVersion from 'shared/ReactVersion.js';
 
 import {
   createRequest,
@@ -32,16 +32,16 @@ import {
   stopFlowing,
   abort,
   prepareForStartFlowingIfBeforeAllReady,
-} from 'react-server/src/ReactFizzServer';
+} from 'react-server/src/ReactFizzServer.js';
 
 import {
   createResumableState,
   createRenderState,
   resumeRenderState,
   createRootFormatContext,
-} from 'react-dom-bindings/src/server/ReactFizzConfigDOM';
+} from 'react-dom-bindings/src/server/ReactFizzConfigDOM.js';
 
-import {ensureCorrectIsomorphicReactVersion} from '../shared/ensureCorrectIsomorphicReactVersion';
+import {ensureCorrectIsomorphicReactVersion} from '../shared/ensureCorrectIsomorphicReactVersion.js';
 ensureCorrectIsomorphicReactVersion();
 
 function createDrainHandler(destination: Destination, request: Request) {

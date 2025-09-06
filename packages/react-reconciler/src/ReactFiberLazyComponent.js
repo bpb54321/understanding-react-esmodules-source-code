@@ -7,8 +7,8 @@
  * @flow
  */
 
-import assign from 'shared/assign';
-import {disableDefaultPropsExceptForClasses} from 'shared/ReactFeatureFlags';
+import assign from 'shared/assign.js';
+import {disableDefaultPropsExceptForClasses} from 'shared/ReactFeatureFlags.js';
 
 export function resolveDefaultPropsOnNonClassComponent(
   Component: any,

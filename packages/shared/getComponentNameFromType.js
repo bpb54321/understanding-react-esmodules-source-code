@@ -7,8 +7,8 @@
  * @flow
  */
 
-import type {LazyComponent} from 'react/src/ReactLazy';
-import type {ReactContext, ReactConsumerType} from 'shared/ReactTypes';
+import type {LazyComponent} from 'react/src/ReactLazy.js';
+import type {ReactContext, ReactConsumerType} from 'shared/ReactTypes.js';
 
 import {
   REACT_CONTEXT_TYPE,
@@ -26,13 +26,13 @@ import {
   REACT_TRACING_MARKER_TYPE,
   REACT_VIEW_TRANSITION_TYPE,
   REACT_ACTIVITY_TYPE,
-} from 'shared/ReactSymbols';
+} from 'shared/ReactSymbols.js';
 
 import {
   enableTransitionTracing,
   enableRenderableContext,
   enableViewTransition,
-} from './ReactFeatureFlags';
+} from './ReactFeatureFlags.js';
 
 // Keep in sync with react-reconciler/getComponentNameFromFiber
 function getWrappedName(

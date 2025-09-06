@@ -5,8 +5,8 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import getNodeForCharacterOffset from './getNodeForCharacterOffset';
-import {TEXT_NODE} from './HTMLNodeType';
+import getNodeForCharacterOffset from './getNodeForCharacterOffset.js';
+import {TEXT_NODE} from './HTMLNodeType.js';
 
 /**
  * @param {DOMElement} outerNode

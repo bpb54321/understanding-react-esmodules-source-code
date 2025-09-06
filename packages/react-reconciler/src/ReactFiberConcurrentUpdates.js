@@ -7,27 +7,27 @@
  * @flow
  */
 
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
 import type {
   UpdateQueue as HookQueue,
   Update as HookUpdate,
-} from './ReactFiberHooks';
+} from './ReactFiberHooks.js';
 import type {
   SharedQueue as ClassQueue,
   Update as ClassUpdate,
-} from './ReactFiberClassUpdateQueue';
-import type {Lane, Lanes} from './ReactFiberLane';
-import type {OffscreenInstance} from './ReactFiberOffscreenComponent';
+} from './ReactFiberClassUpdateQueue.js';
+import type {Lane, Lanes} from './ReactFiberLane.js';
+import type {OffscreenInstance} from './ReactFiberOffscreenComponent.js';
 
 import {
   warnAboutUpdateOnNotYetMountedFiberInDEV,
   throwIfInfiniteUpdateLoopDetected,
   getWorkInProgressRoot,
-} from './ReactFiberWorkLoop';
-import {NoLane, NoLanes, mergeLanes, markHiddenUpdate} from './ReactFiberLane';
-import {NoFlags, Placement, Hydrating} from './ReactFiberFlags';
-import {HostRoot, OffscreenComponent} from './ReactWorkTags';
-import {OffscreenVisible} from './ReactFiberOffscreenComponent';
+} from './ReactFiberWorkLoop.js';
+import {NoLane, NoLanes, mergeLanes, markHiddenUpdate} from './ReactFiberLane.js';
+import {NoFlags, Placement, Hydrating} from './ReactFiberFlags.js';
+import {HostRoot, OffscreenComponent} from './ReactWorkTags.js';
+import {OffscreenVisible} from './ReactFiberOffscreenComponent.js';
 
 export type ConcurrentUpdate = {
   next: ConcurrentUpdate,

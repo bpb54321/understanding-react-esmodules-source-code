@@ -38,7 +38,7 @@
  * @private
  */
 
-import {checkHtmlStringCoercion} from 'shared/CheckStringCoercion';
+import {checkHtmlStringCoercion} from 'shared/CheckStringCoercion.js';
 
 const matchHtmlRegExp = /["'&<>]/;
 

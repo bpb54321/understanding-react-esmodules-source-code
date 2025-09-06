@@ -11,14 +11,14 @@ import type {
   TransitionTracingCallbacks,
   Fiber,
   FiberRoot,
-} from './ReactInternalTypes';
-import type {Transition} from 'react/src/ReactStartTransition';
-import type {OffscreenInstance} from './ReactFiberOffscreenComponent';
-import type {StackCursor} from './ReactFiberStack';
+} from './ReactInternalTypes.js';
+import type {Transition} from 'react/src/ReactStartTransition.js';
+import type {OffscreenInstance} from './ReactFiberOffscreenComponent.js';
+import type {StackCursor} from './ReactFiberStack.js';
 
-import {enableTransitionTracing} from 'shared/ReactFeatureFlags';
-import {createCursor, push, pop} from './ReactFiberStack';
-import {getWorkInProgressTransitions} from './ReactFiberWorkLoop';
+import {enableTransitionTracing} from 'shared/ReactFeatureFlags.js';
+import {createCursor, push, pop} from './ReactFiberStack.js';
+import {getWorkInProgressTransitions} from './ReactFiberWorkLoop.js';
 
 export type SuspenseInfo = {name: string | null};
 

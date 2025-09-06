@@ -57,9 +57,9 @@ export {
   version,
   act, // DEV-only
   captureOwnerStack, // DEV-only
-} from './src/ReactClient';
+} from './src/ReactClient.js';
 
-import {useOptimistic} from './src/ReactClient';
+import {useOptimistic} from './src/ReactClient.js';
 
 export function experimental_useOptimistic<S, A>(
   passthrough: S,

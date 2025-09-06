@@ -7,4 +7,4 @@
  * @flow
  */
 
-export {cache} from './ReactCacheImpl';
+export {cache} from './ReactCacheImpl.js';

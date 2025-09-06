@@ -7,23 +7,23 @@
  * @flow
  */
 
-import type {Dispatcher} from 'react-reconciler/src/ReactInternalTypes';
-import type {AsyncDispatcher} from 'react-reconciler/src/ReactInternalTypes';
+import type {Dispatcher} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {AsyncDispatcher} from 'react-reconciler/src/ReactInternalTypes.js';
 
 import type {
   Reference,
   TaintEntry,
   RequestCleanupQueue,
-} from './ReactTaintRegistry';
+} from './ReactTaintRegistry.js';
 
 import {
   TaintRegistryObjects,
   TaintRegistryValues,
   TaintRegistryByteLengths,
   TaintRegistryPendingRequests,
-} from './ReactTaintRegistry';
+} from './ReactTaintRegistry.js';
 
-import {enableTaint} from 'shared/ReactFeatureFlags';
+import {enableTaint} from 'shared/ReactFeatureFlags.js';
 
 export type SharedStateServer = {
   H: null | Dispatcher, // ReactCurrentDispatcher for Hooks

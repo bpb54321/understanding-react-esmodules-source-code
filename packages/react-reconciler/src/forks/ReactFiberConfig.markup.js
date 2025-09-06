@@ -9,8 +9,8 @@
 
 // Re-exported just because we always type check react-reconciler even in
 // dimensions where it's not used.
-export * from 'react-dom-bindings/src/client/ReactFiberConfigDOM';
-export * from 'react-client/src/ReactClientConsoleConfigBrowser';
+export * from 'react-dom-bindings/src/client/ReactFiberConfigDOM.js';
+export * from 'react-client/src/ReactClientConsoleConfigBrowser.js';
 
 // eslint-disable-next-line react-internal/prod-error-codes
 throw new Error('Fiber is not used in react-markup');

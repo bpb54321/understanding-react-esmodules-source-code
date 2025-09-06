@@ -7,7 +7,7 @@
  * @flow
  */
 
-import {captureOwnerStack as captureOwnerStackImpl} from './src/ReactClient';
+import {captureOwnerStack as captureOwnerStackImpl} from './src/ReactClient.js';
 
 export {
   __CLIENT_INTERNALS_DO_NOT_USE_OR_WARN_USERS_THEY_CANNOT_UPGRADE,
@@ -59,16 +59,16 @@ export {
   useSyncExternalStore,
   useTransition,
   version,
-} from './src/ReactClient';
+} from './src/ReactClient.js';
 
-export {jsx, jsxs, jsxDEV} from './src/jsx/ReactJSX';
+export {jsx, jsxs, jsxDEV} from './src/jsx/ReactJSX.js';
 
 // export for backwards compatibility during upgrade
-export {useMemoCache as unstable_useMemoCache} from './src/ReactHooks';
+export {useMemoCache as unstable_useMemoCache} from './src/ReactHooks.js';
 
 // export to match the name of the OSS function typically exported from
 // react/compiler-runtime
-export {useMemoCache as c} from './src/ReactHooks';
+export {useMemoCache as c} from './src/ReactHooks.js';
 
 // Only export captureOwnerStack in development.
 let captureOwnerStack: ?() => null | string;

@@ -12,14 +12,14 @@ import type {
   PreloadModuleOptions,
   PreinitOptions,
   PreinitModuleOptions,
-} from './ReactDOMTypes';
+} from './ReactDOMTypes.js';
 
-import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals';
+import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals.js';
 
 import {
   getCrossOriginString,
   getCrossOriginStringAs,
-} from 'react-dom-bindings/src/shared/crossOriginStrings';
+} from 'react-dom-bindings/src/shared/crossOriginStrings.js';
 
 export function prefetchDNS(href: string) {
   if (__DEV__) {

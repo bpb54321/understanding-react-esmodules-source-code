@@ -17,8 +17,8 @@ import type {
   ReactStackTrace,
   ReactFunctionLocation,
   ReactErrorInfoDev,
-} from 'shared/ReactTypes';
-import type {LazyComponent} from 'react/src/ReactLazy';
+} from 'shared/ReactTypes.js';
+import type {LazyComponent} from 'react/src/ReactLazy.js';
 
 import type {
   ClientReference,
@@ -27,27 +27,27 @@ import type {
   ServerManifest,
   StringDecoder,
   ModuleLoading,
-} from './ReactFlightClientConfig';
+} from './ReactFlightClientConfig.js';
 
 import type {
   HintCode,
   HintModel,
-} from 'react-server/src/ReactFlightServerConfig';
+} from 'react-server/src/ReactFlightServerConfig.js';
 
 import type {
   CallServerCallback,
   EncodeFormActionCallback,
-} from './ReactFlightReplyClient';
+} from './ReactFlightReplyClient.js';
 
-import type {Postpone} from 'react/src/ReactPostpone';
+import type {Postpone} from 'react/src/ReactPostpone.js';
 
-import type {TemporaryReferenceSet} from './ReactFlightTemporaryReferences';
+import type {TemporaryReferenceSet} from './ReactFlightTemporaryReferences.js';
 
 import {
   enablePostpone,
   enableProfilerTimer,
   enableComponentPerformanceTrack,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
 import {
   resolveClientReference,
@@ -62,21 +62,21 @@ import {
   bindToConsole,
   rendererVersion,
   rendererPackageName,
-} from './ReactFlightClientConfig';
+} from './ReactFlightClientConfig.js';
 
 import {
   createBoundServerReference,
   registerBoundServerReference,
-} from './ReactFlightReplyClient';
+} from './ReactFlightReplyClient.js';
 
-import {readTemporaryReference} from './ReactFlightTemporaryReferences';
+import {readTemporaryReference} from './ReactFlightTemporaryReferences.js';
 
 import {
   markAllTracksInOrder,
   logComponentRender,
   logDedupedComponentRender,
   logComponentErrored,
-} from './ReactFlightPerformanceTrack';
+} from './ReactFlightPerformanceTrack.js';
 
 import {
   REACT_LAZY_TYPE,
@@ -84,22 +84,22 @@ import {
   REACT_POSTPONE_TYPE,
   ASYNC_ITERATOR,
   REACT_FRAGMENT_TYPE,
-} from 'shared/ReactSymbols';
+} from 'shared/ReactSymbols.js';
 
-import getComponentNameFromType from 'shared/getComponentNameFromType';
+import getComponentNameFromType from 'shared/getComponentNameFromType.js';
 
-import {getOwnerStackByComponentInfoInDev} from 'shared/ReactComponentInfoStack';
+import {getOwnerStackByComponentInfoInDev} from 'shared/ReactComponentInfoStack.js';
 
-import {injectInternals} from './ReactFlightClientDevToolsHook';
+import {injectInternals} from './ReactFlightClientDevToolsHook.js';
 
-import ReactVersion from 'shared/ReactVersion';
+import ReactVersion from 'shared/ReactVersion.js';
 
-import isArray from 'shared/isArray';
+import isArray from 'shared/isArray.js';
 
-import * as React from 'react';
+import * as React from 'react.js';
 
-import type {SharedStateServer} from 'react/src/ReactSharedInternalsServer';
-import type {SharedStateClient} from 'react/src/ReactSharedInternalsClient';
+import type {SharedStateServer} from 'react/src/ReactSharedInternalsServer.js';
+import type {SharedStateClient} from 'react/src/ReactSharedInternalsClient.js';
 
 // TODO: This is an unfortunate hack. We shouldn't feature detect the internals
 // like this. It's just that for now we support the same build of the Flight

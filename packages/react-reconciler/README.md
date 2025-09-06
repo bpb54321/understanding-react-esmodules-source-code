@@ -211,7 +211,7 @@ import {
   DiscreteEventPriority,
   ContinuousEventPriority,
   DefaultEventPriority,
-} from 'react-reconciler/constants';
+} from 'react-reconciler/constants.js';
 
 const HostConfig = {
   // ...

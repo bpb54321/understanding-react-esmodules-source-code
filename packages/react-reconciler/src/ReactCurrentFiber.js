@@ -7,11 +7,11 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber} from './ReactInternalTypes.js';
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
-import {getOwnerStackByFiberInDev} from './ReactFiberComponentStack';
-import {getComponentNameFromOwner} from 'react-reconciler/src/getComponentNameFromFiber';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
+import {getOwnerStackByFiberInDev} from './ReactFiberComponentStack.js';
+import {getComponentNameFromOwner} from 'react-reconciler/src/getComponentNameFromFiber.js';
 
 export let current: Fiber | null = null;
 export let isRendering: boolean = false;

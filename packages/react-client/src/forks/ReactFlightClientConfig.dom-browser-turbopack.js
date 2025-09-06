@@ -7,13 +7,13 @@
  * @flow
  */
 
-export {default as rendererVersion} from 'shared/ReactVersion';
+export {default as rendererVersion} from 'shared/ReactVersion.js';
 export const rendererPackageName = 'react-server-dom-turbopack';
 
-export * from 'react-client/src/ReactFlightClientStreamConfigWeb';
-export * from 'react-client/src/ReactClientConsoleConfigBrowser';
-export * from 'react-server-dom-turbopack/src/client/ReactFlightClientConfigBundlerTurbopack';
-export * from 'react-server-dom-turbopack/src/client/ReactFlightClientConfigBundlerTurbopackBrowser';
-export * from 'react-server-dom-turbopack/src/client/ReactFlightClientConfigTargetTurbopackBrowser';
-export * from 'react-dom-bindings/src/shared/ReactFlightClientConfigDOM';
+export * from 'react-client/src/ReactFlightClientStreamConfigWeb.js';
+export * from 'react-client/src/ReactClientConsoleConfigBrowser.js';
+export * from 'react-server-dom-turbopack/src/client/ReactFlightClientConfigBundlerTurbopack.js';
+export * from 'react-server-dom-turbopack/src/client/ReactFlightClientConfigBundlerTurbopackBrowser.js';
+export * from 'react-server-dom-turbopack/src/client/ReactFlightClientConfigTargetTurbopackBrowser.js';
+export * from 'react-dom-bindings/src/shared/ReactFlightClientConfigDOM.js';
 export const usedWithSSR = false;

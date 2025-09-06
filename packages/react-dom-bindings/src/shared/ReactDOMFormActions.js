@@ -7,11 +7,11 @@
  * @flow
  */
 
-import type {Dispatcher} from 'react-reconciler/src/ReactInternalTypes';
-import type {Awaited} from 'shared/ReactTypes';
+import type {Dispatcher} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {Awaited} from 'shared/ReactTypes.js';
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
-import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
+import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals.js';
 
 type FormStatusNotPending = {|
   pending: false,

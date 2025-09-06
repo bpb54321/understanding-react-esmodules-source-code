@@ -6,51 +6,51 @@
  *
  * @flow
  */
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
 import type {
   Thenable,
   GestureProvider,
   GestureOptions,
-} from 'shared/ReactTypes';
-import {NoLane, type Lanes} from './ReactFiberLane';
-import type {StackCursor} from './ReactFiberStack';
-import type {Cache, SpawnedCachePool} from './ReactFiberCacheComponent';
-import type {Transition} from 'react/src/ReactStartTransition';
-import type {ScheduledGesture} from './ReactFiberGestureScheduler';
+} from 'shared/ReactTypes.js';
+import {NoLane, type Lanes} from './ReactFiberLane.js';
+import type {StackCursor} from './ReactFiberStack.js';
+import type {Cache, SpawnedCachePool} from './ReactFiberCacheComponent.js';
+import type {Transition} from 'react/src/ReactStartTransition.js';
+import type {ScheduledGesture} from './ReactFiberGestureScheduler.js';
 
 import {
   enableTransitionTracing,
   enableViewTransition,
   enableGestureTransition,
-} from 'shared/ReactFeatureFlags';
-import {isPrimaryRenderer} from './ReactFiberConfig';
-import {createCursor, push, pop} from './ReactFiberStack';
+} from 'shared/ReactFeatureFlags.js';
+import {isPrimaryRenderer} from './ReactFiberConfig.js';
+import {createCursor, push, pop} from './ReactFiberStack.js';
 import {
   getWorkInProgressRoot,
   getWorkInProgressTransitions,
-} from './ReactFiberWorkLoop';
+} from './ReactFiberWorkLoop.js';
 import {
   createCache,
   retainCache,
   CacheContext,
-} from './ReactFiberCacheComponent';
+} from './ReactFiberCacheComponent.js';
 import {
   queueTransitionTypes,
   entangleAsyncTransitionTypes,
   entangledTransitionTypes,
-} from './ReactFiberTransitionTypes';
+} from './ReactFiberTransitionTypes.js';
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
 import {
   entangleAsyncAction,
   peekEntangledActionLane,
-} from './ReactFiberAsyncAction';
-import {startAsyncTransitionTimer} from './ReactProfilerTimer';
-import {firstScheduledRoot} from './ReactFiberRootScheduler';
+} from './ReactFiberAsyncAction.js';
+import {startAsyncTransitionTimer} from './ReactProfilerTimer.js';
+import {firstScheduledRoot} from './ReactFiberRootScheduler.js';
 import {
   startScheduledGesture,
   cancelScheduledGesture,
-} from './ReactFiberGestureScheduler';
+} from './ReactFiberGestureScheduler.js';
 
 export const NoTransition = null;
 

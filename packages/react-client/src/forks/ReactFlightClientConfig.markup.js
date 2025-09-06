@@ -7,13 +7,13 @@
  * @flow
  */
 
-export {default as rendererVersion} from 'shared/ReactVersion';
+export {default as rendererVersion} from 'shared/ReactVersion.js';
 export const rendererPackageName = 'react-markup';
 
-import type {Thenable} from 'shared/ReactTypes';
+import type {Thenable} from 'shared/ReactTypes.js';
 
 export * from 'react-markup/src/ReactMarkupLegacyClientStreamConfig.js';
-export * from 'react-client/src/ReactClientConsoleConfigPlain';
+export * from 'react-client/src/ReactClientConsoleConfigPlain.js';
 
 export type ModuleLoading = null;
 export type ServerConsumerModuleMap = null;

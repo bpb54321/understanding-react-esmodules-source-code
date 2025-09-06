@@ -6,13 +6,13 @@
  *
  * @flow
  */
-import {REACT_FRAGMENT_TYPE} from 'shared/ReactSymbols';
+import {REACT_FRAGMENT_TYPE} from 'shared/ReactSymbols.js';
 import {
   jsxProd,
   jsxProdSignatureRunningInDevWithDynamicChildren,
   jsxProdSignatureRunningInDevWithStaticChildren,
   jsxDEV as _jsxDEV,
-} from './ReactJSXElement';
+} from './ReactJSXElement.js';
 
 const jsx: any = __DEV__
   ? jsxProdSignatureRunningInDevWithDynamicChildren

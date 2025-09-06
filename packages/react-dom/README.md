@@ -13,7 +13,7 @@ npm install react react-dom
 ### In the browser
 
 ```js
-import { createRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom/client.js';
 
 function App() {
   return <div>Hello World</div>;
@@ -26,7 +26,7 @@ root.render(<App />);
 ### On the server
 
 ```js
-import { renderToPipeableStream } from 'react-dom/server';
+import { renderToPipeableStream } from 'react-dom/server.js';
 
 function App() {
   return <div>Hello World</div>;

@@ -7,7 +7,7 @@
  * @flow
  */
 
-import {TextDecoder} from 'util';
+import {TextDecoder} from 'util.js';
 
 export type StringDecoder = TextDecoder;
 

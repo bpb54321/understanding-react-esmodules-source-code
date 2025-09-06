@@ -7,4 +7,4 @@
  * @flow
  */
 
-export {Fragment, jsxDEV} from './src/jsx/ReactJSX';
+export {Fragment, jsxDEV} from './src/jsx/ReactJSX.js';

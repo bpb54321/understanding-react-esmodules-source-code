@@ -7,10 +7,10 @@
  * @flow
  */
 
-import type {EventPriority} from 'react-reconciler/src/ReactEventPriorities';
-import type {HostDispatcher} from './shared/ReactDOMTypes';
+import type {EventPriority} from 'react-reconciler/src/ReactEventPriorities.js';
+import type {HostDispatcher} from './shared/ReactDOMTypes.js';
 
-import noop from 'shared/noop';
+import noop from 'shared/noop.js';
 
 // This should line up with NoEventPriority from react-reconciler/src/ReactEventPriorities
 // but we can't depend on the react-reconciler from this isomorphic code.

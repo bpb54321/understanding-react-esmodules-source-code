@@ -7,7 +7,7 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
+import type {Fiber} from './ReactInternalTypes.js';
 
 export type StackCursor<T> = {current: T};
 

@@ -7,7 +7,7 @@
  * @flow
  */
 
-import type {ReactDebugInfo} from './ReactTypes';
+import type {ReactDebugInfo} from './ReactTypes.js';
 
 export type ReactElement = {
   $$typeof: any,

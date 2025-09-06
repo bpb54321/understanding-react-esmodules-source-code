@@ -7,7 +7,7 @@
  * @flow
  */
 
-import {REACT_POSTPONE_TYPE} from 'shared/ReactSymbols';
+import {REACT_POSTPONE_TYPE} from 'shared/ReactSymbols.js';
 
 declare class Postpone extends Error {
   $$typeof: symbol;

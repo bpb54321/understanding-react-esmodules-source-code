@@ -7,11 +7,11 @@
  * @flow
  */
 
-import type {Fiber} from './ReactFiber';
+import type {Fiber} from './ReactFiber.js';
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
 
-import {warnsIfNotActing} from './ReactFiberConfig';
+import {warnsIfNotActing} from './ReactFiberConfig.js';
 
 export function isLegacyActEnvironment(fiber: Fiber): boolean {
   if (__DEV__) {

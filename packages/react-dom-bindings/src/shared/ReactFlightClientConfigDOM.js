@@ -10,11 +10,11 @@
 // This client file is in the shared folder because it applies to both SSR and browser contexts.
 // It is the configuration of the FlightClient behavior which can run in either environment.
 
-import type {HintCode, HintModel} from '../server/ReactFlightServerConfigDOM';
+import type {HintCode, HintModel} from '../server/ReactFlightServerConfigDOM.js';
 
-import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals';
+import ReactDOMSharedInternals from 'shared/ReactDOMSharedInternals.js';
 
-import {getCrossOriginString} from './crossOriginStrings';
+import {getCrossOriginString} from './crossOriginStrings.js';
 
 export function dispatchHint<Code: HintCode>(
   code: Code,

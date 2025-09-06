@@ -14,27 +14,27 @@ import type {
   Thenable,
   RejectedThenable,
   Awaited,
-} from 'shared/ReactTypes';
+} from 'shared/ReactTypes.js';
 import type {
   Fiber,
   FiberRoot,
   Dispatcher,
   HookType,
   MemoCache,
-} from './ReactInternalTypes';
-import type {Lanes, Lane} from './ReactFiberLane';
-import type {HookFlags} from './ReactHookEffectTags';
-import type {Flags} from './ReactFiberFlags';
-import type {TransitionStatus} from './ReactFiberConfig';
-import type {ScheduledGesture} from './ReactFiberGestureScheduler';
+} from './ReactInternalTypes.js';
+import type {Lanes, Lane} from './ReactFiberLane.js';
+import type {HookFlags} from './ReactHookEffectTags.js';
+import type {Flags} from './ReactFiberFlags.js';
+import type {TransitionStatus} from './ReactFiberConfig.js';
+import type {ScheduledGesture} from './ReactFiberGestureScheduler.js';
 
 import {
   HostTransitionContext,
   NotPendingTransition as NoPendingHostTransition,
   setCurrentUpdatePriority,
   getCurrentUpdatePriority,
-} from './ReactFiberConfig';
-import ReactSharedInternals from 'shared/ReactSharedInternals';
+} from './ReactFiberConfig.js';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
 import {
   enableSchedulingProfiler,
   enableTransitionTracing,
@@ -44,11 +44,11 @@ import {
   enableNoCloningMemoCache,
   enableViewTransition,
   enableGestureTransition,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 import {
   REACT_CONTEXT_TYPE,
   REACT_MEMO_CACHE_SENTINEL,
-} from 'shared/ReactSymbols';
+} from 'shared/ReactSymbols.js';
 
 import {
   NoMode,
@@ -56,7 +56,7 @@ import {
   StrictEffectsMode,
   StrictLegacyMode,
   NoStrictPassiveEffectsMode,
-} from './ReactTypeOfMode';
+} from './ReactTypeOfMode.js';
 import {
   NoLane,
   SyncLane,
@@ -74,13 +74,13 @@ import {
   includesSomeLane,
   isGestureRender,
   GestureLane,
-} from './ReactFiberLane';
+} from './ReactFiberLane.js';
 import {
   ContinuousEventPriority,
   higherEventPriority,
-} from './ReactEventPriorities';
-import {readContext, checkIfContextChanged} from './ReactFiberNewContext';
-import {HostRoot, CacheComponent, HostComponent} from './ReactWorkTags';
+} from './ReactEventPriorities.js';
+import {readContext, checkIfContextChanged} from './ReactFiberNewContext.js';
+import {HostRoot, CacheComponent, HostComponent} from './ReactWorkTags.js';
 import {
   LayoutStatic as LayoutStaticEffect,
   Passive as PassiveEffect,
@@ -91,13 +91,13 @@ import {
   MountLayoutDev as MountLayoutDevEffect,
   MountPassiveDev as MountPassiveDevEffect,
   FormReset,
-} from './ReactFiberFlags';
+} from './ReactFiberFlags.js';
 import {
   HasEffect as HookHasEffect,
   Layout as HookLayout,
   Passive as HookPassive,
   Insertion as HookInsertion,
-} from './ReactHookEffectTags';
+} from './ReactHookEffectTags.js';
 import {
   getWorkInProgressRoot,
   getWorkInProgressRootRenderLanes,
@@ -106,58 +106,58 @@ import {
   requestDeferredLane,
   markSkippedUpdateLanes,
   isInvalidExecutionContextForEventFunction,
-} from './ReactFiberWorkLoop';
+} from './ReactFiberWorkLoop.js';
 
-import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber';
-import is from 'shared/objectIs';
-import isArray from 'shared/isArray';
+import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber.js';
+import is from 'shared/objectIs.js';
+import isArray from 'shared/isArray.js';
 import {
   markWorkInProgressReceivedUpdate,
   checkIfWorkInProgressReceivedUpdate,
-} from './ReactFiberBeginWork';
+} from './ReactFiberBeginWork.js';
 import {
   getIsHydrating,
   tryToClaimNextHydratableFormMarkerInstance,
-} from './ReactFiberHydrationContext';
+} from './ReactFiberHydrationContext.js';
 import {
   markStateUpdateScheduled,
   setIsStrictModeForDevtools,
-} from './ReactFiberDevToolsHook';
-import {startUpdateTimerByLane} from './ReactProfilerTimer';
-import {createCache} from './ReactFiberCacheComponent';
+} from './ReactFiberDevToolsHook.js';
+import {startUpdateTimerByLane} from './ReactProfilerTimer.js';
+import {createCache} from './ReactFiberCacheComponent.js';
 import {
   createUpdate as createLegacyQueueUpdate,
   enqueueUpdate as enqueueLegacyQueueUpdate,
   entangleTransitions as entangleLegacyQueueTransitions,
-} from './ReactFiberClassUpdateQueue';
+} from './ReactFiberClassUpdateQueue.js';
 import {
   enqueueConcurrentHookUpdate,
   enqueueConcurrentHookUpdateAndEagerlyBailout,
   enqueueConcurrentRenderForLane,
-} from './ReactFiberConcurrentUpdates';
-import {getTreeId} from './ReactFiberTreeContext';
-import {now} from './Scheduler';
+} from './ReactFiberConcurrentUpdates.js';
+import {getTreeId} from './ReactFiberTreeContext.js';
+import {now} from './Scheduler.js';
 import {
   trackUsedThenable,
   checkIfUseWrappedInTryCatch,
   createThenableState,
   SuspenseException,
   SuspenseActionException,
-} from './ReactFiberThenable';
-import type {ThenableState} from './ReactFiberThenable';
-import type {Transition} from 'react/src/ReactStartTransition';
+} from './ReactFiberThenable.js';
+import type {ThenableState} from './ReactFiberThenable.js';
+import type {Transition} from 'react/src/ReactStartTransition.js';
 import {
   peekEntangledActionLane,
   peekEntangledActionThenable,
   chainThenableValue,
-} from './ReactFiberAsyncAction';
-import {requestTransitionLane} from './ReactFiberRootScheduler';
-import {isCurrentTreeHidden} from './ReactFiberHiddenContext';
-import {requestCurrentTransition} from './ReactFiberTransition';
+} from './ReactFiberAsyncAction.js';
+import {requestTransitionLane} from './ReactFiberRootScheduler.js';
+import {isCurrentTreeHidden} from './ReactFiberHiddenContext.js';
+import {requestCurrentTransition} from './ReactFiberTransition.js';
 
-import {callComponentInDEV} from './ReactFiberCallUserSpace';
+import {callComponentInDEV} from './ReactFiberCallUserSpace.js';
 
-import {scheduleGesture} from './ReactFiberGestureScheduler';
+import {scheduleGesture} from './ReactFiberGestureScheduler.js';
 
 export type Update<S, A> = {
   lane: Lane,

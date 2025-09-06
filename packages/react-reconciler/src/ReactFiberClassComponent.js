@@ -7,31 +7,31 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
-import type {Lanes} from './ReactFiberLane';
-import type {UpdateQueue} from './ReactFiberClassUpdateQueue';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {Lanes} from './ReactFiberLane.js';
+import type {UpdateQueue} from './ReactFiberClassUpdateQueue.js';
 
 import {
   LayoutStatic,
   Update,
   Snapshot,
   MountLayoutDev,
-} from './ReactFiberFlags';
+} from './ReactFiberFlags.js';
 import {
   disableLegacyContext,
   enableSchedulingProfiler,
   disableDefaultPropsExceptForClasses,
-} from 'shared/ReactFeatureFlags';
-import ReactStrictModeWarnings from './ReactStrictModeWarnings';
-import {get as getInstance, set as setInstance} from 'shared/ReactInstanceMap';
-import shallowEqual from 'shared/shallowEqual';
-import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber';
-import getComponentNameFromType from 'shared/getComponentNameFromType';
-import assign from 'shared/assign';
-import isArray from 'shared/isArray';
-import {REACT_CONTEXT_TYPE, REACT_CONSUMER_TYPE} from 'shared/ReactSymbols';
+} from 'shared/ReactFeatureFlags.js';
+import ReactStrictModeWarnings from './ReactStrictModeWarnings.js';
+import {get as getInstance, set as setInstance} from 'shared/ReactInstanceMap.js';
+import shallowEqual from 'shared/shallowEqual.js';
+import getComponentNameFromFiber from 'react-reconciler/src/getComponentNameFromFiber.js';
+import getComponentNameFromType from 'shared/getComponentNameFromType.js';
+import assign from 'shared/assign.js';
+import isArray from 'shared/isArray.js';
+import {REACT_CONTEXT_TYPE, REACT_CONSUMER_TYPE} from 'shared/ReactSymbols.js';
 
-import {NoMode, StrictLegacyMode, StrictEffectsMode} from './ReactTypeOfMode';
+import {NoMode, StrictLegacyMode, StrictEffectsMode} from './ReactTypeOfMode.js';
 
 import {
   enqueueUpdate,
@@ -45,23 +45,23 @@ import {
   initializeUpdateQueue,
   cloneUpdateQueue,
   suspendIfUpdateReadFromEntangledAsyncAction,
-} from './ReactFiberClassUpdateQueue';
-import {NoLanes} from './ReactFiberLane';
+} from './ReactFiberClassUpdateQueue.js';
+import {NoLanes} from './ReactFiberLane.js';
 import {
   cacheContext,
   getMaskedContext,
   getUnmaskedContext,
   hasContextChanged,
   emptyContextObject,
-} from './ReactFiberContext';
-import {readContext, checkIfContextChanged} from './ReactFiberNewContext';
-import {requestUpdateLane, scheduleUpdateOnFiber} from './ReactFiberWorkLoop';
+} from './ReactFiberContext.js';
+import {readContext, checkIfContextChanged} from './ReactFiberNewContext.js';
+import {requestUpdateLane, scheduleUpdateOnFiber} from './ReactFiberWorkLoop.js';
 import {
   markForceUpdateScheduled,
   markStateUpdateScheduled,
   setIsStrictModeForDevtools,
-} from './ReactFiberDevToolsHook';
-import {startUpdateTimerByLane} from './ReactProfilerTimer';
+} from './ReactFiberDevToolsHook.js';
+import {startUpdateTimerByLane} from './ReactProfilerTimer.js';
 
 const fakeInternalInstance = {};
 

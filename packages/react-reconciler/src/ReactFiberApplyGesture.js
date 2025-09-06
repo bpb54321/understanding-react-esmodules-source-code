@@ -7,15 +7,15 @@
  * @flow
  */
 
-import type {ViewTransitionProps} from 'shared/ReactTypes';
+import type {ViewTransitionProps} from 'shared/ReactTypes.js';
 
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
 
-import type {Instance, TextInstance, Props} from './ReactFiberConfig';
+import type {Instance, TextInstance, Props} from './ReactFiberConfig.js';
 
-import type {OffscreenState} from './ReactFiberOffscreenComponent';
+import type {OffscreenState} from './ReactFiberOffscreenComponent.js';
 
-import type {ViewTransitionState} from './ReactFiberViewTransitionComponent';
+import type {ViewTransitionState} from './ReactFiberViewTransitionComponent.js';
 
 import {
   cloneMutableInstance,
@@ -34,13 +34,13 @@ import {
   supportsSingletons,
   unhideInstance,
   unhideTextInstance,
-} from './ReactFiberConfig';
+} from './ReactFiberConfig.js';
 import {
   popMutationContext,
   pushMutationContext,
   viewTransitionMutationContext,
   trackHostMutation,
-} from './ReactFiberMutationTracking';
+} from './ReactFiberMutationTracking.js';
 import {
   MutationMask,
   Update,
@@ -50,7 +50,7 @@ import {
   ViewTransitionNamedStatic,
   ViewTransitionStatic,
   AffectedParentLayout,
-} from './ReactFiberFlags';
+} from './ReactFiberFlags.js';
 import {
   HostComponent,
   HostHoistable,
@@ -59,7 +59,7 @@ import {
   HostPortal,
   OffscreenComponent,
   ViewTransitionComponent,
-} from './ReactWorkTags';
+} from './ReactWorkTags.js';
 import {
   restoreEnterOrExitViewTransitions,
   restoreNestedViewTransitions,
@@ -71,11 +71,11 @@ import {
   viewTransitionCancelableChildren,
   pushViewTransitionCancelableScope,
   popViewTransitionCancelableScope,
-} from './ReactFiberCommitViewTransitions';
+} from './ReactFiberCommitViewTransitions.js';
 import {
   getViewTransitionName,
   getViewTransitionClassName,
-} from './ReactFiberViewTransitionComponent';
+} from './ReactFiberViewTransitionComponent.js';
 
 let didWarnForRootClone = false;
 

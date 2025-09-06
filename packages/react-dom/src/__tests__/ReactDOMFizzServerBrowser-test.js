@@ -9,7 +9,7 @@
 
 'use strict';
 
-import {patchMessageChannel} from '../../../../scripts/jest/patchMessageChannel';
+import {patchMessageChannel} from '../../../../scripts/jest/patchMessageChannel.js';
 
 // Polyfills for test environment
 global.ReadableStream =

@@ -15,14 +15,14 @@ import {
   REACT_SUSPENSE_TYPE,
   REACT_SUSPENSE_LIST_TYPE,
   REACT_VIEW_TRANSITION_TYPE,
-} from 'shared/ReactSymbols';
+} from 'shared/ReactSymbols.js';
 
-import type {LazyComponent} from 'react/src/ReactLazy';
+import type {LazyComponent} from 'react/src/ReactLazy.js';
 
-import isArray from 'shared/isArray';
-import getPrototypeOf from 'shared/getPrototypeOf';
+import isArray from 'shared/isArray.js';
+import getPrototypeOf from 'shared/getPrototypeOf.js';
 
-import {enableViewTransition} from 'shared/ReactFeatureFlags';
+import {enableViewTransition} from 'shared/ReactFeatureFlags.js';
 
 // Used for DEV messages to keep track of which parent rendered some props,
 // in case they error.

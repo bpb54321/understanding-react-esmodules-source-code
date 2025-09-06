@@ -7,11 +7,11 @@
  * @flow
  */
 
-import isAttributeNameSafe from '../shared/isAttributeNameSafe';
-import {enableTrustedTypesIntegration} from 'shared/ReactFeatureFlags';
-import {checkAttributeStringCoercion} from 'shared/CheckStringCoercion';
-import {getFiberCurrentPropsFromNode} from './ReactDOMComponentTree';
-import {trackHostMutation} from 'react-reconciler/src/ReactFiberMutationTracking';
+import isAttributeNameSafe from '../shared/isAttributeNameSafe.js';
+import {enableTrustedTypesIntegration} from 'shared/ReactFeatureFlags.js';
+import {checkAttributeStringCoercion} from 'shared/CheckStringCoercion.js';
+import {getFiberCurrentPropsFromNode} from './ReactDOMComponentTree.js';
+import {trackHostMutation} from 'react-reconciler/src/ReactFiberMutationTracking.js';
 
 /**
  * Get the value for a attribute on a node. Only used in DEV for SSR validation.

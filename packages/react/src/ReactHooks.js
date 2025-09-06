@@ -7,16 +7,16 @@
  * @flow
  */
 
-import type {Dispatcher} from 'react-reconciler/src/ReactInternalTypes';
+import type {Dispatcher} from 'react-reconciler/src/ReactInternalTypes.js';
 import type {
   ReactContext,
   StartTransitionOptions,
   Usable,
   Awaited,
-} from 'shared/ReactTypes';
-import {REACT_CONSUMER_TYPE} from 'shared/ReactSymbols';
+} from 'shared/ReactTypes.js';
+import {REACT_CONSUMER_TYPE} from 'shared/ReactSymbols.js';
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
 
 type BasicStateAction<S> = (S => S) | S;
 type Dispatch<A> = A => void;

@@ -7,13 +7,13 @@
  * @flow
  */
 
-import type {AsyncDispatcher, Fiber} from './ReactInternalTypes';
-import type {Cache} from './ReactFiberCacheComponent';
+import type {AsyncDispatcher, Fiber} from './ReactInternalTypes.js';
+import type {Cache} from './ReactFiberCacheComponent.js';
 
-import {readContext} from './ReactFiberNewContext';
-import {CacheContext} from './ReactFiberCacheComponent';
+import {readContext} from './ReactFiberNewContext.js';
+import {CacheContext} from './ReactFiberCacheComponent.js';
 
-import {current as currentOwner} from './ReactCurrentFiber';
+import {current as currentOwner} from './ReactCurrentFiber.js';
 
 function getCacheForType<T>(resourceType: () => T): T {
   const cache: Cache = readContext(CacheContext);

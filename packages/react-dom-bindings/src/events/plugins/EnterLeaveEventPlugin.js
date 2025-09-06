@@ -7,29 +7,29 @@
  * @flow
  */
 
-import type {AnyNativeEvent} from '../PluginModuleType';
-import type {DOMEventName} from '../DOMEventNames';
-import type {DispatchQueue} from '../DOMPluginEventSystem';
-import type {EventSystemFlags} from '../EventSystemFlags';
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {KnownReactSyntheticEvent} from '../ReactSyntheticEventType';
+import type {AnyNativeEvent} from '../PluginModuleType.js';
+import type {DOMEventName} from '../DOMEventNames.js';
+import type {DispatchQueue} from '../DOMPluginEventSystem.js';
+import type {EventSystemFlags} from '../EventSystemFlags.js';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {KnownReactSyntheticEvent} from '../ReactSyntheticEventType.js';
 
-import {registerDirectEvent} from '../EventRegistry';
-import {isReplayingEvent} from '../CurrentReplayingEvent';
-import {SyntheticMouseEvent, SyntheticPointerEvent} from '../SyntheticEvent';
+import {registerDirectEvent} from '../EventRegistry.js';
+import {isReplayingEvent} from '../CurrentReplayingEvent.js';
+import {SyntheticMouseEvent, SyntheticPointerEvent} from '../SyntheticEvent.js';
 import {
   getClosestInstanceFromNode,
   getNodeFromInstance,
   isContainerMarkedAsRoot,
-} from '../../client/ReactDOMComponentTree';
-import {accumulateEnterLeaveTwoPhaseListeners} from '../DOMPluginEventSystem';
+} from '../../client/ReactDOMComponentTree.js';
+import {accumulateEnterLeaveTwoPhaseListeners} from '../DOMPluginEventSystem.js';
 
 import {
   HostComponent,
   HostSingleton,
   HostText,
-} from 'react-reconciler/src/ReactWorkTags';
-import {getNearestMountedFiber} from 'react-reconciler/src/ReactFiberTreeReflection';
+} from 'react-reconciler/src/ReactWorkTags.js';
+import {getNearestMountedFiber} from 'react-reconciler/src/ReactFiberTreeReflection.js';
 
 function registerEvents() {
   registerDirectEvent('onMouseEnter', ['mouseout', 'mouseover']);

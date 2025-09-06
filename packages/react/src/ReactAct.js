@@ -7,12 +7,12 @@
  * @flow
  */
 
-import type {Thenable} from 'shared/ReactTypes';
-import type {RendererTask} from './ReactSharedInternalsClient';
-import ReactSharedInternals from './ReactSharedInternalsClient';
-import queueMacrotask from 'shared/enqueueTask';
+import type {Thenable} from 'shared/ReactTypes.js';
+import type {RendererTask} from './ReactSharedInternalsClient.js';
+import ReactSharedInternals from './ReactSharedInternalsClient.js';
+import queueMacrotask from 'shared/enqueueTask.js';
 
-import {disableLegacyMode} from 'shared/ReactFeatureFlags';
+import {disableLegacyMode} from 'shared/ReactFeatureFlags.js';
 
 // `act` calls can be nested, so we track the depth. This represents the
 // number of `act` scopes on the stack.

@@ -1,4 +1,4 @@
-import {listenToFormSubmissionsForReplaying} from './ReactDOMFizzInstructionSetShared';
+import {listenToFormSubmissionsForReplaying} from './ReactDOMFizzInstructionSetShared.js';
 
 // TODO: Export a helper function that throws the error from javascript URLs instead.
 // We can do that here since we mess with globals anyway and we can guarantee it has loaded.

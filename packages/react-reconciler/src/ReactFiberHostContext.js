@@ -7,10 +7,10 @@
  * @flow
  */
 
-import type {Fiber} from './ReactInternalTypes';
-import type {StackCursor} from './ReactFiberStack';
-import type {Container, HostContext} from './ReactFiberConfig';
-import type {Hook} from './ReactFiberHooks';
+import type {Fiber} from './ReactInternalTypes.js';
+import type {StackCursor} from './ReactFiberStack.js';
+import type {Container, HostContext} from './ReactFiberConfig.js';
+import type {Hook} from './ReactFiberHooks.js';
 
 import {
   getChildHostContext,
@@ -18,8 +18,8 @@ import {
   HostTransitionContext,
   NotPendingTransition,
   isPrimaryRenderer,
-} from './ReactFiberConfig';
-import {createCursor, push, pop} from './ReactFiberStack';
+} from './ReactFiberConfig.js';
+import {createCursor, push, pop} from './ReactFiberStack.js';
 
 const contextStackCursor: StackCursor<HostContext | null> = createCursor(null);
 const contextFiberStackCursor: StackCursor<Fiber | null> = createCursor(null);

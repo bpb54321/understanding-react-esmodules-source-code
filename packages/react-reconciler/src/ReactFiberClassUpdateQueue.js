@@ -84,8 +84,8 @@
 // regardless of priority. Intermediate state may vary according to system
 // resources, but the final state is always the same.
 
-import type {Fiber, FiberRoot} from './ReactInternalTypes';
-import type {Lanes, Lane} from './ReactFiberLane';
+import type {Fiber, FiberRoot} from './ReactInternalTypes.js';
+import type {Lanes, Lane} from './ReactFiberLane.js';
 
 import {
   NoLane,
@@ -97,36 +97,36 @@ import {
   isTransitionLane,
   intersectLanes,
   markRootEntangled,
-} from './ReactFiberLane';
+} from './ReactFiberLane.js';
 import {
   enterDisallowedContextReadInDEV,
   exitDisallowedContextReadInDEV,
-} from './ReactFiberNewContext';
+} from './ReactFiberNewContext.js';
 import {
   Callback,
   Visibility,
   ShouldCapture,
   DidCapture,
-} from './ReactFiberFlags';
-import getComponentNameFromFiber from './getComponentNameFromFiber';
+} from './ReactFiberFlags.js';
+import getComponentNameFromFiber from './getComponentNameFromFiber.js';
 
-import {StrictLegacyMode} from './ReactTypeOfMode';
+import {StrictLegacyMode} from './ReactTypeOfMode.js';
 import {
   markSkippedUpdateLanes,
   isUnsafeClassRenderPhaseUpdate,
   getWorkInProgressRootRenderLanes,
-} from './ReactFiberWorkLoop';
+} from './ReactFiberWorkLoop.js';
 import {
   enqueueConcurrentClassUpdate,
   unsafe_markUpdateLaneFromFiberToRoot,
-} from './ReactFiberConcurrentUpdates';
-import {setIsStrictModeForDevtools} from './ReactFiberDevToolsHook';
+} from './ReactFiberConcurrentUpdates.js';
+import {setIsStrictModeForDevtools} from './ReactFiberDevToolsHook.js';
 
-import assign from 'shared/assign';
+import assign from 'shared/assign.js';
 import {
   peekEntangledActionLane,
   peekEntangledActionThenable,
-} from './ReactFiberAsyncAction';
+} from './ReactFiberAsyncAction.js';
 
 export type Update<State> = {
   lane: Lane,

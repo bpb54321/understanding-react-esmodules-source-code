@@ -7,14 +7,14 @@
  * @flow
  */
 
-import type {ViewTransitionClass, ViewTransitionProps} from 'shared/ReactTypes';
-import type {FiberRoot} from './ReactInternalTypes';
-import type {ViewTransitionInstance, Instance} from './ReactFiberConfig';
+import type {ViewTransitionClass, ViewTransitionProps} from 'shared/ReactTypes.js';
+import type {FiberRoot} from './ReactInternalTypes.js';
+import type {ViewTransitionInstance, Instance} from './ReactFiberConfig.js';
 
 import {
   getCommittingRoot,
   getPendingTransitionTypes,
-} from './ReactFiberWorkLoop';
+} from './ReactFiberWorkLoop.js';
 
 export type ViewTransitionState = {
   autoName: null | string, // the view-transition-name to use when an explicit one is not specified

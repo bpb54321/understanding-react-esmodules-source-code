@@ -7,56 +7,56 @@
  * @flow
  */
 
-import type {AnyNativeEvent} from '../events/PluginModuleType';
+import type {AnyNativeEvent} from '../events/PluginModuleType.js';
 import type {
   Container,
   ActivityInstance,
   SuspenseInstance,
-} from '../client/ReactFiberConfigDOM';
-import type {DOMEventName} from '../events/DOMEventNames';
-import type {EventSystemFlags} from './EventSystemFlags';
-import type {FiberRoot} from 'react-reconciler/src/ReactInternalTypes';
-import type {EventPriority} from 'react-reconciler/src/ReactEventPriorities';
+} from '../client/ReactFiberConfigDOM.js';
+import type {DOMEventName} from '../events/DOMEventNames.js';
+import type {EventSystemFlags} from './EventSystemFlags.js';
+import type {FiberRoot} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {EventPriority} from 'react-reconciler/src/ReactEventPriorities.js';
 
 import {
   unstable_scheduleCallback as scheduleCallback,
   unstable_NormalPriority as NormalPriority,
-} from 'scheduler';
+} from 'scheduler.js';
 import {
   getNearestMountedFiber,
   getContainerFromFiber,
   getActivityInstanceFromFiber,
   getSuspenseInstanceFromFiber,
-} from 'react-reconciler/src/ReactFiberTreeReflection';
+} from 'react-reconciler/src/ReactFiberTreeReflection.js';
 import {
   findInstanceBlockingEvent,
   findInstanceBlockingTarget,
-} from './ReactDOMEventListener';
-import {setReplayingEvent, resetReplayingEvent} from './CurrentReplayingEvent';
+} from './ReactDOMEventListener.js';
+import {setReplayingEvent, resetReplayingEvent} from './CurrentReplayingEvent.js';
 import {
   getInstanceFromNode,
   getClosestInstanceFromNode,
   getFiberCurrentPropsFromNode,
-} from '../client/ReactDOMComponentTree';
+} from '../client/ReactDOMComponentTree.js';
 import {
   HostRoot,
   ActivityComponent,
   SuspenseComponent,
-} from 'react-reconciler/src/ReactWorkTags';
-import {isHigherEventPriority} from 'react-reconciler/src/ReactEventPriorities';
-import {isRootDehydrated} from 'react-reconciler/src/ReactFiberShellHydration';
-import {dispatchReplayedFormAction} from './plugins/FormActionEventPlugin';
+} from 'react-reconciler/src/ReactWorkTags.js';
+import {isHigherEventPriority} from 'react-reconciler/src/ReactEventPriorities.js';
+import {isRootDehydrated} from 'react-reconciler/src/ReactFiberShellHydration.js';
+import {dispatchReplayedFormAction} from './plugins/FormActionEventPlugin.js';
 import {
   resolveUpdatePriority,
   runWithPriority as attemptHydrationAtPriority,
-} from '../client/ReactDOMUpdatePriority';
+} from '../client/ReactDOMUpdatePriority.js';
 
 import {
   attemptContinuousHydration,
   attemptHydrationAtCurrentPriority,
-} from 'react-reconciler/src/ReactFiberReconciler';
+} from 'react-reconciler/src/ReactFiberReconciler.js';
 
-import {enableHydrationChangeEvent} from 'shared/ReactFeatureFlags';
+import {enableHydrationChangeEvent} from 'shared/ReactFeatureFlags.js';
 
 // TODO: Upgrade this definition once we're on a newer version of Flow that
 // has this definition built-in.

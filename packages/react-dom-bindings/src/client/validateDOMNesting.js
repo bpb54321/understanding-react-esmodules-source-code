@@ -7,21 +7,21 @@
  * @flow
  */
 
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {HydrationDiffNode} from 'react-reconciler/src/ReactFiberHydrationDiffs';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {HydrationDiffNode} from 'react-reconciler/src/ReactFiberHydrationDiffs.js';
 
 import {
   current,
   runWithFiberInDEV,
-} from 'react-reconciler/src/ReactCurrentFiber';
+} from 'react-reconciler/src/ReactCurrentFiber.js';
 import {
   HostComponent,
   HostHoistable,
   HostSingleton,
   HostText,
-} from 'react-reconciler/src/ReactWorkTags';
+} from 'react-reconciler/src/ReactWorkTags.js';
 
-import {describeDiff} from 'react-reconciler/src/ReactFiberHydrationDiffs';
+import {describeDiff} from 'react-reconciler/src/ReactFiberHydrationDiffs.js';
 
 function describeAncestors(
   ancestor: Fiber,

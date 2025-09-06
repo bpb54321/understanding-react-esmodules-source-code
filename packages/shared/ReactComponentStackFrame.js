@@ -7,11 +7,11 @@
  * @flow
  */
 
-import {disableLogs, reenableLogs} from 'shared/ConsolePatchingDev';
+import {disableLogs, reenableLogs} from 'shared/ConsolePatchingDev.js';
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
 
-import DefaultPrepareStackTrace from 'shared/DefaultPrepareStackTrace';
+import DefaultPrepareStackTrace from 'shared/DefaultPrepareStackTrace.js';
 
 let prefix;
 let suffix;

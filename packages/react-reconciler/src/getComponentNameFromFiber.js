@@ -7,15 +7,15 @@
  * @flow
  */
 
-import type {ReactContext, ReactConsumerType} from 'shared/ReactTypes';
-import type {Fiber} from './ReactInternalTypes';
+import type {ReactContext, ReactConsumerType} from 'shared/ReactTypes.js';
+import type {Fiber} from './ReactInternalTypes.js';
 
 import {
   disableLegacyMode,
   enableLegacyHidden,
   enableRenderableContext,
   enableViewTransition,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
 import {
   FunctionComponent,
@@ -48,10 +48,10 @@ import {
   Throw,
   ViewTransitionComponent,
   ActivityComponent,
-} from 'react-reconciler/src/ReactWorkTags';
-import getComponentNameFromType from 'shared/getComponentNameFromType';
-import {REACT_STRICT_MODE_TYPE} from 'shared/ReactSymbols';
-import type {ReactComponentInfo} from '../../shared/ReactTypes';
+} from 'react-reconciler/src/ReactWorkTags.js';
+import getComponentNameFromType from 'shared/getComponentNameFromType.js';
+import {REACT_STRICT_MODE_TYPE} from 'shared/ReactSymbols.js';
+import type {ReactComponentInfo} from '../../shared/ReactTypes.js';
 
 // Keep in sync with shared/getComponentNameFromType
 function getWrappedName(

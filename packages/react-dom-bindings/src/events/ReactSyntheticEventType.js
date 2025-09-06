@@ -8,8 +8,8 @@
  * @flow
  */
 
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {DOMEventName} from './DOMEventNames';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {DOMEventName} from './DOMEventNames.js';
 
 export type DispatchConfig = {
   dependencies?: Array<DOMEventName>,

@@ -7,7 +7,7 @@
  * @flow
  */
 
-import ReactVersion from 'shared/ReactVersion';
+import ReactVersion from 'shared/ReactVersion.js';
 import {
   REACT_FRAGMENT_TYPE,
   REACT_PROFILER_TYPE,
@@ -19,22 +19,22 @@ import {
   REACT_SCOPE_TYPE,
   REACT_TRACING_MARKER_TYPE,
   REACT_VIEW_TRANSITION_TYPE,
-} from 'shared/ReactSymbols';
+} from 'shared/ReactSymbols.js';
 
-import {Component, PureComponent} from './ReactBaseClasses';
-import {createRef} from './ReactCreateRef';
-import {forEach, map, count, toArray, only} from './ReactChildren';
+import {Component, PureComponent} from './ReactBaseClasses.js';
+import {createRef} from './ReactCreateRef.js';
+import {forEach, map, count, toArray, only} from './ReactChildren.js';
 import {
   createElement,
   cloneElement,
   isValidElement,
-} from './jsx/ReactJSXElement';
-import {createContext} from './ReactContext';
-import {lazy} from './ReactLazy';
-import {forwardRef} from './ReactForwardRef';
-import {memo} from './ReactMemo';
-import {cache} from './ReactCacheClient';
-import {postpone} from './ReactPostpone';
+} from './jsx/ReactJSXElement.js';
+import {createContext} from './ReactContext.js';
+import {lazy} from './ReactLazy.js';
+import {forwardRef} from './ReactForwardRef.js';
+import {memo} from './ReactMemo.js';
+import {cache} from './ReactCacheClient.js';
+import {postpone} from './ReactPostpone.js';
 import {
   getCacheForType,
   useCallback,
@@ -57,13 +57,13 @@ import {
   use,
   useOptimistic,
   useActionState,
-} from './ReactHooks';
-import ReactSharedInternals from './ReactSharedInternalsClient';
-import {startTransition, startGestureTransition} from './ReactStartTransition';
-import {addTransitionType} from './ReactTransitionType';
-import {act} from './ReactAct';
-import {captureOwnerStack} from './ReactOwnerStack';
-import * as ReactCompilerRuntime from './ReactCompilerRuntime';
+} from './ReactHooks.js';
+import ReactSharedInternals from './ReactSharedInternalsClient.js';
+import {startTransition, startGestureTransition} from './ReactStartTransition.js';
+import {addTransitionType} from './ReactTransitionType.js';
+import {act} from './ReactAct.js';
+import {captureOwnerStack} from './ReactOwnerStack.js';
+import * as ReactCompilerRuntime from './ReactCompilerRuntime.js';
 
 const Children = {
   map,

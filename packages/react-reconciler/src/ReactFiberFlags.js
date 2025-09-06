@@ -10,7 +10,7 @@
 import {
   enableCreateEventHandleAPI,
   enableUseEffectEventHook,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
 export type Flags = number;
 

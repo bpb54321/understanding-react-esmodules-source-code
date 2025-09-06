@@ -7,26 +7,26 @@
  * @flow
  */
 
-import type {DOMEventName} from '../../events/DOMEventNames';
-import type {Fiber} from 'react-reconciler/src/ReactInternalTypes';
-import type {AnyNativeEvent} from '../../events/PluginModuleType';
-import type {DispatchQueue} from '../DOMPluginEventSystem';
-import type {EventSystemFlags} from '../EventSystemFlags';
-import type {ReactSyntheticEvent} from '../ReactSyntheticEventType';
+import type {DOMEventName} from '../../events/DOMEventNames.js';
+import type {Fiber} from 'react-reconciler/src/ReactInternalTypes.js';
+import type {AnyNativeEvent} from '../../events/PluginModuleType.js';
+import type {DispatchQueue} from '../DOMPluginEventSystem.js';
+import type {EventSystemFlags} from '../EventSystemFlags.js';
+import type {ReactSyntheticEvent} from '../ReactSyntheticEventType.js';
 
-import {canUseDOM} from 'shared/ExecutionEnvironment';
+import {canUseDOM} from 'shared/ExecutionEnvironment.js';
 
-import {registerTwoPhaseEvent} from '../EventRegistry';
+import {registerTwoPhaseEvent} from '../EventRegistry.js';
 import {
   getData as FallbackCompositionStateGetData,
   initialize as FallbackCompositionStateInitialize,
   reset as FallbackCompositionStateReset,
-} from '../FallbackCompositionState';
+} from '../FallbackCompositionState.js';
 import {
   SyntheticCompositionEvent,
   SyntheticInputEvent,
-} from '../SyntheticEvent';
-import {accumulateTwoPhaseListeners} from '../DOMPluginEventSystem';
+} from '../SyntheticEvent.js';
+import {accumulateTwoPhaseListeners} from '../DOMPluginEventSystem.js';
 
 const END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 const START_KEYCODE = 229;

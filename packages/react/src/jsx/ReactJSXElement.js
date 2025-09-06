@@ -5,21 +5,21 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import getComponentNameFromType from 'shared/getComponentNameFromType';
-import ReactSharedInternals from 'shared/ReactSharedInternals';
-import hasOwnProperty from 'shared/hasOwnProperty';
-import assign from 'shared/assign';
+import getComponentNameFromType from 'shared/getComponentNameFromType.js';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
+import hasOwnProperty from 'shared/hasOwnProperty.js';
+import assign from 'shared/assign.js';
 import {
   REACT_ELEMENT_TYPE,
   REACT_FRAGMENT_TYPE,
   REACT_LAZY_TYPE,
-} from 'shared/ReactSymbols';
-import {checkKeyStringCoercion} from 'shared/CheckStringCoercion';
-import isArray from 'shared/isArray';
+} from 'shared/ReactSymbols.js';
+import {checkKeyStringCoercion} from 'shared/CheckStringCoercion.js';
+import isArray from 'shared/isArray.js';
 import {
   disableDefaultPropsExceptForClasses,
   ownerStackLimit,
-} from 'shared/ReactFeatureFlags';
+} from 'shared/ReactFeatureFlags.js';
 
 const createTask =
   // eslint-disable-next-line react-internal/no-production-logging

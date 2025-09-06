@@ -7,14 +7,14 @@
  * @flow
  */
 
-import isArray from 'shared/isArray';
+import isArray from 'shared/isArray.js';
 
-import {getCurrentFiberOwnerNameInDevOrNull} from 'react-reconciler/src/ReactCurrentFiber';
-import {getToStringValue, toString} from './ToStringValue';
-import {disableTextareaChildren} from 'shared/ReactFeatureFlags';
+import {getCurrentFiberOwnerNameInDevOrNull} from 'react-reconciler/src/ReactCurrentFiber.js';
+import {getToStringValue, toString} from './ToStringValue.js';
+import {disableTextareaChildren} from 'shared/ReactFeatureFlags.js';
 
-import {track, trackHydrated} from './inputValueTracking';
-import {queueChangeEvent} from '../events/ReactDOMEventReplaying';
+import {track, trackHydrated} from './inputValueTracking.js';
+import {queueChangeEvent} from '../events/ReactDOMEventReplaying.js';
 
 let didWarnValDefaultVal = false;
 

@@ -7,12 +7,12 @@
  * @flow
  */
 
-import ReactSharedInternals from 'shared/ReactSharedInternals';
+import ReactSharedInternals from 'shared/ReactSharedInternals.js';
 import {
   enableViewTransition,
   enableGestureTransition,
-} from 'shared/ReactFeatureFlags';
-import {startTransition} from './ReactStartTransition';
+} from 'shared/ReactFeatureFlags.js';
+import {startTransition} from './ReactStartTransition.js';
 
 export type TransitionTypes = Array<string>;
 

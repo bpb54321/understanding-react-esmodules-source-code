@@ -9,4 +9,4 @@
 
 'use strict';
 
-export * from './src/forks/SchedulerNative';
+export * from './src/forks/SchedulerNative.js';

@@ -15,7 +15,7 @@ import type {
   HeadersDescriptor,
   PreambleState,
   FormatContext,
-} from './ReactFizzConfigDOM';
+} from './ReactFizzConfigDOM.js';
 
 import {
   createRenderState as createRenderStateImpl,
@@ -27,17 +27,17 @@ import {
   writeStartClientRenderedSuspenseBoundary as writeStartClientRenderedSuspenseBoundaryImpl,
   writeEndCompletedSuspenseBoundary as writeEndCompletedSuspenseBoundaryImpl,
   writeEndClientRenderedSuspenseBoundary as writeEndClientRenderedSuspenseBoundaryImpl,
-} from './ReactFizzConfigDOM';
+} from './ReactFizzConfigDOM.js';
 
 import type {
   Destination,
   Chunk,
   PrecomputedChunk,
-} from 'react-server/src/ReactServerStreamConfig';
+} from 'react-server/src/ReactServerStreamConfig.js';
 
-import type {FormStatus} from '../shared/ReactDOMFormActions';
+import type {FormStatus} from '../shared/ReactDOMFormActions.js';
 
-import {NotPending} from '../shared/ReactDOMFormActions';
+import {NotPending} from '../shared/ReactDOMFormActions.js';
 
 export const isPrimaryRenderer = false;
 
@@ -128,7 +128,7 @@ export function createRenderState(
 import {
   stringToChunk,
   stringToPrecomputedChunk,
-} from 'react-server/src/ReactServerStreamConfig';
+} from 'react-server/src/ReactServerStreamConfig.js';
 
 // this chunk is empty on purpose because we do not want to emit the DOCTYPE in legacy mode
 export const doctypeChunk: PrecomputedChunk = stringToPrecomputedChunk('');
@@ -138,7 +138,7 @@ export type {
   HoistableState,
   PreambleState,
   FormatContext,
-} from './ReactFizzConfigDOM';
+} from './ReactFizzConfigDOM.js';
 
 export {
   getChildFormatContext,
@@ -176,9 +176,9 @@ export {
   hoistPreambleState,
   isPreambleReady,
   isPreambleContext,
-} from './ReactFizzConfigDOM';
+} from './ReactFizzConfigDOM.js';
 
-import escapeTextForBrowser from './escapeTextForBrowser';
+import escapeTextForBrowser from './escapeTextForBrowser.js';
 
 export function getViewTransitionFormatContext(
   resumableState: ResumableState,
