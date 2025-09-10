@@ -1,5 +1,5 @@
 {
   "presets": ["@babel/preset-flow"],
-  "sourceMaps": true,
+  "sourceMaps": false,
   "ignore": ["**/__tests__"]
 }
